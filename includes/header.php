@@ -67,11 +67,6 @@
   <meta name="theme-color" content="#ffffff">
   <Link rel="shortcut icon" href="./images/favicon/favicon.ico" />
 
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-
   <!-- jQuery y Slick -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
