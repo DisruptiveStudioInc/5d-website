@@ -145,7 +145,7 @@
 	</div>
 
 	<div class="mw-1280 t-c h-100 med-h-0 jc-center fd-col">
-		<h2 class="h1 m-center" style="max-width:18ch;"><?php echo $Slogan_title; ?></h2>
+		<h2 class="h1 m-center" style="max-width:26ch;"><?php echo $Slogan_title; ?></h2>
 		<p class="h3 m-center" style="max-width:48ch">“<?php echo $Slogan_text; ?>”</p>
 		<a href="<?php echo $Register; ?>" class="btn big c-acc br-50 mt-40 small-mt-20"><?php echo $Btn_live; ?></a>
 	</div>
@@ -440,7 +440,7 @@ foreach ($Modal as $item){
 	</div>
 
 	<div class="mw-1280 t-c big">
-		<h2 class="h1 m-center" style="max-width:16ch"><?php echo $Traits_title; ?></h2>
+		<h2 class="h1 m-center" style="max-width:20ch"><?php echo $Traits_title; ?></h2>
 		<a href="<?php echo $Register; ?>" class="btn big c-acc br-50 mt-40 small-mt-20"><?php echo $Btn_part; ?></a>
 	</div>
 </section>

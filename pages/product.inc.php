@@ -286,28 +286,30 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
             <p class="h4"><?php echo $Started_sub; ?></p>
         </div>
 
-        <div class="jc-center g-20 ai-center small-fd-col">
+        <div class="jc-center g-20 ai-stretch small-fd-col">
 
-            <div class="banner">
+            <div class="w-100 rel">
+              <div class="banner" style="position:sticky;top:80px;">
                 <ul>
-                    <?php
+                  <?php
                     $Service = array(
-                        array('Designed to support your body’s natural rhythms—cognitive, physical, and hormonal—24 hours a day.','Sofía R.',$id),
-                        array('I can focus for hours without getting burned out. Revive works.','Leo M.',$id),
-                        array('In one week, my memory and mental energy improved','Andrea T.',$id)
+                      array('Designed to support your body’s natural rhythms—cognitive, physical, and hormonal—24 hours a day.','Sofía R.',$id),
+                      array('I can focus for hours without getting burned out. Revive works.','Leo M.',$id),
+                      array('In one week, my memory and mental energy improved','Andrea T.',$id)
                     );
 
                     $counter = 1;
                     foreach ($Service as $item){
-                        echo "
-                        <li>
-                            <img src='./images/body/banner/{$counter}.webp' alt='{$item[0]}'/>
-                        </li>
-                        ";
-                        $counter++;
+                      echo "
+                      <li>
+                        <img src='./images/body/banner/{$counter}.webp' alt='{$item[0]}'/>
+                      </li>
+                      ";
+                      $counter++;
                     }
-                    ?>
+                  ?>
                 </ul>
+              </div>
             </div>
 
             <!-- Textos dinámicos -->
