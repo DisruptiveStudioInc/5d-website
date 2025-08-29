@@ -26,13 +26,34 @@
 
   /*-- Font Family --*/
 
-  --f-family-h: "Unbounded", sans-serif;
-  --f-family: "Metrophobic", sans-serif;
+  --f-family-h: "FaunaPro", sans-serif;
+  --f-family: "Averta", sans-serif;
 
   /*-- Font Size --*/
 
   --fs-base: 1rem;
   --lh-base: 1.5;
+}
+
+@font-face {
+  font-family: "FaunaPro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("fauna_pro-extra_light"),
+    url("../../fonts/fauna_pro-extra_light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Averta";
+  font-style: normal;
+  font-weight: 400;
+  src: local("averta"), url("../../fonts/averta.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Averta";
+  font-style: normal;
+  font-weight: 700;
+  src: local("averta-bold"),
+    url("../../fonts/averta-bold.woff2") format("woff2");
 }
 
 /* ============================================== */
