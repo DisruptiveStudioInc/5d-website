@@ -6,3 +6,4 @@
 
 # macOS-specific files
 .DS_Store
+docker-compose.yml
