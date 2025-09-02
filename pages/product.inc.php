@@ -543,12 +543,10 @@ imgContainer.addEventListener('mousemove', (e) => {
     const shadowY = deltaY * -30;
 
     img.style.transform = `translate(-50%, -50%) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
-    img.style.boxShadow = `${shadowX}px ${shadowY}px 40px rgba(0, 0, 0, 0.3)`;
 });
 
 imgContainer.addEventListener('mouseleave', () => {
     img.style.transform = 'translate(-50%, -50%) rotateX(0deg) rotateY(0deg) scale(1)';
-    img.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.2)';
 });
 
 

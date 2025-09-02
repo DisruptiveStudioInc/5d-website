@@ -30,11 +30,17 @@ $Btn_part = "Trascend TODAY";
 $Btn_started = "Connect NOW";
 
     //-------------------------//
+    // Coming Soon
+    //-------------------------//
+
+$Soon_Text = "Coming Soon";
+
+    //-------------------------//
     // Hero
     //-------------------------//
 
-$Hero_01 = "";
-$Hero_02 = "";
+$Hero_01 = "Your access to a universe of opportunities";
+$Hero_02 = "Scalable | Accessible | Sustainable";
 
     //-------------------------//
     // Journey
@@ -90,8 +96,12 @@ $Vision_text_04 = "Duplicate results with annual commitment.";
     // Slogan
     //-------------------------//
 
-$Slogan_title = "Share Stellum and create your digital network";
-$Slogan_text = "Each person who joins ignites a spark that multiplies, driving limitless collective growth.";
+$Slogan_title = "Stellum License";
+$Slogan_text = "For every 500 USDT in earnings, you renew your license. This way the network stays active, new commissions are generated, and residual flow is ensured.";
+$Slogan_suscription_title = "Subscription";
+$Slogan_suscription = "Knowledge and community";
+$Slogan_license_title = "License";
+$Slogan_license = "Business and income";
 
     //-------------------------//
     // Products

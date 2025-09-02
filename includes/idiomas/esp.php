@@ -30,11 +30,17 @@ $Btn_part = "Trasciende HOY";
 $Btn_started = "Conecta AHORA";
 
     //-------------------------//
+    // Coming Soon
+    //-------------------------//
+
+$Soon_Text = "Próximamente";
+
+    //-------------------------//
     // Hero
     //-------------------------//
 
-$Hero_01 = "";
-$Hero_02 = "";
+$Hero_01 = "Tu acceso al universo de oportunidades";
+$Hero_02 = "Escalable | Accesible | Sostenible";
 
     //-------------------------//
     // Journey
@@ -90,8 +96,12 @@ $Vision_text_04 = "Duplica resultados con compromiso anual.";
     // Slogan
     //-------------------------//
 
-$Slogan_title = "Comparte Stellum y crea tu red digital";
-$Slogan_text = "Cada persona que se une enciende una chispa que se multiplica, impulsando un crecimiento colectivo sin límites.";
+$Slogan_title = "Licencia Stellum";
+$Slogan_text = "Cada 500 USDT en ganancias, renuevas tu licencia. Así la red se mantiene activa, se generan nuevas comisiones y se asegura el flujo residual.";
+$Slogan_suscription_title = "Suscripción";
+$Slogan_suscription = "Conocimiento y comunidad";
+$Slogan_license_title = "Licencia";
+$Slogan_license = "Negocio e ingresos";
 
     //-------------------------//
     // Products

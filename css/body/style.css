@@ -14,8 +14,8 @@
   --color-acc-h: #52daff;
   --color-sec-h: #25385a;
 
-  --color-basic: #2e303b;
-  --color-premium: #7f6e44;
+  --color-basic: #776550;
+  --color-premium: #677d8c;
   --color-black: #000000;
 
   --color-testimonials: #5f707f;
@@ -84,10 +84,10 @@
 }
 
 .c-sub.basic {
-  background: radial-gradient(circle, white 0%, var(--color-basic) 100%);
+  background: radial-gradient(circle, #b79b8e 0%, var(--color-basic) 100%);
 }
 .c-sub.premium {
-  background: radial-gradient(circle, #cdb887 0%, var(--color-premium) 100%);
+  background: radial-gradient(circle, #fff 0%, var(--color-premium) 100%);
 }
 .c-sub.black {
   background: radial-gradient(circle, #111111 0%, var(--color-black) 100%);
@@ -484,13 +484,9 @@ section {
 }
 
 .text-hero {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   max-width: 1920px;
   width: 100%;
   padding: 0 30px;
-  transform: translate(-50%, -50%);
   z-index: 2;
   opacity: 0;
   display: block;
@@ -529,6 +525,17 @@ section {
   background: var(--color-pri);
   box-shadow: 0 20px 40px var(--color-glow);
   z-index: 8;
+}
+
+.licence-box {
+  transition-property: transform, box-shadow, background-color;
+  transition: 250ms ease;
+  max-width: 400px;
+  &:hover {
+    box-shadow: 0 20px 40px var(--color-glow);
+    transform: translate3d(0, -10px, 0);
+    background-color: var(--color-pri);
+  }
 }
 
 .glow-effect {
@@ -596,24 +603,28 @@ section {
   z-index: 2;
   transition: all 250ms ease;
 
-  &.img-three {
-    --side: 1;
-    right: 50%;
-  }
-  &.img-two {
-    --side: -1;
-    left: 50%;
+  @media only screen and (min-width: 1081px) {
+    &.img-three {
+      --side: 1;
+      right: 50%;
+    }
+    &.img-two {
+      --side: -1;
+      left: 50%;
+    }
   }
 }
 
 .wrap_products .box_product.img-three {
   z-index: 3;
 }
-.wrap_products.fade-in .box_product.img-three {
-  right: calc(var(--prod-size) * 0.5 + 52%);
-}
-.wrap_products.fade-in .box_product.img-two {
-  left: calc(var(--prod-size) * 0.5 + 52%);
+@media only screen and (min-width: 1081px) {
+  .wrap_products.fade-in .box_product.img-three {
+    right: calc(var(--prod-size) * 0.5 + 52%);
+  }
+  .wrap_products.fade-in .box_product.img-two {
+    left: calc(var(--prod-size) * 0.5 + 52%);
+  }
 }
 
 .product {

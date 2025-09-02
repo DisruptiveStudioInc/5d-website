@@ -26,7 +26,7 @@ $Keywords_Site     = $Keywords;
 // GENERAL
 //-------------------------//
 
-$Host_Site      = $_SERVER["HTTP_HOST"];
+$Host_Site      = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER["HTTP_HOST"];
 $Footer_Rights  = $Company_Name."© ".date("Y").". All rights reserved";
 
 //-------------------------//
