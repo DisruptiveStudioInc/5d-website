@@ -228,16 +228,16 @@ foreach ($Modal as $item){
 
 	<?php
 	$Logos = array(
-		array('1','Gricelda Sánchez','Mi vida estaba estancada hasta que encontré STELLUM; hoy disfruto $3,000 al mes.'),
-	    array('2','Isaac Motola','STELLUM transformó mi forma de pensar; hoy genero $9,000 al mes y sigo creciendo.'),
-	    array('3','Laura Cioccia','STELLUM fue el punto de quiebre; hoy disfruto estabilidad y $3,000 mensuales.'),
-	    array('4','Tania Moya','Con STELLUM pasé de conformarme a generar $9,000 al mes con propósito y enfoque.'),
-	    array('5','Carlos Santoyo','STELLUM me enseñó a pensar distinto; hoy, con $3,000 al mes, vivo mi mejor versión.'),
-	    array('6','Ulises Guzmán','STELLUM me dio estructura y comunidad; hoy genero $3,000 al mes con confianza.'),
-	    array('7','Eduardo Rodríguez','Antes vivía con preocupación financiera; hoy genero $50,000 al mes y lidero con impacto.'),
-	    array('8','Lytzi Rodríguez','Gracias a STELLUM, hoy genero $9,000 al mes y disfruto la libertad de vivir mi presente.'),
-	    array('9','Kevin Zambrano','STELLUM me enseñó a liderar mis finanzas; hoy genero $15,000 al mes construyendo un futuro alineado con mis valores.'),
-	    array('10','Ashgan Mohamed','STELLUM me ayudó a reconectar con mi propósito; hoy genero $9,000 al mes haciendo lo que amo.')
+		array('1','Mariana Torres',$Logos_testimonials[0]),
+    array('2','Andrés Valdivia',$Logos_testimonials[1]),
+    array('3','Sofía Ramírez',$Logos_testimonials[2]),
+    array('4','Valentina Ríos',$Logos_testimonials[3]),
+    array('5','Jorge Medina',$Logos_testimonials[4]),
+    array('6','Ricardo Paredes',$Logos_testimonials[5]),
+    array('7','Daniel Ortega',$Logos_testimonials[6]),
+    array('8','Camila Herrera',$Logos_testimonials[7]),
+    array('9','Isabela Núñez',$Logos_testimonials[8]),
+    array('10','Mateo Lozano',$Logos_testimonials[9])
 	);
 	?>
 
@@ -257,72 +257,8 @@ foreach ($Modal as $item){
 		?>
 	</ul>
 
-	<?php
-	$Logos_izquierda = array(
-		array('11','Lucy Ugalde','Con STELLUM encontré claridad y confianza. Hoy disfruto $9,000 mensuales con seguridad.'),
-	    array('12','Mario González','De la monotonía pasé a liderar. Gracias a STELLUM, hoy genero $100,000 mensuales.'),
-	    array('13','Tania Ramos','Superé mis miedos financieros. Con STELLUM genero $5,000 mensuales y vivo en libertad.'),
-	    array('14','Luis Cañada','Antes trabajar era obligación. Hoy, gracias a STELLUM, gano $5,000 mensuales con propósito.'),
-	    array('15','Bianca Simāo','STELLUM me mostró que cada día es rentable. Hoy mis $15,000 mensuales lo confirman.'),
-	    array('16','Rafael Miranda','Antes estaba disperso. Con STELLUM me enfoqué y genero $9,000 mensuales con claridad.'),
-	    array('17','Nuno Sousa','STELLUM transformó mi mentalidad. Hoy lidero con certeza y gano $50,000 mensuales.'),
-	    array('18','Fernando Barocio','Gracias a STELLUM superé temores. Hoy genero $50,000 mensuales con confianza.'),
-	    array('19','Kevin Díaz','STELLUM encendió mi pasión. Hoy gano $9,000 mensuales y sigo STELLUMlucionando.'),
-	    array('20','Ali Valenzuela','Gracias a STELLUM Hoy genero $15,000 mensuales y cada obstáculo se volvió un escalón.')
-	);
-	?>
-
-	<ul class="people alreves">
-		<?php
-		foreach ($Logos_izquierda as $item){
-			echo "
-			<li class='item item{$item[0]}'>
-				<img src='./images/body/evolvers/{$item[0]}.webp' alt='{$item[1]}'>
-
-					<h5>{$item[1]}</h5>
-					<p>{$item[2]}</p>
-
-			</li>
-			";
-		}
-		?>
-	</ul>
 	</div>
 </section>
-
-<!--<section>
-	<div class="evolvers_wrap">
-		<ul class="evolvers">
-		<?php
-
-		$evolvers = array(
-	        array('01','Gricelda Sánchez','Mi vida estaba estancada hasta que encontré STELLUM; hoy disfruto $3,000 al mes.'),
-	        array('02','Isaac Motola','STELLUM transformó mi forma de pensar; hoy genero $9,000 al mes y sigo creciendo.'),
-	        array('03','Laura Cioccia','STELLUM fue el punto de quiebre; hoy disfruto estabilidad y $3,000 mensuales.'),
-	        array('01','Tania Moya','Con STELLUM pasé de conformarme a generar $9,000 al mes con propósito y enfoque.'),
-	        array('02','Carlos Santoyo','STELLUM me enseñó a pensar distinto; hoy, con $3,000 al mes, vivo mi mejor versión.'),
-	        array('03','Ulises Guzmán','STELLUM me dio estructura y comunidad; hoy genero $3,000 al mes con confianza.'),
-	        array('01','Eduardo Rodríguez','Antes vivía con preocupación financiera; hoy genero $50,000 al mes y lidero con impacto.'),
-	        array('02','Lytzi Rodríguez','Gracias a STELLUM, hoy genero $9,000 al mes y disfruto la libertad de vivir mi presente.'),
-	        array('03','Kevin Zambrano','STELLUM me enseñó a liderar mis finanzas; hoy genero $15,000 al mes construyendo un futuro alineado con mis valores.'),
-	        array('01','Ashgan Mohamed','STELLUM me ayudó a reconectar con mi propósito; hoy genero $9,000 al mes haciendo lo que amo.')
-	    );
-
-        foreach ($evolvers as $item){
-				echo "
-				<li>
-					<img src='./images/body/evolvers/{$item[0]}.webp' alt='{$item[1]}'>
-					<span>
-						<h3>{$item[1]}</h3>
-						<p>{$item[2]}</p>
-					</span>
-				</li>
-				";
-           	}
-        ?>
-		</ul>
-	</div>
-</section>-->
 
 <!-- ============================================== -->
 <!-- SEVEN -->

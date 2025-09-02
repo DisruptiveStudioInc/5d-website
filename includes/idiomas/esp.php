@@ -127,6 +127,19 @@ $Products_price_02 = "Suscripción: 200 USDT";
 
 $Envolvers_title = "Historias reales de expansión y crecimiento";
 
+$Logos_testimonials = array(
+  'Con STELLUM descubrí disciplina y claridad; hoy genero $2,500 al mes con enfoque real.',
+  'Pasé de la incertidumbre a la acción: ahora gano $4,000 al mes gracias a STELLUM.',
+  'STELLUM me dio visión y estrategia; hoy recibo $7,000 mensuales y vivo con propósito.',
+  'Gracias a STELLUM, hoy lidero una comunidad global y genero $12,000 al mes.',
+  'Antes sentía estancamiento; con STELLUM logro $5,000 cada mes y sigo creciendo.',
+  'Encontré un sistema simple y duplicable; ahora ingreso $3,500 mensuales con seguridad.',
+  'Con STELLUM pasé de aprendiz a líder; actualmente genero $8,000 al mes con impacto.',
+  'STELLUM transformó mi mentalidad: hoy alcanzo $6,000 cada mes disfrutando el proceso.',
+  'STELLUM me enseñó a construir un futuro digital sólido; hoy recibo $10,000 mensuales.',
+  'De cero estructura a libertad: ahora con STELLUM genero $4,500 cada mes con confianza.'
+);
+
     //-------------------------//
     // Truth
     //-------------------------//
