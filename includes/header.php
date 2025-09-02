@@ -113,7 +113,7 @@
 
         <div class="jc-center ai-center g-20">
           <div class="logo">
-            <a href="./"><img src="./images/logo/logo.svg" alt="logo evo global"></a>
+            <a href="./"><img src="./images/logo/logo.svg" alt="logo Stellum"></a>
           </div>
           <div class="rel">
             <div class="btn-lan <?= htmlspecialchars($idioma); ?>"><?= $Condicion_lan; ?></div>

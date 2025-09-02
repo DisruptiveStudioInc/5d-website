@@ -2,35 +2,20 @@
 <!-- HERO -->
 <!-- ============================================== -->
 
-<section class="hero-pin">
-	<div class="section-arrows">
-	    <button class="arrow down"></button>
+<section class="hero-pin d-flex fd-col jc-center ai-center overlay o-30">
+  <div class="anchor" id="home"></div>
+  <img src="./images/hero/hero.webp" alt="Placeholder" class="background" style="opacity:1" />
+
+  <div class="text-hero t-c hero-text">
+    <h1 class="h1-special"><?php echo $Hero_01; ?></h1>
+    <p class="h4 w-50 med-w-80 small-w-100 m-center"><?php echo $Hero_02; ?></p>
+  </div>
+  <div class="section-arrows">
+    <button class="arrow down"></button>
 	</div>
 
-	<div class="text-hero t-c hero-text">
-        <h1 class="h1-special first"><?php echo $Hero_01; ?></h1>
-        <p class="h4 w-50 med-w-80 small-w-100 m-center"><?php echo $Hero_02; ?></p>
-    </div>
 
-    <div class="anchor" id="home"></div>
 
-	<div class="dh of-h rel">
-	    <div class="video-placeholder">
-	        <img src="./images/body/letters/4.webp" alt="Placeholder" />
-	    </div>
-
-	    <div class="video-iframe-wrapper">
-	        <iframe
-			    src="https://player.vimeo.com/video/<?php echo $Video_vimeo; ?>?background=1&autoplay=1&muted=1&loop=1"
-			    frameborder="0"
-			    allow="autoplay; fullscreen; picture-in-picture"
-			    title="Darevita video agosto 2025_1">
-		  </iframe>
-	    </div>
-	</div>
-
-    <!-- Vimeo API -->
-    <script src="https://player.vimeo.com/api/player.js"></script>
 </section>
 
 <!-- ============================================== -->
@@ -145,8 +130,18 @@
 	</div>
 
 	<div class="mw-1280 t-c h-100 med-h-0 jc-center fd-col">
-		<h2 class="h1 m-center" style="max-width:26ch;"><?php echo $Slogan_title; ?></h2>
-		<p class="h3 m-center" style="max-width:48ch">“<?php echo $Slogan_text; ?>”</p>
+		<h2 class="h1 m-center mb-20" style="max-width:26ch;"><?php echo $Slogan_title; ?></h2>
+		<p class="h4 m-center mb-40" style="max-width:48ch">“<?php echo $Slogan_text; ?>”</p>
+    <ul class="d-flex med-fd-col med-ai-center jc-center g-20">
+      <li class="licence-box c-sec p-10 med-w-100 w-30 br-10">
+        <p class="h3 fw-700"><?= $Slogan_suscription_title; ?></p>
+        <p><?= $Slogan_suscription; ?></p>
+      </li>
+      <li class="licence-box c-sec p-10 med-w-100 w-30 br-10">
+        <p class="h3 fw-700"><?= $Slogan_license_title; ?></p>
+        <p><?= $Slogan_license; ?></p>
+      </li>
+    </ul>
 		<a href="<?php echo $Register; ?>" class="btn big c-acc br-50 mt-40 small-mt-20"><?php echo $Btn_live; ?></a>
 	</div>
 </section>
@@ -569,18 +564,12 @@ document.addEventListener("DOMContentLoaded", function () {
             .addTo(controller);
 
             // ========== HERO
-            var heroTimeline = new TimelineMax();
-            heroTimeline.fromTo('.hero-text', animationSpeed, {opacity:0}, {opacity:1}, "+=0.5");
-
-            new ScrollMagic.Scene({
-                triggerElement: '.hero-pin',
-                duration: '100%',
-                triggerHook: 0
-            })
-            .setPin('.hero-pin')
-            .setTween(heroTimeline)
-            //.addIndicators()
-            .addTo(controller);
+            TweenMax.fromTo(
+              ".hero-text",
+              0.75, // animationSpeed
+              { opacity: 0, y: 40 },
+              { opacity: 1, y: 0, ease: Power3.easeOut, delay: 2.2 }
+            );
 
             // ========== PARALLAX
             var parallaxTimeline = new TimelineMax();
