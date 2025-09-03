@@ -90,8 +90,11 @@
       </div>
     </div>";
 
-    echo $wrap_get;
+    //echo $wrap_get;
   ?>
+  <div class="wrap-get">
+    <a href="<?= $Register; ?>" target="_blank" class="btn-get"><?= $Btn_started; ?></a>
+  </div>
 
   <!-- ============================================== -->
   <!-- PRELOADER -->
@@ -153,8 +156,8 @@
                   continue;
                 }
 
-                // Submenú con sub-sub (Menu 4)
-                if ($counter == 4) {
+                // Submenú con sub-sub (Menu 4) desactivado
+                if ($counter == 6) {
                   echo "<li class='rel'>";
                   echo "<a href='#' class='btn-sub'>{$item[2]}</a>";
 
@@ -194,7 +197,7 @@
 
                 // Items normales
                 } else {
-                  echo "<li><a href='{$item[0]}' class='{$item[1]}'>{$item[2]}</a></li>";
+                  echo "<li class='normal'><a href='{$item[0]}' class='{$item[1]}'>{$item[2]}</a></li>";
                 }
               }
             ?>

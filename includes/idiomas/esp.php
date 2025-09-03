@@ -243,7 +243,7 @@ $Satarted_list_02_01 = "Activación de por vida hasta llegar al <span class='fw-
 $Satarted_list_03_01 = "Acceso a tu <span class='fw-700'>oficina virtual STELLUM</span>";
 $Satarted_list_04_01 = "Derecho al <span class='fw-700'>plan de recompensas básico</span>";
 $Satarted_list_05_01 = "Biblioteca digital con <span class='fw-700'>infoproductos esenciales</span>";
-$Satarted_footnote_01 = "Al alcanzar 500 USDT en ganancias, el sistema solicita una recompra de 100 USDT para mantenerte activo y seguir cobrando comisiones.*";
+$Satarted_footnote_01 = "Al alcanzar 300 USDT en ganancias, el sistema solicita una recompra de 100 USDT para mantenerte activo y seguir cobrando comisiones.*";
 
 $Satarted_title_plans_01 = "Plan de recompensas";
 $Satarted_plans_text_01_01 = "Suscripción Básica (100 USDT) → reparte 70 USDT";

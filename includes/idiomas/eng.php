@@ -241,7 +241,7 @@ $Satarted_list_02_01 = "Lifetime activation until reaching the <span class='fw-7
 $Satarted_list_03_01 = "Access to your <span class='fw-700'>STELLUM virtual office</span>";
 $Satarted_list_04_01 = "Right to the <span class='fw-700'>basic reward plan</span>";
 $Satarted_list_05_01 = "Digital library with <span class='fw-700'>essential infoproducts</span>";
-$Satarted_footnote_01 = "Upon reaching 500 USDT in earnings, the system requires a repurchase of 100 USDT to remain active and continue earning commissions.*";
+$Satarted_footnote_01 = "Upon reaching 300 USDT in earnings, the system requires a repurchase of 100 USDT to remain active and continue earning commissions.*";
 
 $Satarted_title_plans_01 = "Reward plan";
 $Satarted_plans_text_01_01 = "Basic subscription (100 USDT) → distributes 70 USDT";
