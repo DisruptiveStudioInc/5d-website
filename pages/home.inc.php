@@ -323,7 +323,7 @@ foreach ($Modal as $item){
 			</span>
 		</div>
 
-		<img src="./images/body/products/all.webp" class="mw-300 m-center small-d-block d-none" alt="all products"/>
+		<img src="./images/body/products/basic.webp" class="mw-300 m-center small-d-block d-none" alt="all products"/>
 
 		<!-- Textos -->
 		<div class="text_spirit">
