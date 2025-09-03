@@ -4,7 +4,7 @@
 		$user_replica = $_SESSION['user_replica'];
 	}
 	else{
-		$user_replica = isset($_GET['ref']) ? $_GET['ref'] : NULL;
+		$user_replica = isset($_GET['ref']) ? $_GET['ref'] : 'admin';
 		$_SESSION['user_replica'] = $user_replica;
 	}
 

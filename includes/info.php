@@ -42,8 +42,7 @@ $link_web_in = "https://int.myevoglobal.com";
 $link_web_co = "https://col.myevoglobal.com";
 $link_web_eu = "https://eur.myevoglobal.com";
 
-// $Register = "https://my.stellumglobal.com/register/?ref=$user_replica";
-$Register    = "https://my.stellumglobal.com/login";
+$Register = "https://my.stellumglobal.com/register/$user_replica";
 $Login    = "https://my.stellumglobal.com/login";
 
 $Shop_us = "$link_web_us/?ref=$user_replica";
