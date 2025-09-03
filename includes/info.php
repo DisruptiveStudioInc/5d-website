@@ -42,7 +42,8 @@ $link_web_in = "https://int.myevoglobal.com";
 $link_web_co = "https://col.myevoglobal.com";
 $link_web_eu = "https://eur.myevoglobal.com";
 
-$Register = "https://my.stellumglobal.com/register/?ref=$user_replica";
+// $Register = "https://my.stellumglobal.com/register/?ref=$user_replica";
+$Register    = "https://my.stellumglobal.com/login";
 $Login    = "https://my.stellumglobal.com/login";
 
 $Shop_us = "$link_web_us/?ref=$user_replica";
@@ -142,7 +143,7 @@ $Menu = array(
   array('#home','active',$Menu_01),
   array('#stellum','',$Menu_02),
   array('#suscriptions','',$Menu_03),
-  array('','',$Menu_04)
+  array('?p=product&id=basic','',$Products_title_01)
   // array('','', $Menu_05)
 );
 

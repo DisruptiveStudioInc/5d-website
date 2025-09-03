@@ -156,11 +156,6 @@ $Modal = array(
 		$Products_title_01,
 		$Products_sub_01,
 		$Products_text_01
-	),
-	array(
-		$Products_title_02,
-		$Products_sub_02,
-		$Products_text_02
 	)
 );
 
@@ -201,17 +196,8 @@ foreach ($Modal as $item){
 		<img src="./images/body/products/<?php echo $link_01; ?>.webp" class="product" alt="<?php echo $link_01; ?>"/>
 	</div>
 
-	<div class="box_product img-two">
-		<span>
-			<button type="button" class="v-white c-acc icon br-50 icon-more" onclick="openModal('Modal2')"></button>
-			<a href="?p=product&id=<?php echo $link_02; ?>" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
-		</span>
-		<img src="./images/body/products/<?php echo $link_02; ?>.webp" class="product" alt="<?php echo $link_02; ?>"/>
-	</div>
-
 	<!--<img class="polvo med-d-none" src="./images/body/products/bg.webp">-->
 	<img class="background med-d-none img_product_<?php echo $link_01; ?>" src="./images/body/subpage/bg_<?php echo $link_01; ?>.webp" alt="<?php echo $link_01; ?> background">
-	<img class="background med-d-none img_product_<?php echo $link_02; ?>" src="./images/body/subpage/bg_<?php echo $link_02; ?>.webp" alt="<?php echo $link_02; ?> background">
 
 	</div>
 </section>

@@ -14,7 +14,7 @@
   --color-acc-h: #52daff;
   --color-sec-h: #25385a;
 
-  --color-basic: #776550;
+  --color-basic: #677d8c;
   --color-premium: #677d8c;
   --color-black: #000000;
 
@@ -84,7 +84,7 @@
 }
 
 .c-sub.basic {
-  background: radial-gradient(circle, #b79b8e 0%, var(--color-basic) 100%);
+  background: radial-gradient(circle, #fff 0%, var(--color-basic) 100%);
 }
 .c-sub.premium {
   background: radial-gradient(circle, #fff 0%, var(--color-premium) 100%);
@@ -599,32 +599,13 @@ section {
   --prod-size: 400px;
   position: absolute;
   top: 50%;
-  transform: translate(calc(50% * var(--side)), -50%);
+  transform: translate(0, -50%);
   z-index: 2;
   transition: all 250ms ease;
-
-  @media only screen and (min-width: 1081px) {
-    &.img-three {
-      --side: 1;
-      right: 50%;
-    }
-    &.img-two {
-      --side: -1;
-      left: 50%;
-    }
-  }
 }
 
 .wrap_products .box_product.img-three {
   z-index: 3;
-}
-@media only screen and (min-width: 1081px) {
-  .wrap_products.fade-in .box_product.img-three {
-    right: calc(var(--prod-size) * 0.5 + 52%);
-  }
-  .wrap_products.fade-in .box_product.img-two {
-    left: calc(var(--prod-size) * 0.5 + 52%);
-  }
 }
 
 .product {
