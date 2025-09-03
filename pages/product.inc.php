@@ -195,7 +195,7 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
                 </div>
             </div>
 
-            <img class="w-50 med-w-30 small-w-80 small-mt-40 br-20" src="./images/body/products/<?php echo $id; ?>.webp" alt="<?php echo $id; ?> Product" />
+            <img class="w-50 med-w-30 small-w-80 small-mt-40" src="./images/body/products/<?php echo $id; ?>.webp" alt="<?php echo $id; ?> Product" />
         </div>
         <img class="full-img-abs" src="./images/body/subpage/bg_<?php echo $id; ?>.webp" alt="<?php echo $id; ?> background" />
     </div>

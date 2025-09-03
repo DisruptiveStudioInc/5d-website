@@ -10,7 +10,7 @@ $Keywords = "evolución, educación, crecimiento, comunidad, exclusividad, lider
 
 $Menu_01 = "Inicio";
 $Menu_02 = "Stellum";
-$Menu_03 = "Suscripciones";
+$Menu_03 = "Suscripción";
 $Menu_04 = "Productos";
 $Menu_05 = "Tienda";
 
@@ -71,7 +71,7 @@ $Letters_text_02 = "Acelera tu expansión y conquista recompensas universales in
 $Letters_title_03 = "Bono por niveles";
 $Letters_text_03 = "Construye constelaciones y recibe ingresos infinitamente ascendentes.";
 
-$Letters_title_04 = "Bono acelerador";
+$Letters_title_04 = "Bono infinito";
 $Letters_text_04 = "Impulsa tu órbita y desbloquea beneficios cósmicos.";
 
     //-------------------------//
@@ -96,8 +96,8 @@ $Vision_text_04 = "Duplica resultados con compromiso anual.";
     // Slogan
     //-------------------------//
 
-$Slogan_title = "Licencia Stellum";
-$Slogan_text = "Cada 500 USDT en ganancias, renuevas tu licencia. Así la red se mantiene activa, se generan nuevas comisiones y se asegura el flujo residual.";
+$Slogan_title = "Licencia Infinity";
+$Slogan_text = "Cada 300 USDT en ganancias, renuevas tu licencia. Así la red se mantiene activa, se generan nuevas comisiones y se asegura el flujo residual infinito.";
 $Slogan_suscription_title = "Suscripción";
 $Slogan_suscription = "Conocimiento y comunidad";
 $Slogan_license_title = "Licencia";
@@ -107,7 +107,7 @@ $Slogan_license = "Negocio e ingresos";
     // Products
     //-------------------------//
 
-$Products_title_01 = "Básica";
+$Products_title_01 = "Premium";
 $Products_01 = "Beneficios esenciales";
 $Products_sub_01 = "100 USDT";
 $Products_text_01 = "La puerta de entrada al ecosistema STELLUM. Con tu activación de por vida accedes a la comunidad global y pones en marcha tu crecimiento digital. Este paquete está diseñado para quienes buscan iniciar de forma accesible y contar con los beneficios esenciales desde el primer día.";
@@ -177,7 +177,7 @@ $Spirit_text_03 = "Escalamos sin fronteras, transformando desafíos en crecimien
     // Traits
     //-------------------------//
 
-$Traits_title = "Abre cominos hacia un futuro estelar";
+$Traits_title = "Abre caminos hacia un futuro estelar";
 
     //-------------------------//
     // Ingredients
@@ -208,14 +208,13 @@ $Benefits = "Beneficios";
 $Benefits_sub_01 = "Tu acceso directo a crecimiento ilimitado";
 $Benefits_sub_p_01 = "Acceso al Business Plan STELLUM";
 $Benefits_01_tit_01 = "Portal Stellum";
-$Benefits_01_01 = "Tu oficina virtual para gestionar, crecer y mantener el control de tu red global.
-";
-$Benefits_01_tit_02 = "Biblioteca digital";
-$Benefits_01_02 = "Acceso a cursos esenciales: bienestar, desarrollo personal, fitness, recetas y habilidades prácticas.";
-$Benefits_01_tit_03 = "Planes de recompensa";
-$Benefits_01_03 = "Derecho a generar ingresos a través del plan básico de compensaciones de STELLUM.";
+$Benefits_01_01 = "Hub digital para gestionar y expandir tu red global.";
+$Benefits_01_tit_02 = "Biblioteca exclusiva";
+$Benefits_01_02 = "Cursos avanzados de monetización: YouTube, TikTok, Hotmart, avatares, liderazgo y MÁS.";
+$Benefits_01_tit_03 = "Recompensas superiores";
+$Benefits_01_03 = "Accede al plan premium con mayores ingresos y proyección.";
 $Benefits_01_tit_04 = "Comunidad global y duplicable";
-$Benefits_01_04 = "Conecta con una comunidad global que multiplica oportunidades.";
+$Benefits_01_04 = "Red internacional de alto nivel, duplicable y en constante expansión.";
 
 $Benefits_sub_02 = "Conexión estelar para tu crecimiento";
 $Benefits_sub_p_02 = "Acceso al Business Plan STELLUM con mayor potencial de ingresos";
@@ -235,23 +234,23 @@ $Benefits_02_05 = "Red internacional de alto nivel, duplicable y en expansión c
     //-------------------------//
 
 
-$Satarted_title_01 = "Plan básico Stellum";
-$Satarted_sub_01 = "Inicia tu camino en STELLUM con acceso de por vida y los beneficios indispensables para comenzar tu desarrollo digital.";
-$Satarted_title_01_01 = "Inicia tu camino digital";
+$Satarted_title_01 = "Suscripción única premium";
+$Satarted_sub_01 = "Lleva tu crecimiento a un nivel superior con acceso de por vida y beneficios exclusivos.";
+$Satarted_title_01_01 = "Despega tu evolución digital";
 $Satarted_list_01_01 = "Inscripción única: <span class='fw-700'>100 USDT</span>";
-$Satarted_list_02_01 = "Activación de por vida hasta llegar al <span class='fw-700'>Acelerador de Volumen*</span>";
+$Satarted_list_02_01 = "Activación de por vida";
 $Satarted_list_03_01 = "Acceso a tu <span class='fw-700'>oficina virtual STELLUM</span>";
 $Satarted_list_04_01 = "Derecho al <span class='fw-700'>plan de recompensas básico</span>";
-$Satarted_list_05_01 = "Biblioteca digital con <span class='fw-700'>infoproductos esenciales</span>";
+$Satarted_list_05_01 = "Biblioteca digital con <span class='fw-700'>infoproductos Premium</span>";
 $Satarted_footnote_01 = "Al alcanzar 300 USDT en ganancias, el sistema solicita una recompra de 100 USDT para mantenerte activo y seguir cobrando comisiones.*";
 
 $Satarted_title_plans_01 = "Plan de recompensas";
 $Satarted_plans_text_01_01 = "Suscripción Básica (100 USDT) → reparte 70 USDT";
-$Satarted_plans_list_01_01 = "Nivel 1: 30 USDT";
+$Satarted_plans_list_01_01 = "Nivel 1: 40 USDT";
 $Satarted_plans_list_02_01 = "Nivel 2: 20 USDT";
-$Satarted_plans_list_03_01 = "Nivel 3: 10 USDT";
-$Satarted_plans_list_04_01 = "Nivel 4: 5 USDT";
-$Satarted_plans_list_05_01 = "Nivel 5: 3 USDT";
+$Satarted_plans_list_03_01 = "Nivel 3: 5 USDT";
+$Satarted_plans_list_04_01 = "Nivel 4: 2 USDT";
+$Satarted_plans_list_05_01 = "Nivel 5: 1 USDT";
 $Satarted_plans_list_06_01 = "Nivel 6: 1 USDT";
 $Satarted_plans_list_07_01 = "Nivel 7: 1 USDT";
 $Satarted_plans_text_01_02 = "Retención empresa: 30 USDT";

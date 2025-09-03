@@ -14,7 +14,7 @@
   --color-acc-h: #52daff;
   --color-sec-h: #25385a;
 
-  --color-basic: #677d8c;
+  --color-basic: #c1943a;
   --color-premium: #677d8c;
   --color-black: #000000;
 
@@ -84,7 +84,7 @@
 }
 
 .c-sub.basic {
-  background: radial-gradient(circle, #fff 0%, var(--color-basic) 100%);
+  background: radial-gradient(circle, #f0eeca 0%, var(--color-basic) 100%);
 }
 .c-sub.premium {
   background: radial-gradient(circle, #fff 0%, var(--color-premium) 100%);
