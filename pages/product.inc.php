@@ -229,26 +229,13 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
 <!-- TWO -->
 <!-- ============================================== -->
 
-<div id='Modal_<?php echo $id; ?>' class='modal modal_product'>
-    <div class='modal-content rel' style="padding: 10px;">
-    <button type="button" class="v-white c-pri icon icon-close" onclick="closeModal('Modal_<?php echo $id; ?>')"></button>
-
-    <video class="full-img"
-        src="./video/video.webm"
-        autoplay loop muted playsinline
-        poster="./images/body/letters/1.webp">
-    </video>
-    </div>
-</div>
-
 <section>
     <div class="img_med of-h">
-        <div class="h-100 rel all-tc-0 overlay o-70 custom">
+        <div class="h-100 rel all-tc-0 overlay o-60 custom">
             <div class="center">
                 <h2 class="h1"><?php echo $Benefits; ?></h2>
                 <p><?php echo $Benefits_Sub; ?></p>
                 <p><?= $Benefits_Text ; ?></p>
-                <!--<button type="button" class="btn big c-pri br-50 mt-40 small-mt-20" onclick="openModal('Modal_<?php echo $id; ?>')"><?php echo $Btn_view; ?></button>-->
             </div>
 
             <ul class="benefits-list med-d-none">
@@ -477,46 +464,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* ============================================== */
-/* MODAL */
-/* ============================================== */
-
-// Función para abrir el modal
-function openModal(modalId) {
-    var modal = document.getElementById(modalId);
-    if (modal) {
-        modal.classList.add('open'); // Muestra el modal
-        document.body.classList.add('no-scroll'); // Bloquea el scroll
-    }
-}
-
-// Función para cerrar el modal
-function closeModal(modalId) {
-    var modal = document.getElementById(modalId);
-    if (modal) {
-        modal.classList.remove('open'); // Oculta el modal
-        checkModalsOpen(); // Verifica si hay otros modales abiertos
-    }
-}
-
-// Función para verificar si hay modales abiertos y desbloquear el scroll
-function checkModalsOpen() {
-    var openModals = document.querySelectorAll('.modal.open');
-    if (openModals.length === 0) {
-        document.body.classList.remove('no-scroll'); // Reactiva el scroll
-    }
-}
-
-// Función para cerrar el modal si se hace clic fuera de él
-window.onclick = function(event) {
-    var modals = document.querySelectorAll('.modal');
-    modals.forEach(function(modal) {
-        if (event.target === modal) {
-            closeModal(modal.id);
-        }
-    });
-};
-
-/* ============================================== */
 /* TILT */
 /* ============================================== */
 
@@ -537,10 +484,6 @@ imgContainer.addEventListener('mousemove', (e) => {
     // inclinación
     const rotateX = deltaY * 15;
     const rotateY = deltaX * -15;
-
-    // sombra contraria al mouse
-    const shadowX = deltaX * -30; // mueve sombra contrario al mouse
-    const shadowY = deltaY * -30;
 
     img.style.transform = `translate(-50%, -50%) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
 });
