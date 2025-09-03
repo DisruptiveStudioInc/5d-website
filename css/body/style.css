@@ -1632,6 +1632,9 @@ ul.textos li span img {
   min-height: var(--icon-wrap-c);
   transition: all 0.25s ease-in-out;
 }
+.v-custom.premium {
+  --icons: 11;
+}
 
 .v-custom::before {
   content: "";
@@ -1641,7 +1644,7 @@ ul.textos li span img {
   transform: translate(-50%, -50%);
   width: var(--icon-size-c);
   height: var(--icon-size-c);
-  background-size: calc(var(--icon-size-c) * 10);
+  background-size: calc(var(--icon-size-c) * var(--icons, 10));
   overflow: hidden;
 }
 
@@ -1653,7 +1656,7 @@ ul.textos li span img {
 .v-custom.my_flags::before {
   width: var(--icon-size-ch);
   height: var(--icon-size-ch);
-  background-size: calc(var(--icon-size-ch) * 10);
+  background-size: calc(var(--icon-size-ch) * var(--icons, 10));
 }
 
 /* Íconos grandes */
@@ -1664,7 +1667,7 @@ ul.textos li span img {
 .v-custom.i-big::before {
   width: var(--icon-size-big);
   height: var(--icon-size-big);
-  background-size: calc(var(--icon-size-big) * 10);
+  background-size: calc(var(--icon-size-big) * var(--icons, 10));
 }
 
 /* Sprites */
@@ -1734,6 +1737,9 @@ ul.textos li span img {
 }
 .v-custom.i-big.icon-10::before {
   background-position: calc(-9 * var(--icon-size-big)) 0;
+}
+.v-custom.i-big.icon-11::before {
+  background-position: calc(-10 * var(--icon-size-big)) 0;
 }
 
 /* ============================================== */
