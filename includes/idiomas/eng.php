@@ -34,6 +34,9 @@ $Btn_started = "Connect NOW";
     //-------------------------//
 
 $Soon_Text = "Coming Soon";
+$Soon_Description1 = "This Sunday, September 7th";
+$Soon_Description2 = "Connect on Zoom at 07:00 p.m. (CDMX)";
+$Soon_Description3 = "Don't miss it!";
 
     //-------------------------//
     // Hero

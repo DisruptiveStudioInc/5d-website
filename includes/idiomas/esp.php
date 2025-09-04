@@ -34,6 +34,9 @@ $Btn_started = "Conecta AHORA";
     //-------------------------//
 
 $Soon_Text = "Próximamente";
+$Soon_Description1 = "Este domingo 7 de septiembre";
+$Soon_Description2 = "Conéctate en Zoom 07:00 p.m. (CDMX)";
+$Soon_Description3 = "¡No te lo puedes perder!";
 
     //-------------------------//
     // Hero
