@@ -92,9 +92,11 @@
 
     //echo $wrap_get;
   ?>
-  <div class="wrap-get">
-    <a href="<?= $Register; ?>" target="_blank" class="btn-get"><?= $Btn_started; ?></a>
-  </div>
+  <?php if($ConnectBO): ?>
+    <div class="wrap-get">
+      <a href="<?= $Register; ?>" target="_blank" class="btn-get"><?= $Btn_started; ?></a>
+    </div>
+  <?php endif; ?>
 
   <!-- ============================================== -->
   <!-- PRELOADER -->
@@ -216,12 +218,14 @@
         </div>
 
         <div class="jc-center ai-center">
-          <div class="btns m-0 g-10 med-d-none">
-            <a href='<?php echo $Login; ?>' target="_blank" class="btn c-ter br-30"><?php echo $Menu_log; ?></a>
-            <?php if($user_replica): ?>
-              <a href='<?php echo $Register; ?>' target="_blank" class="btn c-acc br-30"><?php echo $Menu_reg; ?></a>
-            <?php endif; ?>
-          </div>
+          <?php if($ConnectBO): ?>
+            <div class="btns m-0 g-10 med-d-none">
+              <a href='<?php echo $Login; ?>' target="_blank" class="btn c-ter br-30"><?php echo $Menu_log; ?></a>
+              <?php if($user_replica): ?>
+                <a href='<?php echo $Register; ?>' target="_blank" class="btn c-acc br-30"><?php echo $Menu_reg; ?></a>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
           <div class="hamburguer">
             <span></span>
             <span></span>

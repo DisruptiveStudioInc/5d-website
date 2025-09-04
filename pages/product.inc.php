@@ -190,8 +190,13 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
                       </div>
                     </div>";
 
-                    echo $wrap_product;
+                    //echo $wrap_product;
                     ?>
+                    <?php if($ConnectBO): ?>
+                      <div class="wrap-get subpage">
+                        <a href="<?= $Register; ?>" target="_blank" class="btn-get"><?= $Btn_buy; ?></a>
+                      </div>
+                    <?php endif; ?>
                 </div>
             </div>
 
@@ -345,7 +350,9 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
 <section class="c-<?php echo $id; ?>">
     <div class="mw-1280 t-c big">
         <h2 class="h1 med-mt-50"><?php echo $Started_subpage; ?></h2>
-        <a href="<?php echo $Register; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?php echo $Btn_start; ?></a>
+        <?php if($ConnectBO): ?>
+          <a href="<?php echo $Register; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?php echo $Btn_start; ?></a>
+        <?php endif; ?>
     </div>
 </section>
 

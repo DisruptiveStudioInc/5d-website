@@ -142,7 +142,9 @@
         <p><?= $Slogan_license; ?></p>
       </li>
     </ul>
-		<a href="<?php echo $Register; ?>" class="btn big c-acc br-50 mt-40 small-mt-20"><?php echo $Btn_live; ?></a>
+    <?php if($ConnectBO): ?>
+		  <a href="<?php echo $Register; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?php echo $Btn_live; ?></a>
+    <?php endif; ?>
 	</div>
 </section>
 
@@ -206,6 +208,7 @@ foreach ($Modal as $item){
 <!-- SIX -->
 <!-- ============================================== -->
 
+<?php if(false): ?>
 <section class="deg">
 	<div class="wrap-people">
 		<div class="mw-1440 p-30 mb-40">
@@ -245,6 +248,7 @@ foreach ($Modal as $item){
 
 	</div>
 </section>
+<?php endif; ?>
 
 <!-- ============================================== -->
 <!-- SEVEN -->
@@ -358,7 +362,9 @@ foreach ($Modal as $item){
 
 	<div class="mw-1280 t-c big">
 		<h2 class="h1 m-center" style="max-width:20ch"><?php echo $Traits_title; ?></h2>
-		<a href="<?php echo $Register; ?>" class="btn big c-acc br-50 mt-40 small-mt-20"><?php echo $Btn_part; ?></a>
+    <?php if($ConnectBO): ?>
+		  <a href="<?php echo $Register; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?php echo $Btn_part; ?></a>
+    <?php endif; ?>
 	</div>
 </section>
 

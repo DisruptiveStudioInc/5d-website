@@ -19,7 +19,7 @@
           <li><a target="_blank" href="https://www.instagram.com/stellumglobal" class="v-white icon small br-2 icon-instagram"></a></li>
           <li><a target="_blank" href="https://www.tiktok.com/@stellumglobal" class="v-white icon small br-2 icon-tiktok"></a></li>
           <li><a target="_blank" href="https://www.youtube.com/@StellumGlobal" class="v-white icon small br-2 icon-youtube"></a></li>
-          <li><a target="_blank" href="https://www.linkedin.com/in/stellumglobal/" class="v-white icon small br-2 icon-linkedin"></a></li>
+          <!-- <li><a target="_blank" href="https://www.linkedin.com/in/stellumglobal/" class="v-white icon small br-2 icon-linkedin"></a></li> -->
         </ul>
       </div>
       <?php if($user_replica): ?>
