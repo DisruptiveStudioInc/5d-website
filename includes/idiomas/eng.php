@@ -63,16 +63,16 @@ $Journey_text_4 = "Activation from 100 USDT, immediate rewards, bonuses, unlimit
     //-------------------------//
 
 $Letters_title_01 = "Fast Start Bonus";
-$Letters_text_01 = "Begin your stellar journey earning from day one.";
+$Letters_text_01 = "With your first direct client, you receive a one-time commission of 70 USDT. From your second direct client onward, you receive 40 USDT.";
 
 $Letters_title_02 = "Speed Bonus";
-$Letters_text_02 = "Accelerate your expansion and unlock immediate universal rewards.";
+$Letters_text_02 = "If within your first 7 days you connect 3 direct clients, you receive an extra bonus of 30 USDT.";
 
 $Letters_title_03 = "Level Bonus";
-$Letters_text_03 = "Build constellations and receive infinitely ascending income.";
+$Letters_text_03 = "STELLUM recognizes and rewards the power of teamwork. Each advancement in your network generates benefits that multiply up to 7 levels.";
 
 $Letters_title_04 = "Infinity Bonus";
-$Letters_text_04 = "Boost your orbit and unlock cosmic benefits.";
+$Letters_text_04 = "With every 300 USDT accumulated, you renew your license, ensuring your network stays active and continues multiplying commissions. This means you pay $100 for every $300.";
 
     //-------------------------//
     // Vision
@@ -244,7 +244,7 @@ $Satarted_list_05_01 = "Digital library with <span class='fw-700'>Premium infopr
 $Satarted_footnote_01 = "Upon reaching 300 USDT in earnings, the system requires a repurchase of 100 USDT to remain active and continue earning commissions.*";
 
 $Satarted_title_plans_01 = "Reward plan";
-$Satarted_plans_text_01_01 = "Basic subscription (100 USDT) → distributes 70 USDT";
+$Satarted_plans_text_01_01 = "Subscription (100 USDT) → distributes 70 USDT";
 $Satarted_plans_list_01_01 = "Level 1: 40 USDT";
 $Satarted_plans_list_02_01 = "Level 2: 20 USDT";
 $Satarted_plans_list_03_01 = "Level 3: 5 USDT";

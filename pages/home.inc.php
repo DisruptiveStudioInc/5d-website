@@ -65,19 +65,19 @@
 			    <button class="arrow up"></button>
 			    <button class="arrow down"></button>
 			</div>
-			<h2 class="word_01"><?php echo $Letters_title_04; ?><span><?php echo $Letters_text_04; ?></span></h2>
+			<h2 class="word_01"><?php echo $Letters_title_04; ?><span class="t-pretty"><?php echo $Letters_text_04; ?></span></h2>
 			<img class="img_01" src="./images/body/letters/4.webp" alt="<?php echo $Letters_title_04; ?>">
 		</div>
 		<div>
-			<h2 class="word_02"><?php echo $Letters_title_02; ?><span><?php echo $Letters_text_02; ?></span></h2>
+			<h2 class="word_02"><?php echo $Letters_title_02; ?><span class="t-pretty"><?php echo $Letters_text_02; ?></span></h2>
 			<img class="img_02" src="./images/body/letters/2.webp" alt="<?php echo $Letters_title_02; ?>">
 		</div>
 		<div>
-			<h2 class="word_03"><?php echo $Letters_title_03; ?><span><?php echo $Letters_text_03; ?></span></h2>
+			<h2 class="word_03"><?php echo $Letters_title_03; ?><span class="t-pretty"><?php echo $Letters_text_03; ?></span></h2>
 			<img class="img_03" src="./images/body/letters/3.webp" alt="<?php echo $Letters_title_03; ?>">
 		</div>
 		<div>
-			<h2 class="word_04 w-60 med-w-100"><?php echo $Letters_title_01; ?><span><?php echo $Letters_text_01; ?></span></h2>
+			<h2 class="word_04 w-60 med-w-100"><?php echo $Letters_title_01; ?><span class="t-pretty"><?php echo $Letters_text_01; ?></span></h2>
 			<img class="img_04" src="./images/body/letters/1.webp" alt="<?php echo $Letters_title_01; ?>">
 		</div>
 	</div>
