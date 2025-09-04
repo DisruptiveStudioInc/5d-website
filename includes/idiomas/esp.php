@@ -63,16 +63,16 @@ $Journey_text_4 = "Activación desde 100 USDT, recompensas inmediatas, bonos, ex
     //-------------------------//
 
 $Letters_title_01 = "Bono de inicio rápido";
-$Letters_text_01 = "Comienza tu viaje estelar ganando desde el inicio.";
+$Letters_text_01 = "Con tu primer cliente directo recibes una comisión única de 70 USDT. A partir del segundo cliente directo en adelante, recibes 40 USDT.";
 
 $Letters_title_02 = "Bono de velocidad";
-$Letters_text_02 = "Acelera tu expansión y conquista recompensas universales inmediatas.";
+$Letters_text_02 = "Si en tus primeros 7 días conectas a 3 clientes directos, recibes un bono extra de 30 USDT.";
 
 $Letters_title_03 = "Bono por niveles";
-$Letters_text_03 = "Construye constelaciones y recibe ingresos infinitamente ascendentes.";
+$Letters_text_03 = "STELLUM reconoce y premia la fuerza del trabajo en equipo. Cada avance en tu red genera beneficios que se multiplican hasta 7 niveles.";
 
 $Letters_title_04 = "Bono infinito";
-$Letters_text_04 = "Impulsa tu órbita y desbloquea beneficios cósmicos.";
+$Letters_text_04 = "Con cada 300 USDT acumulados renuevas tu licencia, asegurando que tu red siga activa y multiplicando comisiones. Esto significa que pagas $100 cada $300.";
 
     //-------------------------//
     // Vision
@@ -245,7 +245,7 @@ $Satarted_list_05_01 = "Biblioteca digital con <span class='fw-700'>infoproducto
 $Satarted_footnote_01 = "Al alcanzar 300 USDT en ganancias, el sistema solicita una recompra de 100 USDT para mantenerte activo y seguir cobrando comisiones.*";
 
 $Satarted_title_plans_01 = "Plan de recompensas";
-$Satarted_plans_text_01_01 = "Suscripción Básica (100 USDT) → reparte 70 USDT";
+$Satarted_plans_text_01_01 = "Suscripción (100 USDT) → reparte 70 USDT";
 $Satarted_plans_list_01_01 = "Nivel 1: 40 USDT";
 $Satarted_plans_list_02_01 = "Nivel 2: 20 USDT";
 $Satarted_plans_list_03_01 = "Nivel 3: 5 USDT";
