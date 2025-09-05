@@ -42,7 +42,7 @@
   <link rel="stylesheet" type="text/css" href="./css/min/main.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/min/root.min.css" />
 
-  <link rel="stylesheet" type="text/css" href="./css/body/style.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/body/style.css" />
   <link rel="stylesheet" type="text/css" href="./css/body/navigation.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/body/slick.min.css" />
 
@@ -69,6 +69,7 @@
 
   <!-- jQuery y Slick -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
 </head>
 <body id="page-content">
