@@ -373,6 +373,9 @@ foreach ($Modal as $item){
 </section>
 
 <script>
+/* ==============================================
+  WEBGL MOUSE DISTORTION
+============================================== */
 class MouseDistortionEffect {
     constructor(imagePath = null) {
         // Prevent multiple instances
@@ -406,7 +409,7 @@ class MouseDistortionEffect {
             uTexture: { type: 't', value: null },
             uMouse: { type: 'v2', value: new THREE.Vector2() },
             uTime: { type: 'f', value: 0 },
-            uDistortion: { type: 'f', value: 0.5 },
+            uDistortion: { type: 'f', value: 1.2 },
             uRadius: { type: 'f', value: 0.3 }
         };
 
@@ -504,7 +507,7 @@ class MouseDistortionEffect {
                 vec2 direction = normalize(uv - uMouse);
 
                 // Add wave animation
-                float wave = sin(distance * 15.0 - uTime * 2.0) * 0.5 + 0.5;
+                float wave = sin(distance * 15.0 - uTime * 2.0) * 0.6 + 0.6;
                 distortionStrength *= wave * 0.8;
 
                 // Apply distortion to UV coordinates
@@ -546,8 +549,9 @@ class MouseDistortionEffect {
         console.log('👂 Adding event listeners');
 
         this.onMouseMove = (event) => {
-            this.targetMouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-            this.targetMouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+            // Convert to UV coordinates (0 to 1) instead of NDC (-1 to 1)
+            this.targetMouse.x = event.clientX / window.innerWidth;
+            this.targetMouse.y = 1.0 - (event.clientY / window.innerHeight); // Flip Y axis
         };
 
         this.onResize = () => {
@@ -558,8 +562,9 @@ class MouseDistortionEffect {
         this.onTouchMove = (event) => {
             event.preventDefault();
             const touch = event.touches[0];
-            this.targetMouse.x = (touch.clientX / window.innerWidth) * 2 - 1;
-            this.targetMouse.y = -(touch.clientY / window.innerHeight) * 2 + 1;
+            // Convert to UV coordinates (0 to 1) instead of NDC (-1 to 1)
+            this.targetMouse.x = touch.clientX / window.innerWidth;
+            this.targetMouse.y = 1.0 - (touch.clientY / window.innerHeight); // Flip Y axis
         };
 
         window.addEventListener('mousemove', this.onMouseMove);
