@@ -211,21 +211,23 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
 <!-- ============================================== -->
 
 <section class="c-sub <?php echo $id; ?>">
-    <div class="h-100 of-h rel small-h-0">
+    <div class="h-100 of-h rel small-h-0 p-20 d-flex fd-col ai-center jc-center">
 
-        <img class="img-middle br-20 small-d-none" src="./images/body/products/<?php echo $id; ?>.webp" alt="<?php echo $id; ?> Product" />
+      <h2 class="abs-text h1 t-c <?php echo $Condicion; ?>"><?php echo $Ingredients; ?></h2>
+      <img class="img-middle br-20 small-d-none" src="./images/body/products/<?php echo $id; ?>.webp" alt="<?php echo $id; ?> Product" />
 
-        <div class="ingredients_wrap">
-            <h2 class="abs-text h1 t-c <?php echo $Condicion; ?>"><?php echo $Ingredients; ?></h2>
-            <ul class="ingredients">
-                <?php foreach ($Ingredients_list as $index => $ingredient): ?>
-                    <li>
-                        <span class="v-custom icon icon-<?php echo $index+1; ?> c-<?php echo $id; ?> br-50 <?php echo $id; ?>"></span>
-                        <?php echo $ingredient; ?>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
+      <div class="ingredients_wrap">
+        <ul class="ingredients m-center">
+          <?php foreach ($Ingredients_list as $index => $ingredient): ?>
+            <li>
+              <div class="ingredient-pill">
+                <span class="v-custom icon icon-<?php echo $index+1; ?> c-<?php echo $id; ?> br-50 <?php echo $id; ?>"></span>
+                <?php echo $ingredient; ?>
+              </div>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
 
     </div>
 </section>
@@ -396,11 +398,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
             $('.ingredients_wrap').each(function() {
                 var ingredientsElement = this.querySelector('.ingredients');
-
                 if (ingredientsElement) {
                     var scene = new ScrollMagic.Scene({
                         triggerElement: this,
-                        triggerHook: 0.2,
+                        triggerHook: 0.8,
                         duration: "80%"
                     })
                     .setClassToggle(ingredientsElement, 'fade-in')
@@ -492,11 +493,11 @@ imgContainer.addEventListener('mousemove', (e) => {
     const rotateX = deltaY * 15;
     const rotateY = deltaX * -15;
 
-    img.style.transform = `translate(-50%, -50%) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+    img.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
 });
 
 imgContainer.addEventListener('mouseleave', () => {
-    img.style.transform = 'translate(-50%, -50%) rotateX(0deg) rotateY(0deg) scale(1)';
+    img.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
 });
 
 

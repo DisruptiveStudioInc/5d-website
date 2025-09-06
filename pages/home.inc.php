@@ -4,11 +4,12 @@
 
 <section class="hero-pin d-flex fd-col jc-center ai-center overlay o-30">
   <div class="anchor" id="home"></div>
-  <img src="./images/hero/hero.webp" alt="Placeholder" class="background" style="opacity:1" />
+  <img src="./images/hero/hero.webp" alt="" class="background" style="opacity:1"/>
+  <canvas id="webgl-canvas" class="background" style="opacity:1"></canvas>
 
   <div class="text-hero t-c hero-text">
-    <h1 class="h1-special"><?php echo $Hero_01; ?></h1>
-    <p class="h4 w-50 med-w-80 small-w-100 m-center"><?php echo $Hero_02; ?></p>
+    <h1 class="h1-special"><?= $Hero_01; ?></h1>
+    <p class="h4 w-50 med-w-80 small-w-100 m-center"><?= $Hero_02; ?></p>
   </div>
   <div class="section-arrows">
     <button class="arrow down"></button>
@@ -32,21 +33,20 @@
 	<div class="anchor" id="stellum"></div>
 	<div class="mw-1440 jc-center ai-center h-100 med-h-0">
 		<div class="t-c">
-			<h2 class="h1-special mb-50 small-mb-0"><?php echo $Journey_title; ?></h2>
+			<h2 class="h1-special mb-50 small-mb-0"><?= $Journey_title; ?></h2>
 			<div class="tabs t-c">
 				<div class="tab-header">
-					<div class="tab active"><span>01</span><?php echo $Journey_button_1; ?></div>
-					<div class="tab"><span>02</span><?php echo $Journey_button_2; ?></div>
-					<div class="tab"><span>03</span><?php echo $Journey_button_3; ?></div>
-					<div class="tab"><span>04</span><?php echo $Journey_button_4; ?></div>
-					<div class="active-indicator small-d-none"></div>
+					<div class="tab active"><span>01</span><?= $Journey_button_1; ?></div>
+					<div class="tab"><span>02</span><?= $Journey_button_2; ?></div>
+					<div class="tab"><span>03</span><?= $Journey_button_3; ?></div>
+					<div class="tab"><span>04</span><?= $Journey_button_4; ?></div>
 				</div>
 
 				<div class="tab-content">
-					<div class="content active" data-text="<?php echo $Journey_text_1; ?>"><?php echo $Journey_text_1; ?></div>
-					<div class="content" data-text="<?php echo $Journey_text_2; ?>"><?php echo $Journey_text_2; ?></div>
-					<div class="content" data-text="<?php echo $Journey_text_3; ?>"><?php echo $Journey_text_3; ?></div>
-					<div class="content" data-text="<?php echo $Journey_text_4; ?>"><?php echo $Journey_text_4; ?></div>
+					<div class="content active" data-text="<?= $Journey_text_1; ?>"><?= $Journey_text_1; ?></div>
+					<div class="content" data-text="<?= $Journey_text_2; ?>"><?= $Journey_text_2; ?></div>
+					<div class="content" data-text="<?= $Journey_text_3; ?>"><?= $Journey_text_3; ?></div>
+					<div class="content" data-text="<?= $Journey_text_4; ?>"><?= $Journey_text_4; ?></div>
 				</div>
 			</div>
 		</div>
@@ -65,20 +65,20 @@
 			    <button class="arrow up"></button>
 			    <button class="arrow down"></button>
 			</div>
-			<h2 class="word_01"><?php echo $Letters_title_04; ?><span class="t-pretty"><?php echo $Letters_text_04; ?></span></h2>
-			<img class="img_01" src="./images/body/letters/4.webp" alt="<?php echo $Letters_title_04; ?>">
+			<h2 class="word_01"><?= $Letters_title_04; ?><span class="t-pretty"><?= $Letters_text_04; ?></span></h2>
+			<img class="img_01" src="./images/body/letters/4.webp" alt="<?= $Letters_title_04; ?>">
 		</div>
 		<div>
-			<h2 class="word_02"><?php echo $Letters_title_02; ?><span class="t-pretty"><?php echo $Letters_text_02; ?></span></h2>
-			<img class="img_02" src="./images/body/letters/2.webp" alt="<?php echo $Letters_title_02; ?>">
+			<h2 class="word_02"><?= $Letters_title_02; ?><span class="t-pretty"><?= $Letters_text_02; ?></span></h2>
+			<img class="img_02" src="./images/body/letters/2.webp" alt="<?= $Letters_title_02; ?>">
 		</div>
 		<div>
-			<h2 class="word_03"><?php echo $Letters_title_03; ?><span class="t-pretty"><?php echo $Letters_text_03; ?></span></h2>
-			<img class="img_03" src="./images/body/letters/3.webp" alt="<?php echo $Letters_title_03; ?>">
+			<h2 class="word_03"><?= $Letters_title_03; ?><span class="t-pretty"><?= $Letters_text_03; ?></span></h2>
+			<img class="img_03" src="./images/body/letters/3.webp" alt="<?= $Letters_title_03; ?>">
 		</div>
 		<div>
-			<h2 class="word_04 w-60 med-w-100"><?php echo $Letters_title_01; ?><span class="t-pretty"><?php echo $Letters_text_01; ?></span></h2>
-			<img class="img_04" src="./images/body/letters/1.webp" alt="<?php echo $Letters_title_01; ?>">
+			<h2 class="word_04 w-60 med-w-100"><?= $Letters_title_01; ?><span class="t-pretty"><?= $Letters_text_01; ?></span></h2>
+			<img class="img_04" src="./images/body/letters/1.webp" alt="<?= $Letters_title_01; ?>">
 		</div>
 	</div>
 </section>
@@ -95,25 +95,25 @@
 	</div>
 
 	<div class="mw-1440 t-c h-100 med-h-0 med-fd-col g-20 jc-center ai-center rel parallax">
-		<h2 class="h1-special short"><?php echo $Vision_text; ?></h2>
+		<h2 class="h1-special short"><?= $Vision_text; ?></h2>
     <div class="box box_1">
-      <h3 class="h3"><?php echo $Vision_title_01; ?></h3>
-      <p><?php echo $Vision_text_01; ?></p>
+      <h3 class="h3"><?= $Vision_title_01; ?></h3>
+      <p><?= $Vision_text_01; ?></p>
       <svg class="glow-effect" xmlns="http://www.w3.org/2000/svg"><rect /></svg>
     </div>
     <div class="box box_2">
-      <h3 class="h3"><?php echo $Vision_title_02; ?></h3>
-      <p><?php echo $Vision_text_02; ?></p>
+      <h3 class="h3"><?= $Vision_title_02; ?></h3>
+      <p><?= $Vision_text_02; ?></p>
       <svg class="glow-effect" xmlns="http://www.w3.org/2000/svg"><rect /></svg>
     </div>
     <div class="box box_3">
-      <h3 class="h3"><?php echo $Vision_title_03; ?></h3>
-      <p><?php echo $Vision_text_03; ?></p>
+      <h3 class="h3"><?= $Vision_title_03; ?></h3>
+      <p><?= $Vision_text_03; ?></p>
       <svg class="glow-effect" xmlns="http://www.w3.org/2000/svg"><rect /></svg>
     </div>
     <div class="box box_4">
-      <h3 class="h3"><?php echo $Vision_title_04; ?></h3>
-      <p><?php echo $Vision_text_04; ?></p>
+      <h3 class="h3"><?= $Vision_title_04; ?></h3>
+      <p><?= $Vision_text_04; ?></p>
       <svg class="glow-effect" xmlns="http://www.w3.org/2000/svg"><rect /></svg>
     </div>
 	</div>
@@ -130,8 +130,8 @@
 	</div>
 
 	<div class="mw-1280 t-c h-100 med-h-0 jc-center fd-col">
-		<h2 class="h1 m-center mb-20" style="max-width:26ch;"><?php echo $Slogan_title; ?></h2>
-		<p class="h4 m-center mb-40" style="max-width:48ch">“<?php echo $Slogan_text; ?>”</p>
+		<h2 class="h1 m-center mb-20" style="max-width:26ch;"><?= $Slogan_title; ?></h2>
+		<p class="h4 m-center mb-40" style="max-width:48ch">“<?= $Slogan_text; ?>”</p>
     <ul class="d-flex med-fd-col med-ai-center jc-center g-20">
       <li class="licence-box c-sec p-10 med-w-100 w-30 br-10">
         <p class="h3 fw-700"><?= $Slogan_suscription_title; ?></p>
@@ -143,7 +143,7 @@
       </li>
     </ul>
     <?php if($ConnectBO): ?>
-		  <a href="<?php echo $Register; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?php echo $Btn_live; ?></a>
+		  <a href="<?= $Register; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?= $Btn_live; ?></a>
     <?php endif; ?>
 	</div>
 </section>
@@ -190,16 +190,18 @@ foreach ($Modal as $item){
 	    <button class="arrow down"></button>
 	</div>
 
-	<div class="box_product img-three rel">
-		<span>
-			<button type="button" class="v-white c-acc icon br-50 icon-more" onclick="openModal('Modal1')"></button>
-			<a href="?p=product&id=<?php echo $link_01; ?>" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
-		</span>
-		<img src="./images/body/products/<?php echo $link_01; ?>.webp" class="product" alt="<?php echo $link_01; ?>"/>
+	<div class="box_product img-three rel flex ai-center jc-center fd-col">
+		<div class="rel t-c">
+      <img src="./images/body/products/<?= $link_01; ?>.webp" class="product m-center" alt="<?= $link_01; ?>" onclick="openModal('Modal1')"/>
+      <div class="abs product-plus-wrap">
+        <button type="button" class="v-white c-acc icon br-50 icon-more"></button>
+      </div>
+		</div>
+    <a href="?p=product&id=<?= $link_01; ?>" class="btn big c-sec br-50"><?= $Btn_view; ?></a>
 	</div>
 
 	<!--<img class="polvo med-d-none" src="./images/body/products/bg.webp">-->
-	<img class="background med-d-none img_product_<?php echo $link_01; ?>" src="./images/body/subpage/bg_<?php echo $link_01; ?>.webp" alt="<?php echo $link_01; ?> background">
+	<img class="background anim-scale med-d-none img_product_<?= $link_01; ?>" src="./images/body/subpage/bg_<?= $link_01; ?>.webp" alt="<?= $link_01; ?> background">
 
 	</div>
 </section>
@@ -212,7 +214,7 @@ foreach ($Modal as $item){
 <section class="deg">
 	<div class="wrap-people">
 		<div class="mw-1440 p-30 mb-40">
-			<h3 class="h3 t-c"><?php echo $Envolvers_title; ?></h3>
+			<h3 class="h3 t-c"><?= $Envolvers_title; ?></h3>
 		</div>
 
 	<?php
@@ -262,34 +264,36 @@ foreach ($Modal as $item){
 	</div>
 
 	<!--<div class="mw-1440 t-c">
-		<p class="h2"><?php echo $Truth_title; ?></p>
+		<p class="h2"><?= $Truth_title; ?></p>
 	</div>-->
 	<div>
-		<ul class="textos">
-			<li>
-				<h2><?php echo $Truth_title_01; ?></h2>
-				<span><img src="./images/body/truth/1.webp" alt="<?php echo $Truth_title_01; ?>"/>
-					<p class="h4">"<?php echo $Truth_text_01; ?>"</p>
+		<ul class="textos rel">
+      <img src="./images/icons/body/space.svg" alt="" class="abs w-100 h-100 med-d-none" style="top:0;left:0;opacity:0.1">
+      <li>
+        <h2><?= $Truth_title_01; ?></h2>
+				<span><img src="./images/body/truth/1.webp" alt="<?= $Truth_title_01; ?>" class="br-20"/>
+					<p class="h4 t-pretty t-c">"<?= $Truth_text_01; ?>"</p>
 				</span>
 			</li>
 			<li>
-				<h2><?php echo $Truth_title_02; ?></h2>
-				<span><img src="./images/body/truth/2.webp" alt="<?php echo $Truth_title_02; ?>"/>
-					<p class="h4">"<?php echo $Truth_text_02; ?>"</p>
+				<h2><?= $Truth_title_02; ?></h2>
+				<span><img src="./images/body/truth/2.webp" alt="<?= $Truth_title_02; ?>" class="br-20"/>
+					<p class="h4 t-pretty t-c">"<?= $Truth_text_02; ?>"</p>
 				</span>
 			</li>
 			<li>
-				<h2><?php echo $Truth_title_03; ?></h2>
-				<span><img src="./images/body/truth/3.webp" alt="<?php echo $Truth_title_03; ?>"/>
-					<p class="h4">"<?php echo $Truth_text_03; ?>"</p>
+				<h2><?= $Truth_title_03; ?></h2>
+				<span><img src="./images/body/truth/3.webp" alt="<?= $Truth_title_03; ?>" class="br-20"/>
+					<p class="h4 t-pretty t-c">"<?= $Truth_text_03; ?>"</p>
 				</span>
 			</li>
 			<li>
-				<h2><?php echo $Truth_title_04; ?></h2>
-				<span><img src="./images/body/truth/4.webp" alt="<?php echo $Truth_title_04; ?>"/>
-					<p class="h4">"<?php echo $Truth_text_04; ?>"</p>
+				<h2><?= $Truth_title_04; ?></h2>
+				<span><img src="./images/body/truth/4.webp" alt="<?= $Truth_title_04; ?>" class="br-20"/>
+					<p class="h4 t-pretty t-c">"<?= $Truth_text_04; ?>"</p>
 				</span>
 			</li>
+      <img src="./images/icons/body/space.svg" alt="" class="abs w-100 h-100 med-d-none" style="top:0;left:0;mix-blend-mode:overlay;opacity:0.7">
 		</ul>
 	</div>
 </section>
@@ -298,57 +302,7 @@ foreach ($Modal as $item){
 <!-- EIGHT -->
 <!-- ============================================== -->
 
-<section>
-
-	<div class="section-arrows">
-	    <button class="arrow up"></button>
-	    <button class="arrow down"></button>
-	</div>
-
-	<div class="mw-1280 jc-center h-100 med-h-0 g-40 ai-center small-ai-start small-fd-col">
-		<div class="img_spirit small-d-none">
-			<span class="img_product">
-				<div class="product_wrapper">
-					<img src="./images/body/the_spirit/circle/1.webp" class="img_reference" alt="<?php echo $link_03; ?>"/>
-					<img src="./images/body/the_spirit/1.webp" class="product" alt="<?php echo $link_03; ?>"/>
-				</div>
-			</span>
-			<span class="img_product">
-				<div class="product_wrapper">
-					<img src="./images/body/the_spirit/circle/2.webp" class="img_reference" alt="<?php echo $link_02; ?>"/>
-					<img src="./images/body/the_spirit/2.webp" class="product" alt="<?php echo $link_02; ?>"/>
-				</div>
-			</span>
-			<span class="img_product">
-				<div class="product_wrapper">
-					<img src="./images/body/the_spirit/circle/3.webp" class="img_reference" alt="<?php echo $link_01; ?>"/>
-					<img src="./images/body/the_spirit/3.webp" class="product" alt="<?php echo $link_01; ?>"/>
-				</div>
-			</span>
-		</div>
-
-		<img src="./images/body/products/basic.webp" class="mw-300 m-center small-d-block d-none" alt="all products"/>
-
-		<!-- Textos -->
-		<div class="text_spirit">
-			<h2 class="h2 small-t-c"><?php echo $Spirit_title; ?></h2>
-			<div class="text_one">
-				<p class="h2"><?php echo $Spirit_title_01; ?></p>
-				<p><?php echo $Spirit_text_01; ?></p>
-			</div>
-
-			<div class="text_two">
-				<p class="h2"><?php echo $Spirit_title_02; ?></p>
-				<p><?php echo $Spirit_text_02; ?></p>
-			</div>
-
-			<div class="text_tree">
-				<p class="h2"><?php echo $Spirit_title_03; ?></p>
-				<p><?php echo $Spirit_text_03; ?></p>
-			</div>
-		</div>
-	</div>
-</section>
+<?php include_once('./includes/altSec.php'); ?>
 
 <!-- ============================================== -->
 <!-- NINE -->
@@ -361,15 +315,16 @@ foreach ($Modal as $item){
 	</div>
 
 	<div class="mw-1280 t-c big">
-		<h2 class="h1 m-center" style="max-width:20ch"><?php echo $Traits_title; ?></h2>
+		<h2 class="h1 m-center" style="max-width:20ch"><?= $Traits_title; ?></h2>
     <?php if($ConnectBO): ?>
-		  <a href="<?php echo $Register; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?php echo $Btn_part; ?></a>
+		  <a href="<?= $Register; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?= $Btn_part; ?></a>
     <?php endif; ?>
 	</div>
 </section>
 
-<script>
+<script src="./js/webgl-distortion.js"></script>
 
+<script>
 /* ==============================================
     MODAL
 ============================================== */
@@ -463,19 +418,18 @@ document.addEventListener("DOMContentLoaded", function () {
             // ========== GALLERY
             var textoTimeline = new TimelineMax();
             textoTimeline
-                .fromTo('.word_01', animationSpeed, {opacity:1, scale:1}, {opacity:0, scale:4, ease:animationLinear, immediateRender:false})
-                .fromTo('.word_02', animationSpeed, {opacity:0, scale:1}, {opacity:1, scale:1, ease:animationLinear, immediateRender:false})
-                .to('.word_02', animationSpeed, {opacity:0, scale:4, ease:animationLinear})
-                .fromTo('.word_03', animationSpeed, {opacity:0, scale:1}, {opacity:1, scale:1, ease:animationLinear, immediateRender:false})
-                .to('.word_03', animationSpeed, {opacity:0, scale:4, ease:animationLinear})
-                .fromTo('.word_04', animationSpeed, {opacity:0, scale:1}, {opacity:1, scale:1, ease:animationLinear, immediateRender:false});
+                .fromTo('.word_01', animationSpeed, {opacity:1, scale:1, filter:'blur(0)'}, {opacity:0, scale:1.5, y:'-300%', filter:'blur(12px)', ease:animationLinear, immediateRender:false})
+                .fromTo('.word_02', animationSpeed, {opacity:0, scale:1, filter: 'blur(12px)'}, {opacity:1, scale:1, filter:'blur(0)', ease:animationLinear, immediateRender:false})
+                .to('.word_02', animationSpeed, {opacity:0, scale:1.5, y:'-300%', filter:'blur(12px)', ease:animationLinear})
+                .fromTo('.word_03', animationSpeed, {opacity:0, scale:1, filter: 'blur(12px)'}, {opacity:1, scale:1, filter:'blur(0)', ease:animationLinear, immediateRender:false})
+                .to('.word_03', animationSpeed, {opacity:0, scale:1.5, y:'-300%', filter:'blur(12px)', ease:animationLinear})
+                .fromTo('.word_04', animationSpeed, {opacity:0, scale:1, filter: 'blur(12px)'}, {opacity:1, scale:1, filter:'blur(0)', ease:animationLinear, immediateRender:false});
 
             var imgTimeline = new TimelineMax();
             imgTimeline
-                .fromTo('.img_01', animationSpeed, {opacity:1}, {opacity:0, ease:animationLinear, immediateRender:false}, "+=0.2")
-                .fromTo('.img_02', animationSpeed, {opacity:1}, {opacity:0, ease:animationLinear, immediateRender:false}, "+=0.8")
-                .fromTo('.img_03', animationSpeed, {opacity:1}, {opacity:0, ease:animationLinear, immediateRender:false}, "+=0.8")
-                .fromTo('.img_04', animationSpeed, {opacity:1}, {opacity:1, ease:animationLinear, immediateRender:false}, "+=0.8");
+                .to('.img_01', animationSpeed, {y: '-100%', ease: animationLinear}, animationSpeed * 0.25)
+                .to('.img_02', animationSpeed, {y: '-100%', ease: animationLinear}, animationSpeed * 2.25)
+                .to('.img_03', animationSpeed, {y: '-100%', ease: animationLinear}, animationSpeed * 4);
 
             var master = new TimelineMax();
             master.add(textoTimeline, 0);
@@ -553,14 +507,14 @@ document.addEventListener("DOMContentLoaded", function () {
             EVO.fromTo('.evolvers_wrap .evolvers', animationSpeed, {x:"8%"}, {x:"-48%", ease:animationInOutQuart},0);
 
             new ScrollMagic.Scene({
-			    triggerElement: '.evolvers_wrap',
-			    duration:'200%',
-			    triggerHook: 0
-			})
-			.setPin('.evolvers_wrap')
-			.setTween(EVO)
-			//.addIndicators()
-			.addTo(controller);
+          triggerElement: '.evolvers_wrap',
+          duration:'200%',
+          triggerHook: 0
+      })
+      .setPin('.evolvers_wrap')
+      .setTween(EVO)
+      //.addIndicators()
+      .addTo(controller);
 
 
         }).catch(err => console.error("Error cargando scripts ScrollMagic/GSAP:", err));
@@ -596,7 +550,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ============================================== */
     const tabs = document.querySelectorAll('.tab');
     const contents = document.querySelectorAll('.content');
-    const indicator = document.querySelector('.active-indicator');
 
     function typeWriterEffect(element, text, speed=30){
         element.textContent='';
@@ -620,19 +573,13 @@ document.addEventListener("DOMContentLoaded", function () {
             content.classList.add('active');
             const text = content.getAttribute('data-text') || '';
             typeWriterEffect(content,text);
-            if(indicator){
-                indicator.style.transform=`translateX(${tab.offsetLeft}px)`;
-                indicator.style.width=`${tab.offsetWidth}px`;
-            }
         });
     });
 
     window.addEventListener('load', ()=>{
         const activeTab = document.querySelector('.tab.active');
         const activeContent = document.querySelector('.content.active');
-        if(indicator && activeTab && activeContent){
-            indicator.style.transform=`translateX(${activeTab.offsetLeft}px)`;
-            indicator.style.width=`${activeTab.offsetWidth}px`;
+        if(activeTab && activeContent){
             const text = activeContent.getAttribute('data-text') || '';
             typeWriterEffect(activeContent,text);
         }
@@ -662,6 +609,38 @@ document.addEventListener("DOMContentLoaded", function () {
             img.style.transform='none';
         }
     });
+
+    /* ==============================================
+      STICKY BANNER EXPANSION SOLO EN DESKTOP
+    ============================================== */
+    const expansionBoxes = document.querySelectorAll('.expansion-boxes')
+    const expansionBanners = document.querySelectorAll('.expansion-banner')
+
+    if(expansionBoxes.length > 0 && expansionBanners.length > 0){
+      const optionsObserver = {
+        rootMargin: `-90% 0px -5% 0px`
+      }
+      const handleBannerImages = (entries, observer) => {
+        entries.forEach(entry => {
+          const targetImg = document.getElementById(`exp-banner-${entry.target.dataset.image}`)
+          if(entry.isIntersecting){
+            expansionBanners.forEach(banner => banner.classList.remove('active'))
+            targetImg.classList.add('active')
+          }
+        })
+      }
+      const bannerObserver = new IntersectionObserver(handleBannerImages, optionsObserver)
+
+      function handleInitObserver(){
+        if(window.innerWidth > 768){
+          expansionBoxes.forEach(box => bannerObserver.observe(box))
+        } else {
+          bannerObserver.disconnect()
+        }
+      }
+      handleInitObserver();
+      window.addEventListener('resize', handleInitObserver)
+    }
 
 });
 </script>
