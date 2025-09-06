@@ -330,7 +330,6 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
                             <?php endforeach; ?>
                         </ul>
                     <?php endif; ?>
-                    <p><?= $Started_plan_txt[1]; ?></p>
                 </div>
 
                 <div>

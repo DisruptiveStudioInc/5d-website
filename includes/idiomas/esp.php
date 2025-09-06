@@ -243,7 +243,7 @@ $Satarted_title_01_01 = "Despega tu evolución digital";
 $Satarted_list_01_01 = "Inscripción única: <span class='fw-700'>100 USDT</span>";
 $Satarted_list_02_01 = "Activación de por vida";
 $Satarted_list_03_01 = "Acceso a tu <span class='fw-700'>oficina virtual STELLUM</span>";
-$Satarted_list_04_01 = "Derecho al <span class='fw-700'>plan de recompensas básico</span>";
+$Satarted_list_04_01 = "Derecho al <span class='fw-700'>plan de recompensas premium</span>";
 $Satarted_list_05_01 = "Biblioteca digital con <span class='fw-700'>infoproductos Premium</span>";
 $Satarted_footnote_01 = "Al alcanzar 300 USDT en ganancias, el sistema solicita una reactivación de 100 USDT para mantenerte activo y seguir cobrando comisiones.*";
 

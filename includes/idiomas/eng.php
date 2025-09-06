@@ -242,7 +242,7 @@ $Satarted_title_01_01 = "Launch your digital evolution";
 $Satarted_list_01_01 = "One-time registration: <span class='fw-700'>100 USDT</span>";
 $Satarted_list_02_01 = "Lifetime activation";
 $Satarted_list_03_01 = "Access to your <span class='fw-700'>STELLUM virtual office</span>";
-$Satarted_list_04_01 = "Right to the <span class='fw-700'>basic reward plan</span>";
+$Satarted_list_04_01 = "Right to the <span class='fw-700'>premium reward plan</span>";
 $Satarted_list_05_01 = "Digital library with <span class='fw-700'>Premium infoproducts</span>";
 $Satarted_footnote_01 = "Upon reaching 300 USDT in earnings, the system requires a reactivation of 100 USDT to remain active and continue earning commissions.*";
 
