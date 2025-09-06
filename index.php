@@ -8,8 +8,8 @@
 		$_SESSION['user_replica'] = $user_replica;
 	}
 
-  $Maintenance = true;
-  $ConnectBO = false;
+  $Maintenance = false;
+  $ConnectBO = true;
   $pages_dir = 'pages';
 
   if($Maintenance){
