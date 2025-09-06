@@ -75,7 +75,7 @@ $Letters_title_03 = "Level Bonus";
 $Letters_text_03 = "STELLUM recognizes and rewards the power of teamwork. Each advancement in your network generates benefits that multiply up to 7 levels.";
 
 $Letters_title_04 = "Infinity Bonus";
-$Letters_text_04 = "With every 300 USDT accumulated, you renew your license, ensuring your network stays active and continues multiplying commissions. This means you pay $100 for every $300.";
+$Letters_text_04 = "When a member of your team accumulates their first 300 USDT in commissions, they are reactivated at that moment; and you begin earning commissions again from every member who gets reactivated in your organization. These commissions can be infinite.";
 
     //-------------------------//
     // Vision
@@ -244,7 +244,7 @@ $Satarted_list_02_01 = "Lifetime activation";
 $Satarted_list_03_01 = "Access to your <span class='fw-700'>STELLUM virtual office</span>";
 $Satarted_list_04_01 = "Right to the <span class='fw-700'>basic reward plan</span>";
 $Satarted_list_05_01 = "Digital library with <span class='fw-700'>Premium infoproducts</span>";
-$Satarted_footnote_01 = "Upon reaching 300 USDT in earnings, the system requires a repurchase of 100 USDT to remain active and continue earning commissions.*";
+$Satarted_footnote_01 = "Upon reaching 300 USDT in earnings, the system requires a reactivation of 100 USDT to remain active and continue earning commissions.*";
 
 $Satarted_title_plans_01 = "Reward plan";
 $Satarted_plans_text_01_01 = "Subscription (100 USDT) → distributes 70 USDT";

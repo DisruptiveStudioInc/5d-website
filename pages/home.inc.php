@@ -65,8 +65,8 @@
 			    <button class="arrow up"></button>
 			    <button class="arrow down"></button>
 			</div>
-			<h2 class="word_01"><?= $Letters_title_04; ?><span class="t-pretty"><?= $Letters_text_04; ?></span></h2>
-			<img class="img_01" src="./images/body/letters/4.webp" alt="<?= $Letters_title_04; ?>">
+			<h2 class="word_01 w-60 med-w-100"><?= $Letters_title_01; ?><span class="t-pretty"><?= $Letters_text_01; ?></span></h2>
+			<img class="img_01" src="./images/body/letters/1.webp" alt="<?= $Letters_title_01; ?>">
 		</div>
 		<div>
 			<h2 class="word_02"><?= $Letters_title_02; ?><span class="t-pretty"><?= $Letters_text_02; ?></span></h2>
@@ -77,8 +77,8 @@
 			<img class="img_03" src="./images/body/letters/3.webp" alt="<?= $Letters_title_03; ?>">
 		</div>
 		<div>
-			<h2 class="word_04 w-60 med-w-100"><?= $Letters_title_01; ?><span class="t-pretty"><?= $Letters_text_01; ?></span></h2>
-			<img class="img_04" src="./images/body/letters/1.webp" alt="<?= $Letters_title_01; ?>">
+			<h2 class="word_04"><?= $Letters_title_04; ?><span class="t-pretty"><?= $Letters_text_04; ?></span></h2>
+			<img class="img_04" src="./images/body/letters/4.webp" alt="<?= $Letters_title_04; ?>">
 		</div>
 	</div>
 </section>

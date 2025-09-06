@@ -74,8 +74,8 @@ $Letters_text_02 = "Si en tus primeros 7 días conectas a 3 clientes directos, r
 $Letters_title_03 = "Bono por niveles";
 $Letters_text_03 = "STELLUM reconoce y premia la fuerza del trabajo en equipo. Cada avance en tu red genera beneficios que se multiplican hasta 7 niveles.";
 
-$Letters_title_04 = "Bono infinito";
-$Letters_text_04 = "Con cada 300 USDT acumulados renuevas tu licencia, asegurando que tu red siga activa y multiplicando comisiones. Esto significa que pagas $100 cada $300.";
+$Letters_title_04 = "Bono infinity";
+$Letters_text_04 = "Cuando un miembro de tu equipo llega a acumular sus primeros 300 USDT de comisiones, en ese momento se vuelve a reactivar; y tú vuelves a generar comisiones de cada miembro que se reactive en tu organización. Esas comisiones pueden ser infinitas.";
 
     //-------------------------//
     // Vision
@@ -245,7 +245,7 @@ $Satarted_list_02_01 = "Activación de por vida";
 $Satarted_list_03_01 = "Acceso a tu <span class='fw-700'>oficina virtual STELLUM</span>";
 $Satarted_list_04_01 = "Derecho al <span class='fw-700'>plan de recompensas básico</span>";
 $Satarted_list_05_01 = "Biblioteca digital con <span class='fw-700'>infoproductos Premium</span>";
-$Satarted_footnote_01 = "Al alcanzar 300 USDT en ganancias, el sistema solicita una recompra de 100 USDT para mantenerte activo y seguir cobrando comisiones.*";
+$Satarted_footnote_01 = "Al alcanzar 300 USDT en ganancias, el sistema solicita una reactivación de 100 USDT para mantenerte activo y seguir cobrando comisiones.*";
 
 $Satarted_title_plans_01 = "Plan de recompensas";
 $Satarted_plans_text_01_01 = "Suscripción (100 USDT) → reparte 70 USDT";
