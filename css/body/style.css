@@ -14,7 +14,7 @@
   --color-acc-h: #52daff;
   --color-sec-h: #25385a;
 
-  --color-basic: #c1943a;
+  --color-basic: #32d5db;
   --color-premium: #677d8c;
   --color-black: #000000;
 
@@ -100,7 +100,7 @@
 }
 
 .c-sub.basic {
-  background: radial-gradient(circle, #f0eeca 0%, var(--color-basic) 100%);
+  background: radial-gradient(circle, #e9fffe 0%, var(--color-basic) 100%);
 }
 .c-sub.premium {
   background: radial-gradient(circle, #fff 0%, var(--color-premium) 100%);
@@ -834,6 +834,25 @@ img.polvo {
   display: block;
 }
 
+.expansion-banner {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  &.active {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .expansion-boxes {
+    aspect-ratio: 3/2;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .expansion-boxes {
+    aspect-ratio: auto;
+  }
+}
+
 @keyframes circleSlideFade {
   0% {
     opacity: 0;
@@ -997,19 +1016,20 @@ img.polvo {
 
 .tabs {
   display: flex;
-  flex-direction: column;
   max-width: 1080px;
   width: 100%;
   margin: 40px auto;
   font-family: sans-serif;
+  gap: 40px;
 }
 
 .tab-header {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
+  flex-shrink: 0;
 }
 
 .tab {
@@ -1025,7 +1045,6 @@ img.polvo {
   opacity: 0.6;
   transition: all 0.5s cubic-bezier(0.25, 1.25, 0.5, 1.1);
   z-index: 1;
-  width: fit-content;
 }
 
 .tab span {
@@ -1046,6 +1065,7 @@ img.polvo {
 .tab.active {
   color: white;
   opacity: 1;
+  background: var(--color-pri);
 }
 
 .active-indicator {
@@ -1080,7 +1100,7 @@ img.polvo {
   display: none;
   font-size: 3rem;
   line-height: 1.2;
-  text-align: center;
+  text-align: left;
   color: white;
   font-family: var(--f-family);
 }
@@ -1101,16 +1121,13 @@ img.polvo {
     width: 30px;
     height: 30px;
   }
-
-  .tab.active {
-    background: var(--color-pri);
-  }
 }
 
 @media screen and (max-width: 768px) {
   .tabs {
     margin: 20px auto;
     width: 100%;
+    flex-direction: column;
   }
 
   .tab-header {
@@ -1133,6 +1150,7 @@ img.polvo {
 
   .content {
     font-size: 2rem;
+    text-align: center;
   }
 }
 
@@ -1151,7 +1169,6 @@ ul.textos li {
   padding: 60px 30px 15px;
   transition: background 0.3s ease;
   cursor: pointer;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
 ul.textos li h2 {
@@ -1225,7 +1242,6 @@ ul.textos li span img {
   ul.textos li {
     cursor: default;
     transition: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
 
   ul.textos li span {
@@ -1351,21 +1367,10 @@ ul.textos li span img {
 /* SUB */
 /* ============================================== */
 
-.abs-text {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translate(-50%, -50%);
-}
-
 .img-middle {
-  position: absolute;
-  top: 65%;
-  left: 50%;
+  margin-inline: auto;
   max-width: 400px;
   width: 100%;
-  z-index: 2;
-  transform: translate(-50%, -50%);
   z-index: 2;
 
   transition: transform 0.2s ease-out;
@@ -1373,61 +1378,70 @@ ul.textos li span img {
   will-change: transform;
 }
 
+.ingredients {
+  --ingredient-h: 92px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  justify-content: center;
+  align-items: start;
+  max-width: 1440px;
+  margin-top: calc(var(--ingredient-h) * -1);
+}
 .ingredients li {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  --x: 60px;
+  z-index: 1;
+  width: 100%;
+  max-width: 200px;
+  justify-self: center;
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3) {
+    --dir: -1;
+  }
+  &:nth-child(2),
+  &:nth-child(5) {
+    margin-top: var(--ingredient-h);
+    --pill-delay: 0.15s;
+  }
+  &:nth-child(3),
+  &:nth-child(4) {
+    margin-top: calc(var(--ingredient-h) * 2);
+    --pill-delay: 0.3s;
+  }
+  &:first-child {
+    justify-self: end;
+  }
+  &:last-child {
+    justify-self: start;
+  }
+}
+
+.ingredient-pill {
   opacity: 0;
+  transform: translate3d(calc(var(--x) * var(--dir, 1)), 0, 0);
   padding: 10px 20px 10px 10px;
   border-radius: 999px;
   gap: 10px;
   white-space: nowrap;
+  width: 100%;
   color: white;
   background: var(--color-black);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  transition: all 0.8s ease;
+  transition-property: opacity, transform;
+  transition: 0.5s ease;
+  transition-delay: var(--pill-delay, 0s);
+}
+
+.ingredients.fade-in li {
+  .ingredient-pill {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .ingredients li span {
   margin-right: 10px;
-}
-
-.ingredients.fade-in li {
-  opacity: 1;
-  transform: none;
-}
-
-/* Izquierda (misma distancia al borde) */
-.ingredients.fade-in li:nth-child(1) {
-  top: 40%;
-  left: 20%;
-}
-.ingredients.fade-in li:nth-child(2) {
-  top: 55%;
-  left: 20%;
-}
-.ingredients.fade-in li:nth-child(3) {
-  top: 70%;
-  left: 20%;
-}
-
-/* Derecha (misma distancia al borde) */
-.ingredients.fade-in li:nth-child(4) {
-  top: 40%;
-  left: 80%;
-  transform: translateX(-100%);
-}
-.ingredients.fade-in li:nth-child(5) {
-  top: 55%;
-  left: 80%;
-  transform: translateX(-100%);
-}
-.ingredients.fade-in li:nth-child(6) {
-  top: 70%;
-  left: 80%;
-  transform: translateX(-100%);
 }
 
 .benefits-list {
@@ -1520,36 +1534,30 @@ ul.textos li span img {
   line-height: 1;
 }
 
-@media screen and (max-width: 1440px) {
-  /* Izquierda (misma distancia al borde) */
-  .ingredients.fade-in li:nth-child(1) {
-    top: 40%;
-    left: 10%;
+@media only screen and (min-width: 1081px) and (max-width: 1190px) {
+  /*Ingredients*/
+  .ingredients li:first-child {
+    transform: translateX(40px);
   }
-  .ingredients.fade-in li:nth-child(2) {
-    top: 55%;
-    left: 10%;
+  .ingredients li:last-child {
+    transform: translateX(-40px);
   }
-  .ingredients.fade-in li:nth-child(3) {
-    top: 70%;
-    left: 10%;
-  }
+}
 
-  /* Derecha (misma distancia al borde) */
-  .ingredients.fade-in li:nth-child(4) {
-    top: 40%;
-    left: 90%;
-    transform: translateX(-100%);
+@media only screen and (max-width: 1080px) {
+  .ingredients {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 0;
+    & li {
+      max-width: 420px;
+      margin-top: 0 !important;
+      justify-self: center !important;
+    }
   }
-  .ingredients.fade-in li:nth-child(5) {
-    top: 55%;
-    left: 90%;
-    transform: translateX(-100%);
-  }
-  .ingredients.fade-in li:nth-child(6) {
-    top: 70%;
-    left: 90%;
-    transform: translateX(-100%);
+  .ingredient-pill {
+    transform: none !important;
+    opacity: 1;
   }
 }
 
@@ -1572,12 +1580,9 @@ ul.textos li span img {
   }
 
   .abs-text {
-    position: relative;
-    transform: none;
-    left: 0;
-    top: 0;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 40px;
   }
 
   .ingredients {
@@ -1588,22 +1593,10 @@ ul.textos li span img {
   }
 
   .ingredients li {
-    top: 0;
-    left: 0;
-    transform: none;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     opacity: 1;
-    transform: none;
     font-size: 1.5rem;
 
     width: 100%;
-    background: var(--color-100);
-    border: none;
-    backdrop-filter: none;
-    padding: 10px;
   }
 }
 

@@ -4,6 +4,7 @@
 
 <section class="hero-pin d-flex fd-col jc-center ai-center overlay o-30">
   <div class="anchor" id="home"></div>
+  <img src="./images/hero/hero.webp" alt="" class="background" style="opacity:1"/>
   <canvas id="webgl-canvas" class="background" style="opacity:1"></canvas>
 
   <div class="text-hero t-c hero-text">
@@ -39,7 +40,6 @@
 					<div class="tab"><span>02</span><?= $Journey_button_2; ?></div>
 					<div class="tab"><span>03</span><?= $Journey_button_3; ?></div>
 					<div class="tab"><span>04</span><?= $Journey_button_4; ?></div>
-					<div class="active-indicator small-d-none"></div>
 				</div>
 
 				<div class="tab-content">
@@ -302,57 +302,7 @@ foreach ($Modal as $item){
 <!-- EIGHT -->
 <!-- ============================================== -->
 
-<section>
-
-	<div class="section-arrows">
-	    <button class="arrow up"></button>
-	    <button class="arrow down"></button>
-	</div>
-
-	<div class="mw-1280 jc-center h-100 med-h-0 g-40 ai-center small-ai-start small-fd-col">
-		<div class="img_spirit small-d-none">
-			<span class="img_product">
-				<div class="product_wrapper">
-					<img src="./images/body/the_spirit/circle/1.webp" class="img_reference" alt="<?= $link_03; ?>"/>
-					<img src="./images/body/the_spirit/1.webp" class="product" alt="<?= $link_03; ?>"/>
-				</div>
-			</span>
-			<span class="img_product">
-				<div class="product_wrapper">
-					<img src="./images/body/the_spirit/circle/2.webp" class="img_reference" alt="<?= $link_02; ?>"/>
-					<img src="./images/body/the_spirit/2.webp" class="product" alt="<?= $link_02; ?>"/>
-				</div>
-			</span>
-			<span class="img_product">
-				<div class="product_wrapper">
-					<img src="./images/body/the_spirit/circle/3.webp" class="img_reference" alt="<?= $link_01; ?>"/>
-					<img src="./images/body/the_spirit/3.webp" class="product" alt="<?= $link_01; ?>"/>
-				</div>
-			</span>
-		</div>
-
-		<img src="./images/body/products/basic.webp" class="mw-300 m-center small-d-block d-none" alt="all products"/>
-
-		<!-- Textos -->
-		<div class="text_spirit">
-			<h2 class="h2 small-t-c"><?= $Spirit_title; ?></h2>
-			<div class="text_one">
-				<p class="h2"><?= $Spirit_title_01; ?></p>
-				<p><?= $Spirit_text_01; ?></p>
-			</div>
-
-			<div class="text_two">
-				<p class="h2"><?= $Spirit_title_02; ?></p>
-				<p><?= $Spirit_text_02; ?></p>
-			</div>
-
-			<div class="text_tree">
-				<p class="h2"><?= $Spirit_title_03; ?></p>
-				<p><?= $Spirit_text_03; ?></p>
-			</div>
-		</div>
-	</div>
-</section>
+<?php include_once('./includes/altSec.php'); ?>
 
 <!-- ============================================== -->
 <!-- NINE -->
@@ -372,259 +322,7 @@ foreach ($Modal as $item){
 	</div>
 </section>
 
-<script>
-/* ==============================================
-  WEBGL MOUSE DISTORTION
-============================================== */
-class MouseDistortionEffect {
-    constructor(imagePath = null) {
-        // Prevent multiple instances
-        if (window.mouseDistortionActive) {
-            console.log('MouseDistortionEffect already active, skipping...');
-            return;
-        }
-        window.mouseDistortionActive = true;
-
-        console.log('🚀 Initializing MouseDistortionEffect');
-
-        const canvas = document.getElementById('webgl-canvas');
-        if (!canvas) {
-            console.error('❌ Canvas element not found!');
-            return;
-        }
-
-        this.scene = new THREE.Scene();
-        this.camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
-        this.renderer = new THREE.WebGLRenderer({
-            canvas: canvas,
-            alpha: true,
-            antialias: true
-        });
-
-        this.mouse = new THREE.Vector2();
-        this.targetMouse = new THREE.Vector2();
-
-        // Fixed uniforms object
-        this.uniforms = {
-            uTexture: { type: 't', value: null },
-            uMouse: { type: 'v2', value: new THREE.Vector2() },
-            uTime: { type: 'f', value: 0 },
-            uDistortion: { type: 'f', value: 1.2 },
-            uRadius: { type: 'f', value: 0.3 }
-        };
-
-        this.imagePath = imagePath;
-        this.material = null;
-
-        this.init();
-        this.loadTexture();
-    }
-
-    init() {
-        this.renderer.setSize(window.innerWidth, window.innerHeight);
-        this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-        this.renderer.setClearColor(0x000000, 0);
-        console.log('✅ Renderer initialized');
-    }
-
-    loadTexture() {
-        if (this.imagePath) {
-            console.log('🔄 Loading image:', this.imagePath);
-            const loader = new THREE.TextureLoader();
-            loader.load(
-                this.imagePath,
-                (texture) => {
-                    console.log('✅ Image loaded successfully');
-                    texture.minFilter = THREE.LinearFilter;
-                    texture.magFilter = THREE.LinearFilter;
-                    this.uniforms.uTexture.value = texture;
-                    this.createMaterial();
-                },
-                undefined,
-                (error) => {
-                    console.error('❌ Error loading image:', error);
-                    this.createFallbackTexture();
-                }
-            );
-        } else {
-            this.createFallbackTexture();
-        }
-    }
-
-    createFallbackTexture() {
-        console.log('🎨 Creating fallback texture');
-        const canvas = document.createElement('canvas');
-        canvas.width = 1920;
-        canvas.height = 1080;
-        const ctx = canvas.getContext('2d');
-
-        const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-        gradient.addColorStop(0, '#667eea');
-        gradient.addColorStop(0.5, '#764ba2');
-        gradient.addColorStop(1, '#f093fb');
-
-        ctx.fillStyle = gradient;
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-        const texture = new THREE.CanvasTexture(canvas);
-        texture.minFilter = THREE.LinearFilter;
-        texture.magFilter = THREE.LinearFilter;
-        this.uniforms.uTexture.value = texture;
-        this.createMaterial();
-    }
-
-    createMaterial() {
-        console.log('🎭 Creating material');
-
-        const vertexShader = `
-            varying vec2 vUv;
-
-            void main() {
-                vUv = uv;
-                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-            }
-        `;
-
-        const fragmentShader = `
-            uniform sampler2D uTexture;
-            uniform vec2 uMouse;
-            uniform float uTime;
-            uniform float uDistortion;
-            uniform float uRadius;
-
-            varying vec2 vUv;
-
-            void main() {
-                vec2 uv = vUv;
-
-                // Calculate distance from mouse
-                float distance = length(uv - uMouse);
-
-                // Create smooth distortion falloff
-                float distortionStrength = smoothstep(uRadius, 0.0, distance) * uDistortion;
-
-                // Calculate direction from current pixel to mouse
-                vec2 direction = normalize(uv - uMouse);
-
-                // Add wave animation
-                float wave = sin(distance * 15.0 - uTime * 2.0) * 0.6 + 0.6;
-                distortionStrength *= wave * 0.8;
-
-                // Apply distortion to UV coordinates
-                vec2 distortedUv = uv + direction * distortionStrength * 0.08;
-
-                // Sample texture with chromatic aberration
-                float r = texture2D(uTexture, distortedUv + direction * distortionStrength * 0.005).r;
-                float g = texture2D(uTexture, distortedUv).g;
-                float b = texture2D(uTexture, distortedUv - direction * distortionStrength * 0.005).b;
-
-                gl_FragColor = vec4(r, g, b, 1.0);
-            }
-        `;
-
-        try {
-            this.material = new THREE.ShaderMaterial({
-                uniforms: this.uniforms,
-                vertexShader: vertexShader,
-                fragmentShader: fragmentShader,
-                transparent: true
-            });
-
-            const geometry = new THREE.PlaneGeometry(2, 2);
-            const mesh = new THREE.Mesh(geometry, this.material);
-            this.scene.add(mesh);
-
-            console.log('✅ Material created successfully');
-
-            // Start animation and events
-            this.addEventListeners();
-            this.animate();
-
-        } catch (error) {
-            console.error('❌ Error creating material:', error);
-        }
-    }
-
-    addEventListeners() {
-        console.log('👂 Adding event listeners');
-
-        this.onMouseMove = (event) => {
-            // Convert to UV coordinates (0 to 1) instead of NDC (-1 to 1)
-            this.targetMouse.x = event.clientX / window.innerWidth;
-            this.targetMouse.y = 1.0 - (event.clientY / window.innerHeight); // Flip Y axis
-        };
-
-        this.onResize = () => {
-            this.renderer.setSize(window.innerWidth, window.innerHeight);
-            this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-        };
-
-        this.onTouchMove = (event) => {
-            event.preventDefault();
-            const touch = event.touches[0];
-            // Convert to UV coordinates (0 to 1) instead of NDC (-1 to 1)
-            this.targetMouse.x = touch.clientX / window.innerWidth;
-            this.targetMouse.y = 1.0 - (touch.clientY / window.innerHeight); // Flip Y axis
-        };
-
-        window.addEventListener('mousemove', this.onMouseMove);
-        window.addEventListener('resize', this.onResize);
-        window.addEventListener('touchmove', this.onTouchMove, { passive: false });
-    }
-
-    animate() {
-        if (!this.material) return;
-
-        this.animationId = requestAnimationFrame(() => this.animate());
-
-        // Smooth mouse following
-        this.mouse.lerp(this.targetMouse, 0.1);
-
-        // Update uniforms
-        if (this.material.uniforms.uMouse) {
-            this.material.uniforms.uMouse.value.copy(this.mouse);
-        }
-        if (this.material.uniforms.uTime) {
-            this.material.uniforms.uTime.value += 0.016; // ~60fps
-        }
-
-        this.renderer.render(this.scene, this.camera);
-    }
-
-    destroy() {
-        // Cleanup method
-        if (this.animationId) {
-            cancelAnimationFrame(this.animationId);
-        }
-
-        window.removeEventListener('mousemove', this.onMouseMove);
-        window.removeEventListener('resize', this.onResize);
-        window.removeEventListener('touchmove', this.onTouchMove);
-
-        window.mouseDistortionActive = false;
-    }
-}
-
-// Single initialization
-let effectInstance = null;
-
-function initMouseDistortion() {
-    if (effectInstance) {
-        console.log('Effect already exists, skipping...');
-        return;
-    }
-
-    console.log('🎬 Initializing mouse distortion effect');
-    effectInstance = new MouseDistortionEffect('./images/hero/hero.webp');
-}
-
-// Wait for DOM to be ready
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initMouseDistortion);
-} else {
-    initMouseDistortion();
-}
-</script>
+<script src="./js/webgl-distortion.js"></script>
 
 <script>
 /* ==============================================
@@ -809,14 +507,14 @@ document.addEventListener("DOMContentLoaded", function () {
             EVO.fromTo('.evolvers_wrap .evolvers', animationSpeed, {x:"8%"}, {x:"-48%", ease:animationInOutQuart},0);
 
             new ScrollMagic.Scene({
-			    triggerElement: '.evolvers_wrap',
-			    duration:'200%',
-			    triggerHook: 0
-			})
-			.setPin('.evolvers_wrap')
-			.setTween(EVO)
-			//.addIndicators()
-			.addTo(controller);
+          triggerElement: '.evolvers_wrap',
+          duration:'200%',
+          triggerHook: 0
+      })
+      .setPin('.evolvers_wrap')
+      .setTween(EVO)
+      //.addIndicators()
+      .addTo(controller);
 
 
         }).catch(err => console.error("Error cargando scripts ScrollMagic/GSAP:", err));
@@ -852,7 +550,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ============================================== */
     const tabs = document.querySelectorAll('.tab');
     const contents = document.querySelectorAll('.content');
-    const indicator = document.querySelector('.active-indicator');
 
     function typeWriterEffect(element, text, speed=30){
         element.textContent='';
@@ -876,19 +573,13 @@ document.addEventListener("DOMContentLoaded", function () {
             content.classList.add('active');
             const text = content.getAttribute('data-text') || '';
             typeWriterEffect(content,text);
-            if(indicator){
-                indicator.style.transform=`translateX(${tab.offsetLeft}px)`;
-                indicator.style.width=`${tab.offsetWidth}px`;
-            }
         });
     });
 
     window.addEventListener('load', ()=>{
         const activeTab = document.querySelector('.tab.active');
         const activeContent = document.querySelector('.content.active');
-        if(indicator && activeTab && activeContent){
-            indicator.style.transform=`translateX(${activeTab.offsetLeft}px)`;
-            indicator.style.width=`${activeTab.offsetWidth}px`;
+        if(activeTab && activeContent){
             const text = activeContent.getAttribute('data-text') || '';
             typeWriterEffect(activeContent,text);
         }
@@ -918,6 +609,38 @@ document.addEventListener("DOMContentLoaded", function () {
             img.style.transform='none';
         }
     });
+
+    /* ==============================================
+      STICKY BANNER EXPANSION SOLO EN DESKTOP
+    ============================================== */
+    const expansionBoxes = document.querySelectorAll('.expansion-boxes')
+    const expansionBanners = document.querySelectorAll('.expansion-banner')
+
+    if(expansionBoxes.length > 0 && expansionBanners.length > 0){
+      const optionsObserver = {
+        rootMargin: `-90% 0px -5% 0px`
+      }
+      const handleBannerImages = (entries, observer) => {
+        entries.forEach(entry => {
+          const targetImg = document.getElementById(`exp-banner-${entry.target.dataset.image}`)
+          if(entry.isIntersecting){
+            expansionBanners.forEach(banner => banner.classList.remove('active'))
+            targetImg.classList.add('active')
+          }
+        })
+      }
+      const bannerObserver = new IntersectionObserver(handleBannerImages, optionsObserver)
+
+      function handleInitObserver(){
+        if(window.innerWidth > 768){
+          expansionBoxes.forEach(box => bannerObserver.observe(box))
+        } else {
+          bannerObserver.disconnect()
+        }
+      }
+      handleInitObserver();
+      window.addEventListener('resize', handleInitObserver)
+    }
 
 });
 </script>
