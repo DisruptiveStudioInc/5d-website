@@ -204,17 +204,18 @@
                 }
               }
             ?>
-
-            <div class="d-none med-d-block mt-20">
-              <div class="mb-10">
-                <a href="<?php echo $Login; ?>" target="_blank" class="btn c-ter br-30 small-w-100"><?php echo $Menu_log; ?></a>
-              </div>
-              <?php if($user_replica): ?>
-                <div>
-                  <a href="<?php echo $Register ?>" target="_blank" class="btn c-acc br-30 small-w-100"><?php echo $Menu_reg; ?></a>
+            <?php if($ConnectBO): ?>
+              <div class="d-none med-d-block mt-20">
+                <div class="mb-10">
+                  <a href="<?php echo $Login; ?>" target="_blank" class="btn c-ter br-30 small-w-100"><?php echo $Menu_log; ?></a>
                 </div>
-              <?php endif; ?>
-            </div>
+                <?php if($user_replica): ?>
+                  <div>
+                    <a href="<?php echo $Register ?>" target="_blank" class="btn c-acc br-30 small-w-100"><?php echo $Menu_reg; ?></a>
+                  </div>
+                <?php endif; ?>
+              </div>
+            <?php endif; ?>
           </ul>
         </div>
 
