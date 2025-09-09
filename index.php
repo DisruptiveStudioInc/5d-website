@@ -9,7 +9,7 @@
 	}
 
   $Maintenance = false;
-  $ConnectBO = false;
+  $ConnectBO = true;
   $pages_dir = 'pages';
 
   if($Maintenance){
