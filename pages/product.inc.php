@@ -192,9 +192,9 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
 
                     //echo $wrap_product;
                     ?>
-                    <?php if($ConnectBO): ?>
+                    <?php if($user_replica): ?>
                       <div class="wrap-get subpage">
-                        <a href="<?= $Login; ?>" target="_blank" class="btn-get"><?= $Btn_buy; ?></a>
+                        <a href="<?= $Register; ?>" target="_blank" class="btn-get"><?= $Btn_buy; ?></a>
                       </div>
                     <?php endif; ?>
                 </div>

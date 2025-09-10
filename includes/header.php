@@ -93,9 +93,9 @@
 
     //echo $wrap_get;
   ?>
-  <?php if($ConnectBO): ?>
+  <?php if($user_replica): ?>
     <div class="wrap-get">
-      <a href="<?= $Login; ?>" target="_blank" class="btn-get"><?= $Btn_started; ?></a>
+      <a href="<?= $Register; ?>" target="_blank" class="btn-get"><?= $Btn_started; ?></a>
     </div>
   <?php endif; ?>
 
@@ -209,7 +209,7 @@
                 <div class="mb-10">
                   <a href="<?php echo $Login; ?>" target="_blank" class="btn c-ter br-30 small-w-100"><?php echo $Menu_log; ?></a>
                 </div>
-                <?php if($user_replica && false): ?>
+                <?php if($user_replica): ?>
                   <div>
                     <a href="<?php echo $Register ?>" target="_blank" class="btn c-acc br-30 small-w-100"><?php echo $Menu_reg; ?></a>
                   </div>
@@ -223,7 +223,7 @@
           <?php if($ConnectBO): ?>
             <div class="btns m-0 g-10 med-d-none">
               <a href='<?php echo $Login; ?>' target="_blank" class="btn c-ter br-30"><?php echo $Menu_log; ?></a>
-              <?php if($user_replica && false): ?>
+              <?php if($user_replica): ?>
                 <a href='<?php echo $Register; ?>' target="_blank" class="btn c-acc br-30"><?php echo $Menu_reg; ?></a>
               <?php endif; ?>
             </div>

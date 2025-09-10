@@ -142,8 +142,8 @@
         <p><?= $Slogan_license; ?></p>
       </li>
     </ul>
-    <?php if($ConnectBO): ?>
-		  <a href="<?= $Login; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?= $Btn_live; ?></a>
+    <?php if($user_replica): ?>
+		  <a href="<?= $Register; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?= $Btn_live; ?></a>
     <?php endif; ?>
 	</div>
 </section>
@@ -316,8 +316,8 @@ foreach ($Modal as $item){
 
 	<div class="mw-1280 t-c big">
 		<h2 class="h1 m-center" style="max-width:20ch"><?= $Traits_title; ?></h2>
-    <?php if($ConnectBO): ?>
-		  <a href="<?= $Login; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?= $Btn_part; ?></a>
+    <?php if($user_replica): ?>
+		  <a href="<?= $Register; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?= $Btn_part; ?></a>
     <?php endif; ?>
 	</div>
 </section>
