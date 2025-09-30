@@ -31,24 +31,17 @@
 	</div>
 
 	<div class="anchor" id="stellum"></div>
-	<div class="mw-1440 jc-center ai-center h-100 med-h-0">
+	<div class="mw-1440 jc-center ai-center ha-100 med-h-0">
 		<div class="t-c">
 			<h2 class="h1-special mb-50 small-mb-0"><?= $Journey_title; ?></h2>
-			<div class="tabs t-c">
-				<div class="tab-header">
-					<div class="tab active"><span>01</span><?= $Journey_button_1; ?></div>
-					<div class="tab"><span>02</span><?= $Journey_button_2; ?></div>
-					<div class="tab"><span>03</span><?= $Journey_button_3; ?></div>
-					<div class="tab"><span>04</span><?= $Journey_button_4; ?></div>
-				</div>
-
-				<div class="tab-content">
-					<div class="content active" data-text="<?= $Journey_text_1; ?>"><?= $Journey_text_1; ?></div>
-					<div class="content" data-text="<?= $Journey_text_2; ?>"><?= $Journey_text_2; ?></div>
-					<div class="content" data-text="<?= $Journey_text_3; ?>"><?= $Journey_text_3; ?></div>
-					<div class="content" data-text="<?= $Journey_text_4; ?>"><?= $Journey_text_4; ?></div>
-				</div>
-			</div>
+      <ul class="slider">
+        <?php foreach($sec01 as $step): ?>
+          <li class="content-slide">
+            <h3 class="content-title"><?= $step['title'] ?></h3>
+            <p class="content-text" data-text="<?= $step['text'] ?>"><?= $step['text'] ?></p>
+          </li>
+        <?php endforeach; ?>
+      </ul>
 		</div>
 	</div>
 </section>
@@ -323,6 +316,7 @@ foreach ($Modal as $item){
 </section>
 
 <script src="./js/webgl-distortion.js"></script>
+<script src="./js/slider.js"></script>
 
 <script>
 /* ==============================================
@@ -544,46 +538,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     }
-
-    /* ==============================================
-       TABS
-    ============================================== */
-    const tabs = document.querySelectorAll('.tab');
-    const contents = document.querySelectorAll('.content');
-
-    function typeWriterEffect(element, text, speed=30){
-        element.textContent='';
-        let i=0;
-        function type(){
-            if(i<text.length){
-                element.textContent += text.charAt(i);
-                i++;
-                setTimeout(type,speed);
-            }
-        }
-        type();
-    }
-
-    tabs.forEach((tab,index)=>{
-        tab.addEventListener('click', ()=>{
-            tabs.forEach(t=>t.classList.remove('active'));
-            contents.forEach(c=>c.classList.remove('active'));
-            tab.classList.add('active');
-            const content = contents[index];
-            content.classList.add('active');
-            const text = content.getAttribute('data-text') || '';
-            typeWriterEffect(content,text);
-        });
-    });
-
-    window.addEventListener('load', ()=>{
-        const activeTab = document.querySelector('.tab.active');
-        const activeContent = document.querySelector('.content.active');
-        if(activeTab && activeContent){
-            const text = activeContent.getAttribute('data-text') || '';
-            typeWriterEffect(activeContent,text);
-        }
-    });
 
     /* ==============================================
        PARALLAX TEXTO SOLO EN DESKTOP

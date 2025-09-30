@@ -1,15 +1,15 @@
 <?php
 
 $Lang = "es";
-$Description = "Stellum es un ecosistema diseñado para transformar la manera en que las personas aprenden, crecen y se conectan. A través de educación avanzada, trading en tiempo real y una comunidad exclusiva, brindamos acceso a herramientas, conocimientos y experiencias que antes estaban reservadas para unos pocos. Nuestro modelo integra formación práctica, oportunidades de negocio y vivencias premium como viajes, eventos globales y beneficios de alto nivel, creando un entorno donde cada paso impulsa tu evolución personal, profesional y financiera. Con EVO, el conocimiento se convierte en acción y la acción en resultados medibles, en una red global que abre puertas, conecta ideas y convierte la visión en realidad.";
+$Description = "5D es un ecosistema diseñado para transformar la manera en que las personas aprenden, crecen y se conectan. A través de educación avanzada, trading en tiempo real y una comunidad exclusiva, brindamos acceso a herramientas, conocimientos y experiencias que antes estaban reservadas para unos pocos. Nuestro modelo integra formación práctica, oportunidades de negocio y vivencias premium como viajes, eventos globales y beneficios de alto nivel, creando un entorno donde cada paso impulsa tu evolución personal, profesional y financiera. Con EVO, el conocimiento se convierte en acción y la acción en resultados medibles, en una red global que abre puertas, conecta ideas y convierte la visión en realidad.";
 $Keywords = "evolución, educación, crecimiento, comunidad, exclusividad, liderazgo, trading, negocios, conocimiento, transformación, bienestar, membresía, éxito, innovación, aprendizaje, oportunidades, libertad, visión, experiencias, conexión";
 
-    //-------------------------//
-    // Menu
-    //-------------------------//
+  //-------------------------//
+  // Menu
+  //-------------------------//
 
 $Menu_01 = "Inicio";
-$Menu_02 = "Stellum";
+$Menu_02 = "5D";
 $Menu_03 = "Suscripción";
 $Menu_04 = "Productos";
 $Menu_05 = "Tienda";
@@ -17,9 +17,9 @@ $Menu_05 = "Tienda";
 $Menu_log = "Login";
 $Menu_reg = "Regístrate";
 
-    //-------------------------//
-    // Btn
-    //-------------------------//
+//-------------------------//
+// Btn
+//-------------------------//
 
 $Btn_view = "Ver más";
 $Btn_buy = "Empieza HOY";
@@ -29,279 +29,229 @@ $Btn_live = "Empieza ya";
 $Btn_part = "Trasciende HOY";
 $Btn_started = "Conecta AHORA";
 
-    //-------------------------//
-    // Coming Soon
-    //-------------------------//
+//-------------------------//
+// Coming Soon
+//-------------------------//
 
 $Soon_Text = "Próximamente";
 $Soon_Description1 = "Este domingo 7 de septiembre";
 $Soon_Description2 = "Conéctate en Zoom 07:00 p.m. (CDMX)";
 $Soon_Description3 = "¡No te lo puedes perder!";
 
-    //-------------------------//
-    // Hero
-    //-------------------------//
+//-------------------------//
+// Hero
+//-------------------------//
 
-$Hero_01 = "Tu acceso al universo de oportunidades";
-$Hero_02 = "Escalable | Accesible | Sostenible";
+$Hero_01 = "Deja de soñar, empieza a vivir en {$Company_Name}";
+$Hero_02 = "Aprende | Viaja | Gana";
 
-    //-------------------------//
-    // Journey
-    //-------------------------//
+//-------------------------//
+// Journey
+//-------------------------//
 
-$Journey_title = "Tu universo <span class='tc-acc'>Stellum</span>";
+$Journey_title = "Principios <span class='tc-acc'>{$Company_Name}</span>";
 
-$Journey_button_1 = "Aprendizaje";
-$Journey_button_2 = "Herramientas";
-$Journey_button_3 = "Comunidad";
-$Journey_button_4 = "Oportunidades";
+$Journey_button_1 = "Deseo";
+$Journey_button_2 = "Definición";
+$Journey_button_3 = "Decisión";
+$Journey_button_4 = "Determinación";
+$Journey_button_5 = "Disciplina";
 
-$Journey_text_1 = "Infoproductos en bienestar, finanzas, creatividad, marketing digital, IA, monetización.";
-$Journey_text_2 = "Software MLM, sistema duplicable, recompra automática, escalable y sostenible.";
-$Journey_text_3 = "Red global de negocios digitales, alianzas estratégicas y crecimiento colectivo.";
-$Journey_text_4 = "Activación desde 100 USDT, recompensas inmediatas, bonos, expansión sin límites.";
+$Journey_text_1 = "tener hambre de más";
+$Journey_text_2 = "saber lo que quieres";
+$Journey_text_3 = "tomar acción";
+$Journey_text_4 = "no rendirte";
+$Journey_text_5 = "hacerlo siempre";
 
-    //-------------------------//
-    // Letters
-    //-------------------------//
+//-------------------------//
+// Letters
+//-------------------------//
 
-$Letters_title_01 = "Bono de inicio rápido";
-$Letters_text_01 = "Con tu primer cliente directo recibes una comisión única de 70 USDT. A partir del segundo cliente directo en adelante, recibes 40 USDT.";
+$Letters_title_01 = "{$Company_Name} Academy";
+$Letters_text_01 = "Level up en digital: aprende, crece y conéctate:";
+$Letters_list01_01 = "Cursos digitales especializados que te preparan para la vida real";
+$Letters_list01_02 = "MasterClass en vivo con referentes jóvenes";
+$Letters_list01_03 = "Eventos exclusivos donde la comunidad vibra contigo";
+$Letters_list01_04 = "Conocimiento práctico que acelera tu crecimiento";
 
-$Letters_title_02 = "Bono de velocidad";
-$Letters_text_02 = "Si en tus primeros 7 días conectas a 3 clientes directos, recibes un bono extra de 30 USDT.";
+$Letters_title_02 = "{$Company_Name} Digital Business";
+$Letters_text_02 = "Global mindset, digital vibes:";
+$Letters_list02_01 = "Back Office en tu cel para llevar todo fácil y rápido";
+$Letters_list02_02 = "Monetiza tus ideas y conviértelas en cash real";
+$Letters_list02_03 = "Acceso global sin límites porque el mundo es tuyo";
 
-$Letters_title_03 = "Bono por niveles";
-$Letters_text_03 = "STELLUM reconoce y premia la fuerza del trabajo en equipo. Cada avance en tu red genera beneficios que se multiplican hasta 7 niveles.";
+$Letters_title_03 = "{$Company_Name} Experience";
+$Letters_text_03 = "Lo que nadie vive, tú sí lo vas a contar:";
+$Letters_list03_01 = "Cruceros épicos que se viven una sola vez";
+$Letters_list03_02 = "Viajes globales con tu crew";
+$Letters_list03_03 = "Bootcamps y retiros exóticos solo para los que se atreven";
 
-$Letters_title_04 = "Bono infinity";
-$Letters_text_04 = "Cuando un miembro de tu equipo llega a acumular sus primeros 300 USDT de comisiones, en ese momento se vuelve a reactivar; y tú vuelves a generar comisiones de cada miembro que se reactive en tu organización. Esas comisiones pueden ser infinitas.";
+$Letters_title_04 = "{$Company_Name} Rewards";
+$Letters_text_04 = "En {$Company_Name} tu esfuerzo siempre tiene recompensa:";
+$Letters_list04_01 = "Convenciones VIP con pura energía";
+$Letters_list04_02 = "Premios y experiencias que no se repiten";
+$Letters_list04_03 = "Merch exclusivo que te hace destacar";
 
-    //-------------------------//
-    // Vision
-    //-------------------------//
+$Letters_title_05 = "{$Company_Name} Evolution System";
+$Letters_text_05 = "El GPS de tu evolución personal:";
+$Letters_inner_05_01 = "Las 5D no son teoría, son ";
+$Letters_list05_01 = "Acción";
+$Letters_list05_02 = "Deseo";
+$Letters_list05_03 = "Definición";
+$Letters_list05_04 = "Decisión";
+$Letters_list05_05 = "Determinación";
+$Letters_list05_06 = "Disciplina";
 
-$Vision_text = "Fórmula Stellum";
+//-------------------------//
+// Vision
+//-------------------------//
 
-$Vision_title_01 = "Conexión";
-$Vision_text_01 = "Conéctate al sistema.";
+$Vision_text = "Ecosistema {$Company_Name}";
 
-$Vision_title_02 = "Plan";
-$Vision_text_02 = "Haz tu lista.";
+$Vision_title_01 = "Backoffice digital";
+$Vision_text_01 = "Para llevar el control fácil desde tu cel.";
 
-$Vision_title_03 = "Red";
-$Vision_text_03 = "Organiza reuniones.";
+$Vision_title_02 = "Academia online";
+$Vision_text_02 = "Con lo que sí importa, sin relleno.";
 
-$Vision_title_04 = "Expansión";
-$Vision_text_04 = "Duplica resultados con compromiso anual.";
+$Vision_title_03 = "Marketplace";
+$Vision_text_03 = "Con acceso directo a lo que necesitas.";
 
-    //-------------------------//
-    // Slogan
-    //-------------------------//
+$Vision_title_04 = "Agencia de viajes";
+$Vision_text_04 = "Con experiencias únicas y épicas.";
 
-$Slogan_title = "Licencia Infinity";
-$Slogan_text = "Cada 300 USDT en ganancias, renuevas tu licencia. Así la red se mantiene activa, se generan nuevas comisiones y se asegura el flujo residual infinito.";
-$Slogan_suscription_title = "Suscripción";
-$Slogan_suscription = "Conocimiento y comunidad";
-$Slogan_license_title = "Licencia";
-$Slogan_license = "Negocio e ingresos";
+$Vision_title_05 = "Comunidad global";
+$Vision_text_05 = "Que crece y vibra contigo.";
 
-    //-------------------------//
-    // Products
-    //-------------------------//
+//-------------------------//
+// Slogan
+//-------------------------//
 
-$Products_title_01 = "Premium";
-$Products_01 = "Beneficios esenciales";
+$Slogan_title = "Escalera al éxito";
+$Slogan_subtitle = "Levelup desde el día uno";
+$Slogan_text = "Tus primeros logros en la comunidad 5D";
+$Slogan_plans = ['500', '1K', '2.5K'];
+
+//-------------------------//
+// Products
+//-------------------------//
+
+$Products_title_01 = "Pass 5D";
+$Products_01 = "Tu pase directo";
 $Products_sub_01 = "100 USDT";
-$Products_text_01 = "La puerta de entrada al ecosistema STELLUM. Con tu activación de por vida accedes a la comunidad global y pones en marcha tu crecimiento digital. Este paquete está diseñado para quienes buscan iniciar de forma accesible y contar con los beneficios esenciales desde el primer día.";
-$Products_text_inner_01 = "Tu acceso de por vida a STELLUM. Inicia tu crecimiento digital con los beneficios esenciales desde el primer día.";
+$Products_text_01 = "Tu pase directo al mundo 5D. Actívalo una vez, entra para siempre: comunidad global, recompensas reales y crecimiento nonstop desde el día uno.";
+$Products_text_inner_01 = "Todo lo que necesitas para crecer, ganar y vivir en {$Company_Name}.";
 $Products_price_01 = "Suscripción: 100 USDT";
 
-$Products_title_02 = "Premium";
-$Products_02 = "Beneficios exclusivos";
-$Products_sub_02 = "200 USDT";
-$Products_text_02 = "El acceso total al universo STELLUM. Incluye todos los beneficios de la suscripción Básica más mayor rentabilidad, más recompensas y aceleradores de crecimiento. Ideal para quienes desean maximizar resultados y escalar con más velocidad y ventajas exclusivas.";
-$Products_text_inner_02 = "Desbloquea con Premium lo mejor de STELLUM: herramientas avanzadas, beneficios exclusivos y crecimiento sin fronteras.";
-$Products_price_02 = "Suscripción: 200 USDT";
+//-------------------------//
+// Truth
+//-------------------------//
 
-    //-------------------------//
-    // Envolvers
-    //-------------------------//
+$Truth_title = "Rewards por puntos";
+$Truth_subtitle = "Tus puntos, tus vibes: viajes, premios y recuerdos épicos.";
 
-$Envolvers_title = "Historias reales de expansión y crecimiento";
+$Truth_title_01 = "Renovación";
+$Truth_text_01 = "10pts";
 
-$Logos_testimonials = array(
-  'Con STELLUM descubrí disciplina y claridad; hoy genero $2,500 al mes con enfoque real.',
-  'Pasé de la incertidumbre a la acción: ahora gano $4,000 al mes gracias a STELLUM.',
-  'STELLUM me dio visión y estrategia; hoy recibo $7,000 mensuales y vivo con propósito.',
-  'Gracias a STELLUM, hoy lidero una comunidad global y genero $12,000 al mes.',
-  'Antes sentía estancamiento; con STELLUM logro $5,000 cada mes y sigo creciendo.',
-  'Encontré un sistema simple y duplicable; ahora ingreso $3,500 mensuales con seguridad.',
-  'Con STELLUM pasé de aprendiz a líder; actualmente genero $8,000 al mes con impacto.',
-  'STELLUM transformó mi mentalidad: hoy alcanzo $6,000 cada mes disfrutando el proceso.',
-  'STELLUM me enseñó a construir un futuro digital sólido; hoy recibo $10,000 mensuales.',
-  'De cero estructura a libertad: ahora con STELLUM genero $4,500 cada mes con confianza.'
-);
+$Truth_title_02 = "Boleto VIP";
+$Truth_text_02 = "10x = 100 pts";
 
-    //-------------------------//
-    // Truth
-    //-------------------------//
+$Truth_title_03 = "Viaje Bootcamp";
+$Truth_text_03 = "20x = 200 pts";
 
-$Truth_title = "Donde la visión se convierte en acción y la acción, en evolución.";
+$Truth_title_04 = "Crucero";
+$Truth_text_04 = "30x = 300 pts";
 
-$Truth_title_01 = "Ascenso";
-$Truth_text_01 = "Imagina el mañana y crea oportunidades hoy.";
+$Truth_title_05 = "Viaje exótico";
+$Truth_text_05 = "50x = 500 pts";
 
-$Truth_title_02 = "Impulso";
-$Truth_text_02 = "Escala sin límites con comunidad y tecnología.";
+//-------------------------//
+// Spirit
+//-------------------------//
 
-$Truth_title_03 = "Cosmos";
-$Truth_text_03 = "Integra conocimiento, innovación y colaboración.";
+$Spirit_title = "Club 5D Elite";
+$Spirit_subtitle = "Un club exclusivo para los que se atreven a más";
+$Spirit_text = "El spot de los que van en serio y marcan historia dentro de 5D.";
 
-$Truth_title_04 = "Legado";
-$Truth_text_04 = "Deja huella, inspira y alcanza sostenibilidad duradera.";
+$Spirit_title_01 = "{$Company_Name} – 5K";
+$Spirit_text_01 = "Tu primera placa, prueba de que tu constancia ya dejó huella.";
 
-    //-------------------------//
-    // Spirit
-    //-------------------------//
+$Spirit_title_02 = "{$Company_Name} – 10K";
+$Spirit_text_02 = "El nivel donde solo llegan los que rompen límites y se vuelven leyenda.";
 
-$Spirit_title = "La expansión de Stellum";
+//-------------------------//
+// Traits
+//-------------------------//
 
-$Spirit_title_01 = "Guías";
-$Spirit_text_01 = "Proyectamos el futuro digital con ideas que generan expansión constante.";
+$Traits_title = "Viaja, aprende, gana y vive en {$Company_Name}";
 
-$Spirit_title_02 = "Exploradores";
-$Spirit_text_02 = "Descubrimos nuevas rutas con visión, valentía y propósito.";
+//-------------------------//
+// Ingredients
+//-------------------------//
 
-$Spirit_title_03 = "Ascendentes";
-$Spirit_text_03 = "Escalamos sin fronteras, transformando desafíos en crecimiento constante.";
-
-    //-------------------------//
-    // Traits
-    //-------------------------//
-
-$Traits_title = "Abre caminos hacia un futuro estelar";
-
-    //-------------------------//
-    // Ingredients
-    //-------------------------//
-
-$Ingredients_01 = "Inicio Stellum";
+$Ingredients_01 = "Dale start a tu 5D";
 $Ingredients_01_01 = "Impulso";
 $Ingredients_01_02 = "Acceso";
-$Ingredients_01_03 = "Progreso";
-$Ingredients_01_04 = "Aprendizaje";
-$Ingredients_01_05 = "Red";
-$Ingredients_01_06 = "Crecimiento";
+$Ingredients_01_03 = "Flow";
+$Ingredients_01_04 = "Skills";
+$Ingredients_01_05 = "Conexiones";
+$Ingredients_01_06 = "Growth";
 
-$Ingredients_02 = "Expansión Stellum";
-$Ingredients_02_01 = "Visión";
-$Ingredients_02_02 = "Innovación";
-$Ingredients_02_03 = "Conexión";
-$Ingredients_02_04 = "Avance";
-$Ingredients_02_05 = "Potencia";
-$Ingredients_02_06 = "Liderazgo";
-
-    //-------------------------//
-    // Benefits
-    //-------------------------//
+//-------------------------//
+// Benefits
+//-------------------------//
 
 $Benefits = "Beneficios";
 
-$Benefits_sub_01 = "Tu acceso directo a crecimiento ilimitado";
-$Benefits_sub_p_01 = "Acceso al Business Plan STELLUM";
-$Benefits_01_tit_01 = "Portal Stellum";
-$Benefits_01_01 = "Hub digital para gestionar y expandir tu red global.";
-$Benefits_01_tit_02 = "Biblioteca exclusiva";
-$Benefits_01_02 = "Cursos avanzados de monetización: YouTube, TikTok, Hotmart, avatares, liderazgo y MÁS.";
-$Benefits_01_tit_03 = "Recompensas superiores";
-$Benefits_01_03 = "Accede al plan premium con mayores ingresos y proyección.";
-$Benefits_01_tit_04 = "Comunidad global y duplicable";
-$Benefits_01_04 = "Red internacional de alto nivel, duplicable y en constante expansión.";
+$Benefits_sub_01 = "Lo que solo {$Company_Name} te da";
+$Benefits_01_tit_01 = "Backoffice 5D";
+$Benefits_01_01 = "Todo en tu cel, fácil de mover y listo para escalar global.";
+$Benefits_01_tit_02 = "Academia exclusiva";
+$Benefits_01_02 = "Skills que sí sirven: marketing, liderazgo, IA, cashflow y más.";
+$Benefits_01_tit_03 = "Recompensas premium";
+$Benefits_01_03 = "Tu esfuerzo paga: premios y bonos que marcan la diferencia.";
+$Benefits_01_tit_04 = "Comunidad global";
+$Benefits_01_04 = "Aquí nadie se queda atrás: todos vibran y avanzan.";
 
-$Benefits_sub_02 = "Conexión estelar para tu crecimiento";
-$Benefits_sub_p_02 = "Acceso al Business Plan STELLUM con mayor potencial de ingresos";
-$Benefits_02_tit_01 = "Portal Stellum Pro";
-$Benefits_02_01 = "Vuela en jets privados con tarifas exclusivas, comparables a primera clase comercial.";
-$Benefits_02_tit_02 = "Biblioteca exclusiva";
-$Benefits_02_02 = "Básica + cursos avanzados de monetización: YouTube, TikTok, Hotmart, avatares, liderazgo y MÁS.";
-$Benefits_02_tit_03 = "Recompensas superiores";
-$Benefits_02_03 = "Accede al plan premium con mayores ingresos y proyección.";
-$Benefits_02_tit_04 = "Plan de recompensas élite";
-$Benefits_02_04 = "Desbloquea compensaciones avanzadas y beneficios sin límites.";
-$Benefits_02_tit_05 = "Comunidad global estelar";
-$Benefits_02_05 = "Red internacional de alto nivel, duplicable y en expansión constante.";
-
-    //-------------------------//
-    // Started
-    //-------------------------//
+//-------------------------//
+// Started - Product bonuses
+//-------------------------//
 
 
-$Satarted_title_01 = "Suscripción única premium";
-$Satarted_sub_01 = "Lleva tu crecimiento a un nivel superior con acceso de por vida y beneficios exclusivos.";
-$Satarted_title_01_01 = "Despega tu evolución digital";
-$Satarted_list_01_01 = "Inscripción única: <span class='fw-700'>100 USDT</span>";
-$Satarted_list_02_01 = "Activación de por vida";
-$Satarted_list_03_01 = "Acceso a tu <span class='fw-700'>oficina virtual STELLUM</span>";
-$Satarted_list_04_01 = "Derecho al <span class='fw-700'>plan de recompensas premium</span>";
-$Satarted_list_05_01 = "Biblioteca digital con <span class='fw-700'>infoproductos Premium</span>";
-$Satarted_footnote_01 = "Al alcanzar 300 USDT en ganancias, el sistema solicita una reactivación de 100 USDT para mantenerte activo y seguir cobrando comisiones.*";
+$Satarted_title_01 = "Poder {$Company_Name}";
+$Satarted_sub_01 = "Desde el primer día, tu esfuerzo vibra en {$Company_Name}.";
+$Bonus_flash_title = "Flash Bonus";
+$Bonus_flash_text01 = "Gana YA";
+$Bonus_flash_list_01 = "{$Bonuses['flash']['first_referal']} USD con tu primer referido.";
+$Bonus_flash_list_02 = "{$Bonuses['flash']['regular_referal']} USD en cada siguiente.";
+$Bonus_flash_text02 = " Cobras desde el primer día.";
 
-$Satarted_title_plans_01 = "Plan de recompensas";
-$Satarted_plans_text_01_01 = "Suscripción (100 USDT) → reparte 70 USDT";
-$Satarted_plans_list_01_01 = "Nivel 1: 40 USDT";
-$Satarted_plans_list_02_01 = "Nivel 2: 20 USDT";
-$Satarted_plans_list_03_01 = "Nivel 3: 5 USDT";
-$Satarted_plans_list_04_01 = "Nivel 4: 2 USDT";
-$Satarted_plans_list_05_01 = "Nivel 5: 1 USDT";
-$Satarted_plans_list_06_01 = "Nivel 6: 1 USDT";
-$Satarted_plans_list_07_01 = "Nivel 7: 1 USDT";
-$Satarted_plans_text_01_02 = "Retención empresa: 30 USDT";
+$Bonus_speed_title = "Speed Bonus";
+$Bonus_speed_text01 = "La velocidad paga";
+$Bonus_speed_list_01 = "Refiere {$Bonuses['speed']['people']} personas en tus primeros {$Bonuses['speed']['initial_days']} días.";
+$Bonus_speed_list_02 = "Ganas {$Bonuses['speed']['amount']} USD extra.";
+$Bonus_speed_text02 = "El que se mueve rápido, gana más.";
 
-$Satarted_title_bonus_01 = "Bonos únicos";
-$Satarted_bonus_text_01_01 = "Bono de Inicio Rápido";
-$Satarted_bonus_text_02_01 = "Se paga solo al sponsor directo cuando un nuevo socio entra.";
-$Satarted_bonus_text_03_01 = "El pago es único:";
-$Satarted_bonus_text_04_01 = "<span class='fw-700'>Paquete 100 → 70 USDT</span>";
-$Satarted_bonus_footnote_01 = "Este bono no se reparte en la red.*";
+$Bonus_level_title = "Level Bonus";
+$Bonus_level_text01 = "Ganar juntos = Crecer juntos:";
+$Bonus_level_list_level = "Nivel";
+$Bonus_level_text02 = "Lo que gana tu equipo, lo ganas tú.";
 
-$Satarted_subpage_01 = "UN INICIO QUE TRASCIENDE.";
+$Bonus_infinity_title = "Infinity Bonus";
+$Bonus_infinity_text01 = "El bono que nunca se detiene:";
+$Bonus_infinity_list_01 = "Cada {$Bonuses['infinity']['people']} en tu comunidad = vuelves a cobrar.";
+$Bonus_infinity_text02 = "Aquí no hay límite.";
 
-    //-------------------------//
+$Bonus_rewards_title = "Rewards Bonus";
+$Bonus_rewards_text01 = "Constancia que paga:";
+$Bonus_rewards_list_01 = "Bonos extra por seguir firme y activo.";
+$Bonus_rewards_text02 = "Porque tu esfuerzo merece celebrarse.";
 
-$Satarted_title_02 = "Plan premium Stellum";
-$Satarted_sub_02 = "Lleva tu crecimiento a un nivel superior con acceso de por vida y beneficios exclusivos.";
-$Satarted_title_01_02 = "Despega tu evolución digital";
-$Satarted_list_01_02 = "Inscripción única: <span class='fw-700'>200 USDT</span>";
-$Satarted_list_02_02 = "Activación de por vida hasta llegar al <span class='fw-700'>Acelerador de Volumen*</span>";
-$Satarted_list_03_02 = "Acceso a tu <span class='fw-700'>oficina virtual STELLUM</span>";
-$Satarted_list_04_02 = "Derecho al <span class='fw-700'>plan de recompensas premium</span>";
-$Satarted_list_05_02 = "Biblioteca digital con <span class='fw-700'>infoproductos Premium</span> (incluye lo del Básico + extras exclusivos)";
-$Satarted_footnote_02 = "Al acumular 1,000 USDT en ganancias, el sistema exige una recompra de 200 USDT para mantenerte activo y seguir cobrando comisiones.*";
+$Satarted_subpage_01 = "Lo que viene es grande y es contigo.";
 
-$Satarted_title_plans_02 = "Plan de recompensas";
-$Satarted_plans_text_02_01 = "Suscripción Básica (200 USDT) → reparte 140 USDT";
-$Satarted_plans_list_01_02 = "Nivel 1: 60 USDT";
-$Satarted_plans_list_02_02 = "Nivel 2: 40 USDT";
-$Satarted_plans_list_03_02 = "Nivel 3: 20 USDT";
-$Satarted_plans_list_04_02 = "Nivel 4: 10 USDT";
-$Satarted_plans_list_05_02 = "Nivel 5: 6 USDT";
-$Satarted_plans_list_06_02 = "Nivel 6: 2 USDT";
-$Satarted_plans_list_07_02 = "Nivel 7: 2 USDT";
-$Satarted_plans_text_02_02 = "Retención empresa: 60 USDT";
-
-$Satarted_title_bonus_02 = "Bonos únicos";
-$Satarted_bonus_text_01_02 = "Bono de Inicio Rápido";
-$Satarted_bonus_text_02_02 = "Se paga solo al sponsor directo cuando un nuevo socio entra.";
-$Satarted_bonus_text_03_02 = "El pago es único:";
-$Satarted_bonus_text_04_02 = "<span class='fw-700'>Paquete 200 → 140 USDT</span>";
-$Satarted_bonus_footnote_02 = "Este bono no se reparte en la red.*";
-
-$Satarted_subpage_02 = "EL PODER DE UN NUEVO NIVEL.";
-
-    //-------------------------//
-    // Footer
-    //-------------------------//
+//-------------------------//
+// Footer
+//-------------------------//
 
 $Footer_title_01 = "Horario";
 $Footer_title_02 = "Legal";
@@ -310,5 +260,3 @@ $Footer_title_03 = "Nosotros";
 $Footer_link_01 = "IBO Terms";
 $Footer_link_02 = "Políticas y Procedimientos";
 $Footer_link_03 = "Política de Privacidad";
-
-?>

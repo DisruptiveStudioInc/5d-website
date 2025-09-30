@@ -13,7 +13,59 @@ $Hide = ($Actual_Page === 'home' || $Actual_Page === '') ? '' : 'none';
 // CLIENT
 //-------------------------//
 
-$Company_Name  = "Stellum";
+$Company_Name  = "5D";
+
+//-------------------------//
+// BONUSES
+//-------------------------//
+
+$Bonuses = array(
+  'flash' => [
+    'first_referal' => 70,
+    'regular_referal' => 40
+  ],
+  'speed' => [
+    'people' => 3,
+    'initial_days' => 7,
+    'amount' => 30
+  ],
+  'level' => array(
+    [
+      'level' => 1,
+      'percentage' => 40
+    ],
+    [
+      'level' => 2,
+      'percentage' => 20
+    ],
+    [
+      'level' => 3,
+      'percentage' => 5
+    ],
+    [
+      'level' => 4,
+      'percentage' => 2
+    ],
+    [
+      'level' => 5,
+      'percentage' => 1
+    ],
+    [
+      'level' => 6,
+      'percentage' => 1
+    ]
+  ),
+  'infinity' => [
+    'people' => 300
+  ]
+);
+
+//-------------------------//
+// LANGUAGES
+//-------------------------//
+
+include("idiomas/idiomas.php");
+$idioma = $_SESSION["language"];
 
 //-------------------------//
 // META
@@ -185,31 +237,29 @@ $Email = "stellumglobal@gmail.com";
 // $Phone = "(888) 456 7890";
 // $Address = "Blvd. Kukulcan 1,<br>Puerto Juarez,<br>Zona Hotelera,<br>77500 Cancún, Q.R. México";
 
-?>
+//-------------------------//
+// LOOPS
+//-------------------------//
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$sec01 = array(
+  [
+    'title' => $Journey_button_1,
+    'text' => $Journey_text_1
+  ],
+  [
+    'title' => $Journey_button_2,
+    'text' => $Journey_text_2
+  ],
+  [
+    'title' => $Journey_button_3,
+    'text' => $Journey_text_3
+  ],
+  [
+    'title' => $Journey_button_4,
+    'text' => $Journey_text_4
+  ],
+  [
+    'title' => $Journey_button_5,
+    'text' => $Journey_text_5
+  ]
+);

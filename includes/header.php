@@ -1,6 +1,4 @@
 <?php
-  include("idiomas/idiomas.php");
-  $idioma = $_SESSION["language"];
   include("info.php");
 ?>
 
