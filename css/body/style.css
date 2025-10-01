@@ -68,8 +68,23 @@
   }
 }
 
+/* ============================================== */
+/* UTILITIES */
+/* ============================================== */
+
 .t-pretty {
   text-wrap: pretty;
+}
+.min-h-dhv {
+  min-height: 100dvh;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+@media only screen and (max-width: 1080px) {
+  .med-min-h-auto {
+    min-height: auto;
+  }
 }
 
 /* ============================================== */
@@ -318,20 +333,6 @@ section {
 }
 
 /* ============================================== */
-/* PARALLAX */
-/* ============================================== */
-
-.parallax .h1-special {
-  margin-top: -15%;
-}
-
-@media screen and (max-width: 1080px) {
-  .parallax .h1-special {
-    margin-top: 0;
-  }
-}
-
-/* ============================================== */
 /* H1 SPECIAL */
 /* ============================================== */
 
@@ -357,104 +358,76 @@ section {
 }
 
 /* ============================================== */
-/* PIN */
+/* VERTICAL SLIDES - SEC 02 */
 /* ============================================== */
 
-.pin {
-  position: relative;
-  overflow: hidden;
-}
-
-.pin:after {
+.vertical-slides::after {
   content: "";
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
-  z-index: 5;
+  z-index: calc(var(--total-items) + 1);
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
 }
 
-.pin h2 {
-  position: absolute;
-  left: 50%;
+.letter-content {
   top: 50%;
+  transform: translateY(-50%);
+  z-index: calc(var(--total-items) + 2);
+  opacity: 0;
+}
+
+.letter-title {
   font-size: 6vw;
   line-height: 1;
   font-weight: 600;
   margin: 0;
-  transform: translate(-50%, -50%);
-  z-index: 6;
-  text-align: center;
-  color: white;
   text-transform: uppercase;
 }
 
-.pin h2 span {
-  display: block;
-  width: 100%;
+.letter-text {
   margin-top: 10px;
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--f-family);
 }
 
-.word_01,
-.word_02,
-.word_03,
-.word_04 {
-  opacity: 0;
-}
 .img_01,
 .word_01 {
   opacity: 1;
 }
 
-.pin img {
+.letter-bg {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   left: 0;
   top: 0;
+  z-index: calc(var(--total-items) - var(--item-index));
 }
 
-.pin img.img_01 {
-  z-index: 4;
-}
-.pin img.img_02 {
-  z-index: 3;
-}
-.pin img.img_03 {
-  z-index: 2;
-}
-.pin img.img_04 {
-  z-index: 1;
+.letter-item {
+  max-width: calc(50% - 10px);
 }
 
 @media screen and (max-width: 1080px) {
-  .word_01,
-  .word_02,
-  .word_03,
-  .word_04 {
-    opacity: 1;
-  }
-  .letters {
+  .vertical-slides {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 30px 0;
+    padding: 0;
     height: auto;
   }
 
-  .letters > div {
+  .letter-wrap {
     display: block;
     width: 100%;
     position: relative;
   }
 
-  .pin img {
+  .letter-bg {
     position: relative;
     width: 100%;
     height: auto;
@@ -462,29 +435,28 @@ section {
     display: block;
   }
 
-  .pin h2 {
+  .letter-content {
     position: relative;
     left: auto;
     top: auto;
-    padding: 20px;
     transform: none;
-    margin: 10px 0;
-    text-align: center;
+    opacity: 1;
   }
 
-  .pin h2 span {
+  .letter-text {
     color: var(--color-40);
-    text-transform: lowercase;
-    font-weight: 400;
   }
 
-  .pin:after {
+  .letter-item {
+    max-width: none;
+  }
+  .vertical-slides::after {
     display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .pin h2 {
+  .letter-title {
     font-size: 7vw;
   }
 }
@@ -529,19 +501,13 @@ section {
 /* ============================================== */
 
 .box {
-  position: absolute;
-  padding: 30px;
-  border-radius: 20px;
-  max-width: 400px;
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  max-width: calc(30% - 20px);
   background: var(--color-pri);
   box-shadow: 0 20px 40px var(--color-glow);
-  z-index: 8;
+}
+
+.box-title {
+  hyphens: auto;
 }
 
 .licence-box {
@@ -553,6 +519,13 @@ section {
     transform: translate3d(0, -10px, 0);
     background-color: var(--color-pri);
   }
+}
+
+.licence-box-badge {
+  max-width: 72px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .glow-effect {
@@ -601,8 +574,8 @@ section {
 
 @media screen and (max-width: 1080px) {
   .box {
-    position: relative;
-    background: var(--color-sec);
+    /* background: var(--color-sec); */
+    max-width: 400px;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }

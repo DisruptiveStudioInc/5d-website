@@ -169,7 +169,7 @@ $Truth_text_05 = "50x = 500 pts";
 // Spirit
 //-------------------------//
 
-$Spirit_title = "Club 5D Elite";
+$Spirit_title = "Club <span class='tc-acc'>5D Elite</span>";
 $Spirit_subtitle = "Un club exclusivo para los que se atreven a más";
 $Spirit_text = "El spot de los que van en serio y marcan historia dentro de 5D.";
 

@@ -263,3 +263,157 @@ $sec01 = array(
     'text' => $Journey_text_5
   ]
 );
+
+$letterList_01 = [$Letters_list01_01, $Letters_list01_02, $Letters_list01_03, $Letters_list01_04];
+$letterList_02 = [$Letters_list02_01, $Letters_list02_02, $Letters_list02_03];
+$letterList_03 = [$Letters_list03_01, $Letters_list03_02, $Letters_list03_03];
+$letterList_04 = [$Letters_list04_01, $Letters_list04_02, $Letters_list04_03];
+$letterList_05 = [
+  $Letters_list05_01,
+  $Letters_list05_02,
+  $Letters_list05_03,
+  $Letters_list05_04,
+  $Letters_list05_05,
+  $Letters_list05_06
+];
+$verticalSlides = array(
+  [
+    'id' => 1,
+    'title' => $Letters_title_01,
+    'text' => $Letters_text_01,
+    'list' => $letterList_01,
+  ],
+  [
+    'id' => 2,
+    'title' => $Letters_title_02,
+    'text' => $Letters_text_02,
+    'list' => $letterList_02,
+  ],
+  [
+    'id' => 3,
+    'title' => $Letters_title_03,
+    'text' => $Letters_text_03,
+    'list' => $letterList_03,
+  ],
+  [
+    'id' => 4,
+    'title' => $Letters_title_04,
+    'text' => $Letters_text_04,
+    'list' => $letterList_04,
+  ],
+  [
+    'id' => 5,
+    'title' => $Letters_title_05,
+    'text' => $Letters_text_05,
+    'text_inner' => $Letters_inner_05_01,
+    'list' => $letterList_05,
+  ]
+);
+
+$sec03 = array(
+  [
+    'id' => 1,
+    'title' => $Vision_title_01,
+    'text' => $Vision_text_01
+  ],
+  [
+    'id' => 2,
+    'title' => $Vision_title_02,
+    'text' => $Vision_text_02
+  ],
+  [
+    'id' => 3,
+    'title' => $Vision_title_03,
+    'text' => $Vision_text_03
+  ],
+  [
+    'id' => 4,
+    'title' => $Vision_title_04,
+    'text' => $Vision_text_04
+  ],
+  [
+    'id' => 5,
+    'title' => $Vision_title_05,
+    'text' => $Vision_text_05
+  ]
+);
+
+$sec04 = array(
+  [
+    'text' => $Slogan_plans[0],
+    'image' => 'basic'
+  ],
+  $Slogan_plans[1],
+  $Slogan_plans[2]
+);
+
+$sec07 = array(
+  [
+    'id' => 1,
+    'title' => $Truth_title_01,
+    'text' => $Truth_text_01
+  ],
+  [
+    'id' => 2,
+    'title' => $Truth_title_02,
+    'text' => $Truth_text_02
+  ],
+  [
+    'id' => 3,
+    'title' => $Truth_title_03,
+    'text' => $Truth_text_03
+  ],
+  [
+    'id' => 4,
+    'title' => $Truth_title_04,
+    'text' => $Truth_text_04
+  ],
+  [
+    'id' => 5,
+    'title' => $Truth_title_05,
+    'text' => $Truth_text_05
+  ]
+);
+
+$productBonuses = array(
+  'flash' => [
+    'title' => $Bonus_flash_title,
+    'text_01' => $Bonus_flash_text01,
+    'text_02' => $Bonus_flash_text02,
+    'list' => [
+      $Bonus_flash_list_01,
+      $Bonus_flash_list_02
+    ]
+  ],
+  'speed' => [
+    'title' => $Bonus_speed_title,
+    'text_01' => $Bonus_speed_text01,
+    'text_02' => $Bonus_speed_text02,
+    'list' => [
+      $Bonus_speed_list_01,
+      $Bonus_speed_list_02
+    ]
+  ],
+  'level' => [
+    'title' => $Bonus_level_title,
+    'text_01' => $Bonus_level_text01,
+    'text_02' => $Bonus_level_text02,
+    'list' => $Bonuses['level'],
+  ],
+  'infinity' => [
+    'title' => $Bonus_infinity_title,
+    'text_01' => $Bonus_infinity_text01,
+    'text_02' => $Bonus_infinity_text02,
+    'list' => [
+      $Bonus_infinity_list_01
+    ]
+  ],
+  'rewards' => [
+    'title' => $Bonus_rewards_title,
+    'text_01' => $Bonus_rewards_text01,
+    'text_02' => $Bonus_rewards_text02,
+    'list' => [
+      $Bonus_rewards_list_01
+    ]
+  ]
+);

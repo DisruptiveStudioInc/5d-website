@@ -31,14 +31,14 @@
 	</div>
 
 	<div class="anchor" id="stellum"></div>
-	<div class="mw-1440 jc-center ai-center ha-100 med-h-0">
+	<div class="mw-1440 jc-center ai-center min-h-dhv med-min-h-auto med-pt-150 med-pb-150">
 		<div class="t-c">
-			<h2 class="h1-special mb-50 small-mb-0"><?= $Journey_title; ?></h2>
+			<h2 class="h1 mb-80 small-mb-40"><?= $Journey_title; ?></h2>
       <ul class="slider">
         <?php foreach($sec01 as $step): ?>
           <li class="content-slide">
-            <h3 class="content-title"><?= $step['title'] ?></h3>
-            <p class="content-text" data-text="<?= $step['text'] ?>"><?= $step['text'] ?></p>
+            <h3 class="content-title tc-acc h1-special"><?= $step['title'] ?></h3>
+            <p class="content-text h1" data-text="<?= $step['text'] ?>"><?= $step['text'] ?></p>
           </li>
         <?php endforeach; ?>
       </ul>
@@ -52,27 +52,28 @@
 
 <section>
 
-	<div class="h-100 pin rel of-h small-h-0 letters">
-		<div>
-			<div class="section-arrows">
-			    <button class="arrow up"></button>
-			    <button class="arrow down"></button>
-			</div>
-			<h2 class="word_01 w-60 med-w-100"><?= $Letters_title_01; ?><span class="t-pretty"><?= $Letters_text_01; ?></span></h2>
-			<img class="img_01" src="./images/body/letters/1.webp" alt="<?= $Letters_title_01; ?>">
+	<div class="h-100 vertical-slides rel of-h small-h-0 letters" style="--total-items:4">
+    <div class="section-arrows">
+      <button class="arrow up"></button>
+      <button class="arrow down"></button>
+    </div>
+    <?php foreach($verticalSlides as $k => $slide): ?>
+		<div class="letter-wrap" style="--item-index:<?= $k; ?>">
+      <img class="letter-bg img_0<?= $slide['id']; ?>" src="./images/body/letters/<?= $slide['id']; ?>.webp" alt="<?= $slide['title']; ?>">
+      <div class="letter-content word_0<?= $slide['id']; ?> abs w-100 p-40 med-p-10-20 med-pt-50 med-pb-50 t-c">
+        <h2 class="letter-title"><?= $slide['title']; ?></h2>
+        <p class="letter-text t-pretty h3"><?= $slide['text']; ?></p>
+        <?php if(isset($slide['text_inner'])): ?>
+          <p class="letter-text t-pretty"><?= $slide['text_inner']; ?></p>
+        <?php endif; ?>
+        <ul class="letter-list d-flex fw-wrap jc-center t-c w-60 med-w-100 m-center mt-20" style="gap:20px;">
+          <?php foreach($slide['list'] as $item): ?>
+            <li class="letter-item d-flex jc-center ai-center p-20 c-sec br-20 t-pretty small-w-100"><?= $item; ?></li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
 		</div>
-		<div>
-			<h2 class="word_02"><?= $Letters_title_02; ?><span class="t-pretty"><?= $Letters_text_02; ?></span></h2>
-			<img class="img_02" src="./images/body/letters/2.webp" alt="<?= $Letters_title_02; ?>">
-		</div>
-		<div>
-			<h2 class="word_03"><?= $Letters_title_03; ?><span class="t-pretty"><?= $Letters_text_03; ?></span></h2>
-			<img class="img_03" src="./images/body/letters/3.webp" alt="<?= $Letters_title_03; ?>">
-		</div>
-		<div>
-			<h2 class="word_04"><?= $Letters_title_04; ?><span class="t-pretty"><?= $Letters_text_04; ?></span></h2>
-			<img class="img_04" src="./images/body/letters/4.webp" alt="<?= $Letters_title_04; ?>">
-		</div>
+    <?php endforeach; ?>
 	</div>
 </section>
 
@@ -87,28 +88,17 @@
 	    <button class="arrow down"></button>
 	</div>
 
-	<div class="mw-1440 t-c h-100 med-h-0 med-fd-col g-20 jc-center ai-center rel parallax">
+	<div class="mw-1440 t-c h-100 med-h-0 fd-col g-40 med-g-20 jc-center ai-center parallax">
 		<h2 class="h1-special short"><?= $Vision_text; ?></h2>
-    <div class="box box_1">
-      <h3 class="h3"><?= $Vision_title_01; ?></h3>
-      <p><?= $Vision_text_01; ?></p>
-      <svg class="glow-effect" xmlns="http://www.w3.org/2000/svg"><rect /></svg>
-    </div>
-    <div class="box box_2">
-      <h3 class="h3"><?= $Vision_title_02; ?></h3>
-      <p><?= $Vision_text_02; ?></p>
-      <svg class="glow-effect" xmlns="http://www.w3.org/2000/svg"><rect /></svg>
-    </div>
-    <div class="box box_3">
-      <h3 class="h3"><?= $Vision_title_03; ?></h3>
-      <p><?= $Vision_text_03; ?></p>
-      <svg class="glow-effect" xmlns="http://www.w3.org/2000/svg"><rect /></svg>
-    </div>
-    <div class="box box_4">
-      <h3 class="h3"><?= $Vision_title_04; ?></h3>
-      <p><?= $Vision_text_04; ?></p>
-      <svg class="glow-effect" xmlns="http://www.w3.org/2000/svg"><rect /></svg>
-    </div>
+    <ul class="d-flex fw-wrap jc-center">
+      <?php foreach($sec03 as $k => $item): ?>
+        <li class="box rel d-flex fd-col jc-center ai-center g-0 p-20 br-20 w-100 c-pri box_<?= $item['id']; ?>">
+          <h3 class="box-title h3 m-0"><?= $item['title']; ?></h3>
+          <p class="m-0"><?= $item['text']; ?></p>
+          <svg class="glow-effect" xmlns="http://www.w3.org/2000/svg"><rect /></svg>
+        </li>
+      <?php endforeach; ?>
+    </ul>
 	</div>
 </section>
 
@@ -124,16 +114,17 @@
 
 	<div class="mw-1280 t-c h-100 med-h-0 jc-center fd-col">
 		<h2 class="h1 m-center mb-20" style="max-width:26ch;"><?= $Slogan_title; ?></h2>
-		<p class="h4 m-center mb-40" style="max-width:48ch">“<?= $Slogan_text; ?>”</p>
+		<p class="h4 fw-700 tc-acc m-center mb-0" style="max-width:48ch"><?= $Slogan_subtitle; ?></p>
+		<p class="h4 m-center mt-0 mb-40" style="max-width:48ch"><?= $Slogan_text; ?></p>
     <ul class="d-flex med-fd-col med-ai-center jc-center g-20">
-      <li class="licence-box c-sec p-10 med-w-100 w-30 br-10">
-        <p class="h3 fw-700"><?= $Slogan_suscription_title; ?></p>
-        <p><?= $Slogan_suscription; ?></p>
-      </li>
-      <li class="licence-box c-sec p-10 med-w-100 w-30 br-10">
-        <p class="h3 fw-700"><?= $Slogan_license_title; ?></p>
-        <p><?= $Slogan_license; ?></p>
-      </li>
+      <?php foreach($sec04 as $plan): ?>
+        <li class="licence-box rel c-sec p-20 med-w-100 w-30 br-10">
+          <p class="h3 fw-700">5D – <?= gettype($plan) === 'array' ? $plan['text'] : $plan; ?></p>
+          <?php if(gettype($plan) === 'array'): ?>
+            <img src="./images/body/products/<?= $plan['image'] ?>.webp" alt="" class="abs licence-box-badge">
+          <?php endif; ?>
+        </li>
+      <?php endforeach; ?>
     </ul>
     <?php if($user_replica): ?>
 		  <a href="<?= $Register; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?= $Btn_live; ?></a>
@@ -159,12 +150,11 @@ $counter = 1;
 foreach ($Modal as $item){
 	echo "
 	<div id='Modal{$counter}' class='modal'>
-	<div class='modal-content rel t-c'>
-	<span class='v-white c-pri icon icon-close' onclick=\"closeModal('Modal{$counter}')\"></span>
-	<h2 class='h2 tc-pri t-c med-t-l'>{$item[0]}</h2>
-	<p>{$item[2]}</p>
-	<p class='h5'>{$item[1]}</p>
-	</div>
+    <div class='modal-content rel t-c'>
+      <span class='v-white c-pri icon icon-close' onclick=\"closeModal('Modal{$counter}')\"></span>
+      <h2 class='h2 tc-pri t-c med-t-l'>{$item[0]}</h2>
+      <p>{$item[2]}</p>
+    </div>
 	</div>
 	";
 	$counter++;
@@ -256,38 +246,23 @@ foreach ($Modal as $item){
 	    <button class="arrow down"></button>
 	</div>
 
-	<!--<div class="mw-1440 t-c">
-		<p class="h2"><?= $Truth_title; ?></p>
-	</div>-->
-	<div>
-		<ul class="textos rel">
-      <img src="./images/icons/body/space.svg" alt="" class="abs w-100 h-100 med-d-none" style="top:0;left:0;opacity:0.1">
-      <li>
-        <h2><?= $Truth_title_01; ?></h2>
-				<span><img src="./images/body/truth/1.webp" alt="<?= $Truth_title_01; ?>" class="br-20"/>
-					<p class="h4 t-pretty t-c">"<?= $Truth_text_01; ?>"</p>
-				</span>
-			</li>
-			<li>
-				<h2><?= $Truth_title_02; ?></h2>
-				<span><img src="./images/body/truth/2.webp" alt="<?= $Truth_title_02; ?>" class="br-20"/>
-					<p class="h4 t-pretty t-c">"<?= $Truth_text_02; ?>"</p>
-				</span>
-			</li>
-			<li>
-				<h2><?= $Truth_title_03; ?></h2>
-				<span><img src="./images/body/truth/3.webp" alt="<?= $Truth_title_03; ?>" class="br-20"/>
-					<p class="h4 t-pretty t-c">"<?= $Truth_text_03; ?>"</p>
-				</span>
-			</li>
-			<li>
-				<h2><?= $Truth_title_04; ?></h2>
-				<span><img src="./images/body/truth/4.webp" alt="<?= $Truth_title_04; ?>" class="br-20"/>
-					<p class="h4 t-pretty t-c">"<?= $Truth_text_04; ?>"</p>
-				</span>
-			</li>
-      <img src="./images/icons/body/space.svg" alt="" class="abs w-100 h-100 med-d-none" style="top:0;left:0;mix-blend-mode:overlay;opacity:0.7">
+	<div class="mw-1440 t-c">
+		<h2 class="h2"><?= $Truth_title; ?></h2>
+    <p><?= $Truth_subtitle; ?></p>
+	</div>
+	<div class="rel">
+    <img src="./images/icons/body/space.svg" alt="" class="abs w-100 med-d-none" style="height:100%;top:0;left:0;opacity:0.1;object-fit:cover;">
+		<ul class="textos">
+      <?php foreach($sec07 as $item): ?>
+        <li>
+          <h2><?= $item['title']; ?></h2>
+          <span><img src="./images/body/truth/<?= $item['id']; ?>.webp" alt="<?= $item['title']; ?>" class="br-20"/>
+            <p class="h2 t-pretty t-c"><?= $item['text']; ?></p>
+          </span>
+        </li>
+      <?php endforeach; ?>
 		</ul>
+    <img src="./images/icons/body/space.svg" alt="" class="abs w-100 med-d-none" style="height:100%;top:0;left:0;mix-blend-mode:overlay;opacity:0.7;object-fit:cover;">
 	</div>
 </section>
 
@@ -417,24 +392,27 @@ document.addEventListener("DOMContentLoaded", function () {
                 .to('.word_02', animationSpeed, {opacity:0, scale:1.5, y:'-300%', filter:'blur(12px)', ease:animationLinear})
                 .fromTo('.word_03', animationSpeed, {opacity:0, scale:1, filter: 'blur(12px)'}, {opacity:1, scale:1, filter:'blur(0)', ease:animationLinear, immediateRender:false})
                 .to('.word_03', animationSpeed, {opacity:0, scale:1.5, y:'-300%', filter:'blur(12px)', ease:animationLinear})
-                .fromTo('.word_04', animationSpeed, {opacity:0, scale:1, filter: 'blur(12px)'}, {opacity:1, scale:1, filter:'blur(0)', ease:animationLinear, immediateRender:false});
+                .fromTo('.word_04', animationSpeed, {opacity:0, scale:1, filter: 'blur(12px)'}, {opacity:1, scale:1, filter:'blur(0)', ease:animationLinear, immediateRender:false})
+                .to('.word_04', animationSpeed, {opacity:0, scale:1.5, y:'-300%', filter:'blur(12px)', ease:animationLinear})
+                .fromTo('.word_05', animationSpeed, {opacity:0, scale:1, filter: 'blur(12px)'}, {opacity:1, scale:1, filter:'blur(0)', ease:animationLinear, immediateRender:false});
 
             var imgTimeline = new TimelineMax();
             imgTimeline
                 .to('.img_01', animationSpeed, {y: '-100%', ease: animationLinear}, animationSpeed * 0.25)
                 .to('.img_02', animationSpeed, {y: '-100%', ease: animationLinear}, animationSpeed * 2.25)
-                .to('.img_03', animationSpeed, {y: '-100%', ease: animationLinear}, animationSpeed * 4);
+                .to('.img_03', animationSpeed, {y: '-100%', ease: animationLinear}, animationSpeed * 4)
+                .to('.img_04', animationSpeed, {y: '-100%', ease: animationLinear}, animationSpeed * 5.75);
 
             var master = new TimelineMax();
             master.add(textoTimeline, 0);
             master.add(imgTimeline, 0);
 
             new ScrollMagic.Scene({
-                triggerElement: '.pin',
+                triggerElement: '.vertical-slides',
                 duration: '300%',
                 triggerHook: 0
             })
-            .setPin('.pin')
+            .setPin('.vertical-slides')
             .setTween(master)
             //.addIndicators()
             .addTo(controller);
@@ -452,22 +430,27 @@ document.addEventListener("DOMContentLoaded", function () {
             parallaxTimeline
                 .fromTo('.parallax .box_1',
                   animationSpeed,
-                  { right:"62%", top:"47%", opacity:0},
-                  { right:"52%", top:"50%", opacity:1, ease:animationIn })
+                  { x:"-100px", y:"0", opacity:0},
+                  { x:"0", y:"0", opacity:1, ease:animationIn })
                 .fromTo('.parallax .box_2',
                   animationSpeed,
-                  { left:"62%", top:"47%", opacity:0},
-                  { left:"52%", top:"50%", opacity:1, ease:animationIn },
+                  { x:"0", y:"50", opacity:0},
+                  { x:"0", y:"0", opacity:1, ease:animationIn },
                   0)
                 .fromTo('.parallax .box_3',
                   animationSpeed,
-                  { right:"62%", top:"84%", opacity:0},
-                  { right:"52%", top:"74%", opacity:1, ease:animationIn },
+                  { x:"100", y:"0", opacity:0},
+                  { x:"0", y:"0", opacity:1, ease:animationIn },
                   0)
                 .fromTo('.parallax .box_4',
                   animationSpeed,
-                  { left:"62%", top:"84%", opacity:0},
-                  { left:"52%", top:"74%", opacity:1, ease:animationIn },
+                  { x:"-100", y:"50", opacity:0},
+                  { x:"0", y:"0", opacity:1, ease:animationIn },
+                  0)
+                .fromTo('.parallax .box_5',
+                  animationSpeed,
+                  { x:"100", y:"50", opacity:0},
+                  { x:"0", y:"0", opacity:1, ease:animationIn },
                   0);
 
             new ScrollMagic.Scene({
@@ -572,7 +555,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if(expansionBoxes.length > 0 && expansionBanners.length > 0){
       const optionsObserver = {
-        rootMargin: `-90% 0px -5% 0px`
+        rootMargin: `-80% 0px -15% 0px`
       }
       const handleBannerImages = (entries, observer) => {
         entries.forEach(entry => {

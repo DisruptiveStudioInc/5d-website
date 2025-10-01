@@ -165,9 +165,9 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
 
 <section>
     <div class="block-box-bg overlay o-70">
-        <div class="mw-1440 jc-center ai-center dh-100 small-fd-col-rev g-80 small-g-20 p-30">
+        <div class="mw-1440 jc-center ai-center dh-100 small-fd-col-rev g-20 p-30">
 
-            <div class="info w-50 med-w-100 all-tc-0 small-t-c">
+            <div class="info w-60 med-w-100 all-tc-0 small-t-c">
                 <h1 class="h1-special"><?php echo $Subtitulo; ?></h1>
                 <p class="small-d-none"><?php echo $Text; ?></p>
                 <p class="h3"><?php echo $Price; ?></p>
@@ -200,7 +200,7 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
                 </div>
             </div>
 
-            <img class="w-50 med-w-30 small-w-80 small-mt-40" src="./images/body/products/<?php echo $id; ?>.webp" alt="<?php echo $id; ?> Product" />
+            <img class="w-40 med-w-30 small-w-80 small-mt-40" src="./images/body/products/<?php echo $id; ?>.webp" alt="<?php echo $id; ?> Product" />
         </div>
         <img class="full-img-abs" src="./images/body/subpage/bg_<?php echo $id; ?>.webp" alt="<?php echo $id; ?> background" />
     </div>
@@ -308,39 +308,22 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
 
             <!-- Textos dinámicos -->
             <div class="w-100 text_spirit <?php echo $id; ?>">
+              <?php foreach($productBonuses as $bonus): ?>
                 <div>
-                    <p class="h4"><?php echo $Started_tit; ?></p>
-                    <?php if (!empty($Started_list)): ?>
-                        <ul class="menu-list icon-check v-white">
-                            <?php foreach ($Started_list as $li): ?>
-                                <li><?php echo $li; ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    <?php endif; ?>
-                    <p><?= $Started_list_foot; ?></p>
+                  <h3 class="h4"><?= $bonus['title']; ?></h3>
+                  <p><?= $bonus['text_01']; ?></p>
+                  <ul class="menu-list icon-check v-white">
+                    <?php foreach ($bonus['list'] as $li): ?>
+                      <li>
+                        <?= (gettype($li) === 'array') ?
+                        "{$Bonus_level_list_level} {$li['level']}: {$li['percentage']}%" :
+                        $li; ?>
+                      </li>
+                    <?php endforeach; ?>
+                  </ul>
+                  <p class="fw-700"><?= $bonus['text_02']; ?></p>
                 </div>
-
-                <div>
-                    <p class="h4"><?php echo $Started_plan_tit; ?></p>
-                    <p><?= $Started_plan_txt[0]; ?></p>
-                    <?php if (!empty($Started_plans)): ?>
-                        <ul class="menu-list icon-check v-white">
-                            <?php foreach ($Started_plans as $li): ?>
-                                <li><?php echo $li; ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    <?php endif; ?>
-                </div>
-
-                <div>
-                    <p class="h4"><?php echo $Started_bonus_tit; ?></p>
-                    <?php if (!empty($Started_bonuses)): ?>
-                      <?php foreach ($Started_bonuses as $li): ?>
-                          <p><?php echo $li; ?></p>
-                      <?php endforeach; ?>
-                    <?php endif; ?>
-                    <p><?= $Started_bonus_foot; ?></p>
-                </div>
+              <?php endforeach; ?>
             </div>
 
         </div>
