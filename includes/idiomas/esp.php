@@ -42,8 +42,8 @@ $Soon_Description3 = "¡No te lo puedes perder!";
 // Hero
 //-------------------------//
 
-$Hero_01 = "Deja de soñar, empieza a vivir en {$Company_Name}";
-$Hero_02 = "Aprende | Viaja | Gana";
+$Hero_01 = "En {$Company_Name} no caminas solo, caminas con una generación que quiere más";
+$Hero_02 = "Es aprender | Es crecer | Es ser tu merjor versión";
 
 //-------------------------//
 // Journey
@@ -57,79 +57,79 @@ $Journey_button_3 = "Decisión";
 $Journey_button_4 = "Determinación";
 $Journey_button_5 = "Disciplina";
 
-$Journey_text_1 = "tener hambre de más";
-$Journey_text_2 = "saber lo que quieres";
-$Journey_text_3 = "tomar acción";
-$Journey_text_4 = "no rendirte";
-$Journey_text_5 = "hacerlo siempre";
+$Journey_text_1 = "Tener un deseo ardiente por cambiar tu vida.";
+$Journey_text_2 = "Definir cuál es la vida que quieres.";
+$Journey_text_3 = "Decidir ser el héroe de tu vida.";
+$Journey_text_4 = "No negociar con nada ni con nadie tu éxito.";
+$Journey_text_5 = "Hacer lo que tienes que hacer, no importa que, no importa como.";
 
 //-------------------------//
 // Letters
 //-------------------------//
 
 $Letters_title_01 = "{$Company_Name} Academy";
-$Letters_text_01 = "Level up en digital: aprende, crece y conéctate:";
-$Letters_list01_01 = "Cursos digitales especializados que te preparan para la vida real";
-$Letters_list01_02 = "MasterClass en vivo con referentes jóvenes";
-$Letters_list01_03 = "Eventos exclusivos donde la comunidad vibra contigo";
-$Letters_list01_04 = "Conocimiento práctico que acelera tu crecimiento";
+$Letters_text_01 = "El corazón de tu crecimiento:";
+$Letters_list01_01 = "Cursos digitales en liderazgo, negocios y bienestar";
+$Letters_list01_02 = "MasterClass con expertos inspiradores";
+$Letters_list01_03 = "Eventos exclusivos que fortalecen comunidad";
+$Letters_list01_04 = "Aprendizajes prácticos que transforman mentalidad y resultados";
 
-$Letters_title_02 = "{$Company_Name} Digital Business";
-$Letters_text_02 = "Global mindset, digital vibes:";
-$Letters_list02_01 = "Back Office en tu cel para llevar todo fácil y rápido";
-$Letters_list02_02 = "Monetiza tus ideas y conviértelas en cash real";
-$Letters_list02_03 = "Acceso global sin límites porque el mundo es tuyo";
+$Letters_title_02 = "{$Company_Name} Experience";
+$Letters_text_02 = "Lo que aprendes se vive:";
+$Letters_list02_01 = "Cruceros inolvidables que crean recuerdos";
+$Letters_list02_02 = "Viajes que amplían visión y conexiones";
+$Letters_list02_03 = "Retiros y bootcamps que transforman";
+$Letters_list02_04 = "Experiencias únicas que marcan tu vida y comunidad";
 
-$Letters_title_03 = "{$Company_Name} Experience";
-$Letters_text_03 = "Lo que nadie vive, tú sí lo vas a contar:";
-$Letters_list03_01 = "Cruceros épicos que se viven una sola vez";
-$Letters_list03_02 = "Viajes globales con tu crew";
-$Letters_list03_03 = "Bootcamps y retiros exóticos solo para los que se atreven";
+$Letters_title_03 = "{$Company_Name} Rewards";
+$Letters_text_03 = "Tu esfuerzo se celebra en grande:";
+$Letters_list03_01 = "Convenciones VIP de reconocimiento";
+$Letters_list03_02 = "Premios y experiencias exclusivas por tus logros";
+$Letters_list03_03 = "Merch oficial que te distingue";
+$Letters_list03_04 = "Recompensas que convierten metas en momentos inolvidables";
 
-$Letters_title_04 = "{$Company_Name} Rewards";
-$Letters_text_04 = "En {$Company_Name} tu esfuerzo siempre tiene recompensa:";
-$Letters_list04_01 = "Convenciones VIP con pura energía";
-$Letters_list04_02 = "Premios y experiencias que no se repiten";
-$Letters_list04_03 = "Merch exclusivo que te hace destacar";
+$Letters_title_04 = "{$Company_Name} Evolution System";
+$Letters_text_04 = "La metodología que impulsa crecimiento:";
+$Letters_list04_01 = "Sistema paso a paso para aprender y avanzar";
+$Letters_list04_02 = "Comunidad que acompaña y motiva";
+$Letters_list04_03 = "Experiencias compartidas que aceleran resultados";
+$Letters_list04_04 = "Conocimiento que se transforma en logros reales";
 
-$Letters_title_05 = "{$Company_Name} Evolution System";
-$Letters_text_05 = "El GPS de tu evolución personal:";
-$Letters_inner_05_01 = "Las 5D no son teoría, son ";
-$Letters_list05_01 = "Acción";
-$Letters_list05_02 = "Deseo";
-$Letters_list05_03 = "Definición";
-$Letters_list05_04 = "Decisión";
-$Letters_list05_05 = "Determinación";
-$Letters_list05_06 = "Disciplina";
+$Letters_title_05 = "{$Company_Name} Business";
+$Letters_text_05 = "Piensa global, actúa digital:";
+$Letters_list05_01 = "Administra tu negocio desde un solo lugar";
+$Letters_list05_02 = "Visualiza ingresos en tiempo real";
+$Letters_list05_03 = "Organiza y guía a tu comunidad";
+$Letters_list05_04 = "Escala con una herramienta todo-en-uno";
 
 //-------------------------//
 // Vision
 //-------------------------//
 
-$Vision_text = "Ecosistema {$Company_Name}";
+$Vision_text = "Dimensión {$Company_Name}";
 
 $Vision_title_01 = "Backoffice digital";
-$Vision_text_01 = "Para llevar el control fácil desde tu cel.";
+$Vision_text_01 = "Para llevar tu negocio fácil desde tu cel.";
 
 $Vision_title_02 = "Academia online";
-$Vision_text_02 = "Con lo que sí importa, sin relleno.";
+$Vision_text_02 = "Con lo que sí transforma, sin relleno.";
 
 $Vision_title_03 = "Marketplace";
-$Vision_text_03 = "Con acceso directo a lo que necesitas.";
+$Vision_text_03 = "Con acceso directo a lo esencial que necesitas.";
 
 $Vision_title_04 = "Agencia de viajes";
-$Vision_text_04 = "Con experiencias únicas y épicas.";
+$Vision_text_04 = "Con experiencias únicas y memorables.";
 
 $Vision_title_05 = "Comunidad global";
-$Vision_text_05 = "Que crece y vibra contigo.";
+$Vision_text_05 = "Que vibra, crece y camina contigo.";
 
 //-------------------------//
 // Slogan
 //-------------------------//
 
 $Slogan_title = "Escalera al éxito";
-$Slogan_subtitle = "Levelup desde el día uno";
-$Slogan_text = "Tus primeros logros en la comunidad 5D";
+$Slogan_subtitle = "Avanza en grande desde el día uno";
+$Slogan_text = "Tus primeros pasos firmes en la comunidad 5D";
 $Slogan_plans = ['500', '1K', '2.5K'];
 
 //-------------------------//
@@ -139,16 +139,16 @@ $Slogan_plans = ['500', '1K', '2.5K'];
 $Products_title_01 = "Pass 5D";
 $Products_01 = "Tu pase directo";
 $Products_sub_01 = "100 USDT";
-$Products_text_01 = "Tu pase directo al mundo 5D. Actívalo una vez, entra para siempre: comunidad global, recompensas reales y crecimiento nonstop desde el día uno.";
+$Products_text_01 = "Tu pase directo al mundo 5D. Un solo pago de por vida: comunidad global, recompensas reales y crecimiento constante desde el día uno.";
 $Products_text_inner_01 = "Todo lo que necesitas para crecer, ganar y vivir en {$Company_Name}.";
-$Products_price_01 = "Suscripción: 100 USDT";
+$Products_price_01 = "Suscripción: 1000 USDT";
 
 //-------------------------//
 // Truth
 //-------------------------//
 
-$Truth_title = "Rewards por puntos";
-$Truth_subtitle = "Tus puntos, tus vibes: viajes, premios y recuerdos épicos.";
+$Truth_title = "<span class='tc-acc'>Rewards</span> por puntos";
+$Truth_subtitle = "Constancia que paga y se celebra.";
 
 $Truth_title_01 = "Renovación";
 $Truth_text_01 = "10pts";
@@ -170,14 +170,14 @@ $Truth_text_05 = "50x = 500 pts";
 //-------------------------//
 
 $Spirit_title = "Club <span class='tc-acc'>5D Elite</span>";
-$Spirit_subtitle = "Un club exclusivo para los que se atreven a más";
-$Spirit_text = "El spot de los que van en serio y marcan historia dentro de 5D.";
+$Spirit_subtitle = "El lugar donde llegan los que marcan historia.";
+$Spirit_text = "Un club exclusivo y reservado para quienes se atreven a ir más allá, dejando huella en la comunidad 5D y convirtiéndose en ejemplo de grandeza.";
 
 $Spirit_title_01 = "{$Company_Name} – 5K";
-$Spirit_text_01 = "Tu primera placa, prueba de que tu constancia ya dejó huella.";
+$Spirit_text_01 = "Reconocimiento con placa exclusiva, símbolo de liderazgo y constancia.";
 
 $Spirit_title_02 = "{$Company_Name} – 10K";
-$Spirit_text_02 = "El nivel donde solo llegan los que rompen límites y se vuelven leyenda.";
+$Spirit_text_02 = "Nivel que confirma tu visión y compromiso con un impacto mayor.";
 
 //-------------------------//
 // Traits
@@ -189,13 +189,13 @@ $Traits_title = "Viaja, aprende, gana y vive en {$Company_Name}";
 // Ingredients
 //-------------------------//
 
-$Ingredients_01 = "Dale start a tu 5D";
+$Ingredients_01 = "Enciende tu modo en {$Company_Name}";
 $Ingredients_01_01 = "Impulso";
 $Ingredients_01_02 = "Acceso";
-$Ingredients_01_03 = "Flow";
-$Ingredients_01_04 = "Skills";
+$Ingredients_01_03 = "Progreso";
+$Ingredients_01_04 = "Experiencias";
 $Ingredients_01_05 = "Conexiones";
-$Ingredients_01_06 = "Growth";
+$Ingredients_01_06 = "Crecimiento";
 
 //-------------------------//
 // Benefits
@@ -205,13 +205,13 @@ $Benefits = "Beneficios";
 
 $Benefits_sub_01 = "Lo que solo {$Company_Name} te da";
 $Benefits_01_tit_01 = "Backoffice 5D";
-$Benefits_01_01 = "Todo en tu cel, fácil de mover y listo para escalar global.";
+$Benefits_01_01 = "Lleva tu negocio contigo: práctico, ágil y hecho para crecer.";
 $Benefits_01_tit_02 = "Academia exclusiva";
-$Benefits_01_02 = "Skills que sí sirven: marketing, liderazgo, IA, cashflow y más.";
+$Benefits_01_02 = "Skills reales que transforman: liderazgo, marketing, IA, finanzas y más.";
 $Benefits_01_tit_03 = "Recompensas premium";
-$Benefits_01_03 = "Tu esfuerzo paga: premios y bonos que marcan la diferencia.";
+$Benefits_01_03 = "Tu constancia cuenta: premios y bonos que reconocen tu trayectoria.";
 $Benefits_01_tit_04 = "Comunidad global";
-$Benefits_01_04 = "Aquí nadie se queda atrás: todos vibran y avanzan.";
+$Benefits_01_04 = "El lugar donde todos vibran, crecen y avanzan.";
 
 //-------------------------//
 // Started - Product bonuses
@@ -219,17 +219,17 @@ $Benefits_01_04 = "Aquí nadie se queda atrás: todos vibran y avanzan.";
 
 
 $Satarted_title_01 = "Poder {$Company_Name}";
-$Satarted_sub_01 = "Desde el primer día, tu esfuerzo vibra en {$Company_Name}.";
-$Bonus_flash_title = "Flash Bonus";
-$Bonus_flash_text01 = "Gana YA";
-$Bonus_flash_list_01 = "{$Bonuses['flash']['first_referal']} USD con tu primer referido.";
-$Bonus_flash_list_02 = "{$Bonuses['flash']['regular_referal']} USD en cada siguiente.";
-$Bonus_flash_text02 = " Cobras desde el primer día.";
+$Satarted_sub_01 = "En {$Company_Name}, cada paso cuenta y tu fuerza se siente desde el inicio.";
+
+$Bonus_flash_title = "Crece tu comunidad y ganas";
+$Bonus_flash_text01 = "Con el Pass 5D cada vez que alguien se une a tu comunidad, recibes una recompensa directa:";
+$Bonus_flash_list_01 = "1er referido directo → \${$Bonuses['flash']['first_referal']} USD.";
+$Bonus_flash_list_02 = "Cada referido adicional → \${$Bonuses['flash']['regular_referal']} USD.";
 
 $Bonus_speed_title = "Speed Bonus";
-$Bonus_speed_text01 = "La velocidad paga";
+$Bonus_speed_text01 = "Al éxito le gusta la velocidad:";
 $Bonus_speed_list_01 = "Refiere {$Bonuses['speed']['people']} personas en tus primeros {$Bonuses['speed']['initial_days']} días.";
-$Bonus_speed_list_02 = "Ganas {$Bonuses['speed']['amount']} USD extra.";
+$Bonus_speed_list_02 = "Ganas \${$Bonuses['speed']['amount']} USD extra.";
 $Bonus_speed_text02 = "El que se mueve rápido, gana más.";
 
 $Bonus_level_title = "Level Bonus";

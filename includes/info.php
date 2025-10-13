@@ -21,13 +21,13 @@ $Company_Name  = "5D";
 
 $Bonuses = array(
   'flash' => [
-    'first_referal' => 70,
-    'regular_referal' => 40
+    'first_referal' => 700,
+    'regular_referal' => 400
   ],
   'speed' => [
     'people' => 3,
     'initial_days' => 7,
-    'amount' => 30
+    'amount' => 300
   ],
   'level' => array(
     [
@@ -265,17 +265,10 @@ $sec01 = array(
 );
 
 $letterList_01 = [$Letters_list01_01, $Letters_list01_02, $Letters_list01_03, $Letters_list01_04];
-$letterList_02 = [$Letters_list02_01, $Letters_list02_02, $Letters_list02_03];
-$letterList_03 = [$Letters_list03_01, $Letters_list03_02, $Letters_list03_03];
-$letterList_04 = [$Letters_list04_01, $Letters_list04_02, $Letters_list04_03];
-$letterList_05 = [
-  $Letters_list05_01,
-  $Letters_list05_02,
-  $Letters_list05_03,
-  $Letters_list05_04,
-  $Letters_list05_05,
-  $Letters_list05_06
-];
+$letterList_02 = [$Letters_list02_01, $Letters_list02_02, $Letters_list02_03, $Letters_list02_04];
+$letterList_03 = [$Letters_list03_01, $Letters_list03_02, $Letters_list03_03, $Letters_list03_04];
+$letterList_04 = [$Letters_list04_01, $Letters_list04_02, $Letters_list04_03, $Letters_list04_04];
+$letterList_05 = [$Letters_list05_01, $Letters_list05_02, $Letters_list05_03, $Letters_list05_04];
 $verticalSlides = array(
   [
     'id' => 1,
@@ -305,7 +298,6 @@ $verticalSlides = array(
     'id' => 5,
     'title' => $Letters_title_05,
     'text' => $Letters_text_05,
-    'text_inner' => $Letters_inner_05_01,
     'list' => $letterList_05,
   ]
 );

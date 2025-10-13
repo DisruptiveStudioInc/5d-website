@@ -5,13 +5,13 @@
 :root {
   /*-- Color  --*/
 
-  --color-acc: #1cbff5;
+  --color-acc: #ff8500;
   --color-pri: #040a1b;
   --color-sec: #1d283b;
   --color-ter: #26384d;
 
-  --color-ter-h: #52daff;
-  --color-acc-h: #52daff;
+  --color-ter-h: #f3730a;
+  --color-acc-h: #f3730a;
   --color-sec-h: #25385a;
 
   --color-basic: #32d5db;
@@ -19,7 +19,7 @@
   --color-black: #000000;
 
   --color-testimonials: #5f707f;
-  --color-glow: rgba(28, 191, 245, 0.2);
+  --color-glow: rgba(245, 126, 28, 0.2);
 
   --color-brand-100: #4b13e5;
   --color-brand-200: #004fff;
@@ -84,6 +84,9 @@
 @media only screen and (max-width: 1080px) {
   .med-min-h-auto {
     min-height: auto;
+  }
+  .med-min-h-60dvh {
+    min-height: 60dvh;
   }
 }
 
@@ -389,7 +392,6 @@ section {
 
 .letter-text {
   margin-top: 10px;
-  font-size: 1rem;
   line-height: 1.5rem;
 }
 
@@ -481,6 +483,11 @@ section {
   display: block;
   text-align: center;
   transition: opacity 0.5s ease;
+  .h1-special {
+    font-size: 4vw;
+    line-height: 1.1;
+    padding-inline: 50px;
+  }
 }
 
 .text-hero h1,
@@ -511,13 +518,26 @@ section {
 }
 
 .licence-box {
-  transition-property: transform, box-shadow, background-color;
+  transition-property: box-shadow, transform, background-color;
   transition: 250ms ease;
   max-width: 400px;
+  min-height: 40dvh;
+  .licence-bg {
+    opacity: 0.3;
+    filter: grayscale(1);
+    mix-blend-mode: overlay;
+    transition: inherit;
+    transition-property: filter, opacity;
+  }
   &:hover {
-    box-shadow: 0 20px 40px var(--color-glow);
     transform: translate3d(0, -10px, 0);
     background-color: var(--color-pri);
+    box-shadow: 0 20px 40px var(--color-glow);
+    .licence-bg {
+      mix-blend-mode: normal;
+      opacity: 0.6;
+      filter: grayscale(0);
+    }
   }
 }
 
@@ -578,6 +598,15 @@ section {
     max-width: 400px;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
+  }
+  .licence-box {
+    background-color: var(--color-pri);
+    min-height: 30dvh;
+    .licence-bg {
+      mix-blend-mode: normal;
+      opacity: 0.6;
+      filter: grayscale(0);
+    }
   }
 }
 

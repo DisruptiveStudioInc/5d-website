@@ -31,7 +31,7 @@
 	</div>
 
 	<div class="anchor" id="stellum"></div>
-	<div class="mw-1440 jc-center ai-center min-h-dhv med-min-h-auto med-pt-150 med-pb-150">
+	<div class="mw-1440 jc-center ai-center min-h-dhv med-min-h-60dvh med-pt-150 med-pb-150">
 		<div class="t-c">
 			<h2 class="h1 mb-80 small-mb-40"><?= $Journey_title; ?></h2>
       <ul class="slider">
@@ -62,13 +62,10 @@
       <img class="letter-bg img_0<?= $slide['id']; ?>" src="./images/body/letters/<?= $slide['id']; ?>.webp" alt="<?= $slide['title']; ?>">
       <div class="letter-content word_0<?= $slide['id']; ?> abs w-100 p-40 med-p-10-20 med-pt-50 med-pb-50 t-c">
         <h2 class="letter-title"><?= $slide['title']; ?></h2>
-        <p class="letter-text t-pretty h3"><?= $slide['text']; ?></p>
-        <?php if(isset($slide['text_inner'])): ?>
-          <p class="letter-text t-pretty"><?= $slide['text_inner']; ?></p>
-        <?php endif; ?>
-        <ul class="letter-list d-flex fw-wrap jc-center t-c w-60 med-w-100 m-center mt-20" style="gap:20px;">
+        <p class="h4 letter-text t-pretty h3"><?= $slide['text']; ?></p>
+        <ul class="letter-list d-flex fw-wrap jc-center t-c w-60 med-w-100 m-center mt-40 med-mt-20" style="gap:20px;">
           <?php foreach($slide['list'] as $item): ?>
-            <li class="letter-item d-flex jc-center ai-center p-20 c-sec br-20 t-pretty small-w-100"><?= $item; ?></li>
+            <li class="letter-item d-flex jc-center ai-center p-20 c-sec br-20 t-pretty w-50 small-w-100"><?= $item; ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -81,7 +78,7 @@
 <!-- THREE -->
 <!-- ============================================== -->
 
-<section>
+<section class="parallax-wrap">
 
 	<div class="section-arrows">
 	    <button class="arrow up"></button>
@@ -106,20 +103,21 @@
 <!-- FOUR -->
 <!-- ============================================== -->
 
-<section class="c-pri">
+<section class="c-pri licence-wrap">
 	<div class="section-arrows">
 	    <button class="arrow up"></button>
 	    <button class="arrow down"></button>
 	</div>
 
 	<div class="mw-1280 t-c h-100 med-h-0 jc-center fd-col">
-		<h2 class="h1 m-center mb-20" style="max-width:26ch;"><?= $Slogan_title; ?></h2>
-		<p class="h4 fw-700 tc-acc m-center mb-0" style="max-width:48ch"><?= $Slogan_subtitle; ?></p>
-		<p class="h4 m-center mt-0 mb-40" style="max-width:48ch"><?= $Slogan_text; ?></p>
+		<h2 class="h1 m-center mb-20 licence-title" style="max-width:26ch;"><?= $Slogan_title; ?></h2>
+		<p class="h4 fw-700 tc-acc m-center mb-0 licence-text" style="max-width:48ch"><?= $Slogan_subtitle; ?></p>
+		<p class="h4 m-center mt-0 mb-40 licence-text" style="max-width:48ch"><?= $Slogan_text; ?></p>
     <ul class="d-flex med-fd-col med-ai-center jc-center g-20">
       <?php foreach($sec04 as $plan): ?>
-        <li class="licence-box rel c-sec p-20 med-w-100 w-30 br-10">
-          <p class="h3 fw-700">5D – <?= gettype($plan) === 'array' ? $plan['text'] : $plan; ?></p>
+        <li class="licence-box rel c-sec p-20 med-w-100 w-30 br-10 d-flex ai-center jc-center">
+          <img src="./images/body/subpage/bg_basic.webp" alt="" class="licence-bg background br-10">
+          <p class="rel h3 fw-700">5D – <?= gettype($plan) === 'array' ? $plan['text'] : $plan; ?></p>
           <?php if(gettype($plan) === 'array'): ?>
             <img src="./images/body/products/<?= $plan['image'] ?>.webp" alt="" class="abs licence-box-badge">
           <?php endif; ?>
@@ -246,25 +244,60 @@ foreach ($Modal as $item){
 	    <button class="arrow down"></button>
 	</div>
 
-	<div class="mw-1440 t-c">
-		<h2 class="h2"><?= $Truth_title; ?></h2>
-    <p><?= $Truth_subtitle; ?></p>
-	</div>
-	<div class="rel">
-    <img src="./images/icons/body/space.svg" alt="" class="abs w-100 med-d-none" style="height:100%;top:0;left:0;opacity:0.1;object-fit:cover;">
-		<ul class="textos">
+	<div class="mw-1440 d-flex ai-center">
+    <div class="w-100 med-w-50">
+      <h2 class="h1-special" style="font-size:4.5vw"><?= $Truth_title; ?></h2>
+      <p class="h4"><?= $Truth_subtitle; ?></p>
+    </div>
+    <div class="w-100 med-w-50">
       <?php foreach($sec07 as $item): ?>
-        <li>
-          <h2><?= $item['title']; ?></h2>
-          <span><img src="./images/body/truth/<?= $item['id']; ?>.webp" alt="<?= $item['title']; ?>" class="br-20"/>
-            <p class="h2 t-pretty t-c"><?= $item['text']; ?></p>
-          </span>
-        </li>
+        <article class="reward p-20 pt-40 pb-40 of-h rel">
+          <img src="./images/body/truth/<?= $item['id']; ?>.webp" alt="<?= $item['title']; ?>" class="reward-image"/>
+          <h2 class="reward-title h4 m-0" style="transform-origin:left center;"><?= $item['title']; ?></h2>
+          <p class="reward-text mb-0"><?= $item['text']; ?></p>
+        </article>
       <?php endforeach; ?>
-		</ul>
-    <img src="./images/icons/body/space.svg" alt="" class="abs w-100 med-d-none" style="height:100%;top:0;left:0;mix-blend-mode:overlay;opacity:0.7;object-fit:cover;">
+    </div>
 	</div>
 </section>
+<style>
+.reward:not(:last-child){
+  border-bottom:1px solid rgba(255,255,255,0.1)
+}
+.reward-text{
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+.reward-title{
+  transform: translate3d(0,50%,0)scale3d(1.8,1.8,1.8);
+  transition-property: transform, color;
+  transition: 250ms linear;
+}
+.reward-image{
+  position: absolute;
+  height: 100%;
+  width: 60%;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  object-fit: cover;
+  transition: opacity 250ms linear;
+  mask: linear-gradient(to right, rgba(0,0,0,0) 5%, black 70%);
+  pointer-events: none;
+}
+.reward:hover{
+  .reward-title{
+    transform: translate3d(0,0%,0)scale3d(1,1,1);
+    color: var(--color-acc);
+  }
+  .reward-text{
+    opacity: 1;
+  }
+  .reward-image{
+    opacity: 1;
+  }
+}
+</style>
 
 <!-- ============================================== -->
 <!-- EIGHT -->
@@ -430,36 +463,49 @@ document.addEventListener("DOMContentLoaded", function () {
             parallaxTimeline
                 .fromTo('.parallax .box_1',
                   animationSpeed,
-                  { x:"-100px", y:"0", opacity:0},
-                  { x:"0", y:"0", opacity:1, ease:animationIn })
+                  { scale: 1.5, x:"-100px", y:"0", opacity:0},
+                  { scale: 1, x:"0", y:"0", opacity:1, ease:animationIn })
                 .fromTo('.parallax .box_2',
                   animationSpeed,
-                  { x:"0", y:"50", opacity:0},
-                  { x:"0", y:"0", opacity:1, ease:animationIn },
-                  0)
+                  { scale: 1.5, x:"0", y:"50", opacity:0},
+                  { scale: 1, x:"0", y:"0", opacity:1, ease:animationIn })
                 .fromTo('.parallax .box_3',
                   animationSpeed,
-                  { x:"100", y:"0", opacity:0},
-                  { x:"0", y:"0", opacity:1, ease:animationIn },
-                  0)
+                  { scale: 1.5, x:"100", y:"0", opacity:0},
+                  { scale: 1, x:"0", y:"0", opacity:1, ease:animationIn })
                 .fromTo('.parallax .box_4',
                   animationSpeed,
-                  { x:"-100", y:"50", opacity:0},
-                  { x:"0", y:"0", opacity:1, ease:animationIn },
-                  0)
+                  { scale: 1.5, x:"-100", y:"50", opacity:0},
+                  { scale: 1, x:"0", y:"0", opacity:1, ease:animationIn })
                 .fromTo('.parallax .box_5',
                   animationSpeed,
-                  { x:"100", y:"50", opacity:0},
-                  { x:"0", y:"0", opacity:1, ease:animationIn },
-                  0);
+                  { scale: 1.5, x:"100", y:"50", opacity:0},
+                  { scale: 1, x:"0", y:"0", opacity:1, ease:animationIn });
 
             new ScrollMagic.Scene({
-                triggerElement: '.parallax',
-                duration: "50%",
-                triggerHook: 0.5
+                triggerElement: '.parallax-wrap',
+                duration: "100%",
+                triggerHook: 0
             })
+            .setPin('.parallax')
             .setTween(parallaxTimeline)
             //.addIndicators()
+            .addTo(controller);
+
+            // ========== LICENSES
+            var licensesTimeline = new TimelineMax();
+            licensesTimeline
+              .from('.licence-title', animationSpeed, {scale:2, y:200})
+              .staggerFrom('.licence-text', animationSpeed, {y: 40, opacity:0}, 0.2)
+              .staggerFrom('.licence-box', animationSpeed, {x: 80, opacity:0}, 0.2);
+
+            new ScrollMagic.Scene({
+              triggerElement: '.licence-wrap',
+              duration: "200%",
+              triggerHook: 0
+            })
+            .setPin('.licence-wrap')
+            .setTween(licensesTimeline)
             .addTo(controller);
 
             // ========== CONTENT SCROLL (jQuery solo si existe)
