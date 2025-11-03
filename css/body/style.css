@@ -75,6 +75,9 @@
 .t-pretty {
   text-wrap: pretty;
 }
+.t-balance {
+  text-wrap: balance;
+}
 .min-h-dhv {
   min-height: 100dvh;
 }
@@ -354,6 +357,17 @@ section {
   display: block;
   width: 100%;
 }
+
+.h1-hero {
+  font-size: max(7vw, 2.5rem);
+  line-height: 1;
+}
+
+.h1-product {
+  font-size: max(4vw, 2.25rem);
+  line-height: 1;
+}
+
 @media screen and (max-width: 768px) {
   .h1-special.first {
     font-size: 10vw;
@@ -366,7 +380,7 @@ section {
 
 .vertical-slides::after {
   content: "";
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   z-index: calc(var(--total-items) + 1);
   width: 100%;
@@ -601,7 +615,7 @@ section {
   }
   .licence-box {
     background-color: var(--color-pri);
-    min-height: 30dvh;
+    min-height: 16dvh;
     .licence-bg {
       mix-blend-mode: normal;
       opacity: 0.6;
@@ -2077,5 +2091,78 @@ ul.textos li span img {
     flex: 1 1 auto;
     max-width: 100%;
     padding: 10px 0;
+  }
+}
+
+/* ============================================== */
+/* REWARDS */
+/* ============================================== */
+
+.reward:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.reward-image {
+  margin: 0 auto 20px;
+  max-width: 480px;
+}
+@media only screen and (min-width: 1081px) {
+  .reward:hover {
+    .reward-title {
+      transform: translate3d(0, 0%, 0) scale3d(1, 1, 1);
+      color: var(--color-acc);
+    }
+    .reward-text {
+      opacity: 1;
+    }
+    .reward-image {
+      opacity: 1;
+    }
+  }
+  .reward-image {
+    position: absolute;
+    height: 100%;
+    max-width: none;
+    margin: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    object-fit: cover;
+    transition: opacity 250ms linear;
+    mask: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, black 70%);
+    pointer-events: none;
+  }
+  .reward-text {
+    opacity: 0;
+    transition: opacity 250ms linear;
+  }
+  .reward-title {
+    transform: translate3d(0, 50%, 0) scale3d(1.8, 1.8, 1.8);
+    transition-property: transform, color;
+    transition: 250ms linear;
+  }
+}
+
+/* ============================================== */
+/* BANNER CLUB */
+/* ============================================== */
+
+.animate-fade {
+  animation: slidesFade 15s infinite;
+}
+@keyframes slidesFade {
+  from {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
   }
 }

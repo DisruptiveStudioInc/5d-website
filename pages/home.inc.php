@@ -2,13 +2,13 @@
 <!-- HERO -->
 <!-- ============================================== -->
 
-<section class="hero-pin d-flex fd-col jc-center ai-center overlay o-30">
+<section class="hero-pin d-flex fd-col jc-center ai-center overlayy o-30">
   <div class="anchor" id="home"></div>
   <img src="./images/hero/hero.webp" alt="" class="background" style="opacity:1"/>
-  <canvas id="webgl-canvas" class="background" style="opacity:1"></canvas>
+  <!-- <canvas id="webgl-canvas" class="background" style="opacity:1"></canvas> -->
 
   <div class="text-hero t-c hero-text">
-    <h1 class="h1-special"><?= $Hero_01; ?></h1>
+    <h1 class="h1-hero t-balance"><?= $Hero_01; ?></h1>
     <p class="h4 w-50 med-w-80 small-w-100 m-center"><?= $Hero_02; ?></p>
   </div>
   <div class="section-arrows">
@@ -52,6 +52,8 @@
 
 <section>
 
+  <h2 class="h1-special t-c tc-acc m-0 pt-30 pb-30"><?= $Letters_title ?></h2>
+
 	<div class="h-100 vertical-slides rel of-h small-h-0 letters" style="--total-items:4">
     <div class="section-arrows">
       <button class="arrow up"></button>
@@ -62,7 +64,7 @@
       <img class="letter-bg img_0<?= $slide['id']; ?>" src="./images/body/letters/<?= $slide['id']; ?>.webp" alt="<?= $slide['title']; ?>">
       <div class="letter-content word_0<?= $slide['id']; ?> abs w-100 p-40 med-p-10-20 med-pt-50 med-pb-50 t-c">
         <h2 class="letter-title"><?= $slide['title']; ?></h2>
-        <p class="h4 letter-text t-pretty h3"><?= $slide['text']; ?></p>
+        <p class="h4 letter-text t-balnce h3"><?= $slide['text']; ?></p>
         <ul class="letter-list d-flex fw-wrap jc-center t-c w-60 med-w-100 m-center mt-40 med-mt-20" style="gap:20px;">
           <?php foreach($slide['list'] as $item): ?>
             <li class="letter-item d-flex jc-center ai-center p-20 c-sec br-20 t-pretty w-50 small-w-100"><?= $item; ?></li>
@@ -88,10 +90,11 @@
 	<div class="mw-1440 t-c h-100 med-h-0 fd-col g-40 med-g-20 jc-center ai-center parallax">
 		<h2 class="h1-special short"><?= $Vision_text; ?></h2>
     <ul class="d-flex fw-wrap jc-center">
-      <?php foreach($sec03 as $k => $item): ?>
+      <?php foreach($sec03 as $item): ?>
         <li class="box rel d-flex fd-col jc-center ai-center g-0 p-20 br-20 w-100 c-pri box_<?= $item['id']; ?>">
+          <img src="./images/body/ranks/<?= $item['image'] ?>" alt="<?= $item['title']; ?>" class="w-40 mb-10">
           <h3 class="box-title h3 m-0"><?= $item['title']; ?></h3>
-          <p class="m-0"><?= $item['text']; ?></p>
+          <p><?= $item['text'] ?></p>
           <svg class="glow-effect" xmlns="http://www.w3.org/2000/svg"><rect /></svg>
         </li>
       <?php endforeach; ?>
@@ -110,17 +113,15 @@
 	</div>
 
 	<div class="mw-1280 t-c h-100 med-h-0 jc-center fd-col">
-		<h2 class="h1 m-center mb-20 licence-title" style="max-width:26ch;"><?= $Slogan_title; ?></h2>
+		<h2 class="h1 m-center mb-20 licence-title t-balance" style="max-width:26ch;"><?= $Slogan_title; ?></h2>
 		<p class="h4 fw-700 tc-acc m-center mb-0 licence-text" style="max-width:48ch"><?= $Slogan_subtitle; ?></p>
 		<p class="h4 m-center mt-0 mb-40 licence-text" style="max-width:48ch"><?= $Slogan_text; ?></p>
     <ul class="d-flex med-fd-col med-ai-center jc-center g-20">
       <?php foreach($sec04 as $plan): ?>
-        <li class="licence-box rel c-sec p-20 med-w-100 w-30 br-10 d-flex ai-center jc-center">
+        <li class="licence-box rel c-sec p-20 med-w-100 w-30 br-10 d-flex fd-col ai-center jc-center g-10">
           <img src="./images/body/subpage/bg_basic.webp" alt="" class="licence-bg background br-10">
-          <p class="rel h3 fw-700">5D – <?= gettype($plan) === 'array' ? $plan['text'] : $plan; ?></p>
-          <?php if(gettype($plan) === 'array'): ?>
-            <img src="./images/body/products/<?= $plan['image'] ?>.webp" alt="" class="abs licence-box-badge">
-          <?php endif; ?>
+          <h3 class="rel h5 fw-700 m-0"><?= $plan['title'] ?></h3>
+          <p class="rel m-0"><?= $plan['text'] ?></p>
         </li>
       <?php endforeach; ?>
     </ul>
@@ -244,15 +245,15 @@ foreach ($Modal as $item){
 	    <button class="arrow down"></button>
 	</div>
 
-	<div class="mw-1440 d-flex ai-center">
-    <div class="w-100 med-w-50">
-      <h2 class="h1-special" style="font-size:4.5vw"><?= $Truth_title; ?></h2>
-      <p class="h4"><?= $Truth_subtitle; ?></p>
+	<div class="mw-1440 d-flex med-fd-col ai-center g-20">
+    <div class="w-100">
+      <h2 class="h1-special med-t-c" style="font-size:4.5vw"><?= $Truth_title; ?></h2>
+      <p class="h4 med-t-c t-balance"><?= $Truth_subtitle; ?></p>
     </div>
-    <div class="w-100 med-w-50">
+    <div class="w-100 med-d-flex fw-wrap g-0 small-g-20 jc-center">
       <?php foreach($sec07 as $item): ?>
-        <article class="reward p-20 pt-40 pb-40 of-h rel">
-          <img src="./images/body/truth/<?= $item['id']; ?>.webp" alt="<?= $item['title']; ?>" class="reward-image"/>
+        <article class="reward p-20 pt-40 pb-40 of-h rel med-t-c w-100 med-w-40 small-w-100">
+          <img src="./images/body/truth/<?= $item['id']; ?>.webp" alt="<?= $item['title']; ?>" class="reward-image w-60 med-w-100 small-w-60"/>
           <h2 class="reward-title h4 m-0" style="transform-origin:left center;"><?= $item['title']; ?></h2>
           <p class="reward-text mb-0"><?= $item['text']; ?></p>
         </article>
@@ -260,44 +261,6 @@ foreach ($Modal as $item){
     </div>
 	</div>
 </section>
-<style>
-.reward:not(:last-child){
-  border-bottom:1px solid rgba(255,255,255,0.1)
-}
-.reward-text{
-  opacity: 0;
-  transition: opacity 250ms linear;
-}
-.reward-title{
-  transform: translate3d(0,50%,0)scale3d(1.8,1.8,1.8);
-  transition-property: transform, color;
-  transition: 250ms linear;
-}
-.reward-image{
-  position: absolute;
-  height: 100%;
-  width: 60%;
-  top: 0;
-  right: 0;
-  opacity: 0;
-  object-fit: cover;
-  transition: opacity 250ms linear;
-  mask: linear-gradient(to right, rgba(0,0,0,0) 5%, black 70%);
-  pointer-events: none;
-}
-.reward:hover{
-  .reward-title{
-    transform: translate3d(0,0%,0)scale3d(1,1,1);
-    color: var(--color-acc);
-  }
-  .reward-text{
-    opacity: 1;
-  }
-  .reward-image{
-    opacity: 1;
-  }
-}
-</style>
 
 <!-- ============================================== -->
 <!-- EIGHT -->
@@ -495,7 +458,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // ========== LICENSES
             var licensesTimeline = new TimelineMax();
             licensesTimeline
-              .from('.licence-title', animationSpeed, {scale:2, y:200})
+              .from('.licence-title', animationSpeed, {scale:1.5, y:200})
               .staggerFrom('.licence-text', animationSpeed, {y: 40, opacity:0}, 0.2)
               .staggerFrom('.licence-box', animationSpeed, {x: 80, opacity:0}, 0.2);
 

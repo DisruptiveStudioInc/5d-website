@@ -22,41 +22,52 @@ $Company_Name  = "5D";
 $Bonuses = array(
   'flash' => [
     'first_referal' => 700,
-    'regular_referal' => 400
+    'first_percentage' => 70,
+    'regular_referal' => 400,
+    'regular_percentage' => 40
   ],
   'speed' => [
     'people' => 3,
-    'initial_days' => 7,
+    'initial_days' => 30,
     'amount' => 300
   ],
-  'level' => array(
-    [
-      'level' => 1,
-      'percentage' => 40
-    ],
-    [
-      'level' => 2,
-      'percentage' => 20
-    ],
-    [
-      'level' => 3,
-      'percentage' => 5
-    ],
-    [
-      'level' => 4,
-      'percentage' => 2
-    ],
-    [
-      'level' => 5,
-      'percentage' => 1
-    ],
-    [
-      'level' => 6,
-      'percentage' => 1
-    ]
-  ),
+  'community' => [
+    'total_percentage' => 70,
+    'levels' => array(
+      [
+        'level' => 1,
+        'percentage' => 40
+      ],
+      [
+        'level' => 2,
+        'percentage' => 20
+      ],
+      [
+        'level' => 3,
+        'percentage' => 5
+      ],
+      [
+        'level' => 4,
+        'percentage' => 2
+      ],
+      [
+        'level' => 5,
+        'percentage' => 1
+      ],
+      [
+        'level' => 6,
+        'percentage' => 1
+      ],
+      [
+        'level' => 7,
+        'percentage' => 1
+      ]
+    )
+  ],
   'infinity' => [
-    'people' => 300
+    'amount_renew' => 3000,
+    'amount_cost' => 1000,
+    'amount_benefit' => 2000
   ]
 );
 
@@ -306,37 +317,52 @@ $sec03 = array(
   [
     'id' => 1,
     'title' => $Vision_title_01,
-    'text' => $Vision_text_01
+    'text' => $Vision_text_01,
+    'image' => 'zafiro.webp'
   ],
   [
     'id' => 2,
     'title' => $Vision_title_02,
-    'text' => $Vision_text_02
+    'text' => $Vision_text_02,
+    'image' => 'rubi.webp'
   ],
   [
     'id' => 3,
     'title' => $Vision_title_03,
-    'text' => $Vision_text_03
+    'text' => $Vision_text_03,
+    'image' => 'esmeralda.webp'
   ],
   [
     'id' => 4,
     'title' => $Vision_title_04,
-    'text' => $Vision_text_04
+    'text' => $Vision_text_04,
+    'image' => 'diamante.webp'
   ],
   [
     'id' => 5,
     'title' => $Vision_title_05,
-    'text' => $Vision_text_05
+    'text' => $Vision_text_05,
+    'image' => 'diamante_corona.webp'
   ]
 );
 
 $sec04 = array(
   [
-    'text' => $Slogan_plans[0],
-    'image' => 'basic'
+    'title' => $Slogan_item1_title,
+    'text' => $Slogan_item1_text
   ],
-  $Slogan_plans[1],
-  $Slogan_plans[2]
+  [
+    'title' => $Slogan_item2_title,
+    'text' => $Slogan_item2_text
+  ],
+  [
+    'title' => $Slogan_item3_title,
+    'text' => $Slogan_item3_text
+  ],
+  [
+    'title' => $Slogan_item4_title,
+    'text' => $Slogan_item4_text
+  ]
 );
 
 $sec07 = array(
@@ -367,11 +393,11 @@ $sec07 = array(
   ]
 );
 
+$clubBenefits = [$Spirit_item01, $Spirit_item02, $Spirit_item03, $Spirit_item04, $Spirit_item05, $Spirit_item06];
+
 $productBonuses = array(
   'flash' => [
     'title' => $Bonus_flash_title,
-    'text_01' => $Bonus_flash_text01,
-    'text_02' => $Bonus_flash_text02,
     'list' => [
       $Bonus_flash_list_01,
       $Bonus_flash_list_02
@@ -379,33 +405,16 @@ $productBonuses = array(
   ],
   'speed' => [
     'title' => $Bonus_speed_title,
-    'text_01' => $Bonus_speed_text01,
-    'text_02' => $Bonus_speed_text02,
-    'list' => [
-      $Bonus_speed_list_01,
-      $Bonus_speed_list_02
-    ]
+    'text' => $Bonus_speed_text,
   ],
-  'level' => [
-    'title' => $Bonus_level_title,
-    'text_01' => $Bonus_level_text01,
-    'text_02' => $Bonus_level_text02,
-    'list' => $Bonuses['level'],
+  'community' => [
+    'title' => $Bonus_community_title,
+    'text' => $Bonus_community_text01,
+    'list' => $Bonuses['community']['levels'],
+    'total' => $Bonus_community_total,
   ],
   'infinity' => [
     'title' => $Bonus_infinity_title,
-    'text_01' => $Bonus_infinity_text01,
-    'text_02' => $Bonus_infinity_text02,
-    'list' => [
-      $Bonus_infinity_list_01
-    ]
-  ],
-  'rewards' => [
-    'title' => $Bonus_rewards_title,
-    'text_01' => $Bonus_rewards_text01,
-    'text_02' => $Bonus_rewards_text02,
-    'list' => [
-      $Bonus_rewards_list_01
-    ]
+    'text' => $Bonus_infinity_text,
   ]
 );
