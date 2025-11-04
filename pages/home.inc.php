@@ -2,13 +2,13 @@
 <!-- HERO -->
 <!-- ============================================== -->
 
-<section class="hero-pin d-flex fd-col jc-center ai-center overlayy o-30">
-  <div class="anchor" id="home"></div>
+<section class="rel hero-pin d-flex fd-col jc-center ai-center overlayy o-30">
+  <div class="abs" id="home" style="top:0"></div>
   <img src="./images/hero/hero.webp" alt="" class="background" style="opacity:1"/>
-  <!-- <canvas id="webgl-canvas" class="background" style="opacity:1"></canvas> -->
 
   <div class="text-hero t-c hero-text">
-    <h1 class="h1-hero t-balance"><?= $Hero_01; ?></h1>
+    <img src="./images/logo/logo.svg" alt="5D Community" class="w-30 small-w-60 m-center mb-50 small-mb-30">
+    <h1 class="h1-hero t-balance small-mb-30"><?= $Hero_01; ?></h1>
     <p class="h4 w-50 med-w-80 small-w-100 m-center"><?= $Hero_02; ?></p>
   </div>
   <div class="section-arrows">
@@ -30,7 +30,7 @@
 	    <button class="arrow down"></button>
 	</div>
 
-	<div class="anchor" id="stellum"></div>
+	<div class="anchor" id="5d"></div>
 	<div class="mw-1440 jc-center ai-center min-h-dhv med-min-h-60dvh med-pt-150 med-pb-150">
 		<div class="t-c">
 			<h2 class="h1 mb-80 small-mb-40"><?= $Journey_title; ?></h2>
@@ -50,9 +50,9 @@
 <!-- TWO -->
 <!-- ============================================== -->
 
-<section>
+<section class="c-100">
 
-  <h2 class="h1-special t-c tc-acc m-0 pt-30 pb-30"><?= $Letters_title ?></h2>
+  <h2 class="h1-special t-c tc-acc m-0 pt-80 med-pt-30 pb-30"><?= $Letters_title ?></h2>
 
 	<div class="h-100 vertical-slides rel of-h small-h-0 letters" style="--total-items:4">
     <div class="section-arrows">
@@ -117,9 +117,9 @@
 		<p class="h4 fw-700 tc-acc m-center mb-0 licence-text" style="max-width:48ch"><?= $Slogan_subtitle; ?></p>
 		<p class="h4 m-center mt-0 mb-40 licence-text" style="max-width:48ch"><?= $Slogan_text; ?></p>
     <ul class="d-flex med-fd-col med-ai-center jc-center g-20">
-      <?php foreach($sec04 as $plan): ?>
-        <li class="licence-box rel c-sec p-20 med-w-100 w-30 br-10 d-flex fd-col ai-center jc-center g-10">
-          <img src="./images/body/subpage/bg_basic.webp" alt="" class="licence-bg background br-10">
+      <?php foreach($sec04 as $k => $plan): ?>
+        <li class="licence-box rel c-pri p-20 med-w-100 w-30 br-10 d-flex fd-col ai-center jc-center g-10">
+          <img src="./images/body/<?= $k + 1 ?>.webp" alt="" class="licence-bg background br-10">
           <h3 class="rel h5 fw-700 m-0"><?= $plan['title'] ?></h3>
           <p class="rel m-0"><?= $plan['text'] ?></p>
         </li>
@@ -149,7 +149,7 @@ $counter = 1;
 foreach ($Modal as $item){
 	echo "
 	<div id='Modal{$counter}' class='modal'>
-    <div class='modal-content rel t-c'>
+    <div class='modal-content rel t-c pt-60'>
       <span class='v-white c-pri icon icon-close' onclick=\"closeModal('Modal{$counter}')\"></span>
       <h2 class='h2 tc-pri t-c med-t-l'>{$item[0]}</h2>
       <p>{$item[2]}</p>
@@ -172,7 +172,7 @@ foreach ($Modal as $item){
 	    <button class="arrow down"></button>
 	</div>
 
-	<div class="box_product img-three rel flex ai-center jc-center fd-col">
+	<div class="box_product img-three rel flex ai-center jc-center fd-col g-20">
 		<div class="rel t-c">
       <img src="./images/body/products/<?= $link_01; ?>.webp" class="product m-center" alt="<?= $link_01; ?>" onclick="openModal('Modal1')"/>
       <div class="abs product-plus-wrap">
@@ -253,7 +253,7 @@ foreach ($Modal as $item){
     <div class="w-100 med-d-flex fw-wrap g-0 small-g-20 jc-center">
       <?php foreach($sec07 as $item): ?>
         <article class="reward p-20 pt-40 pb-40 of-h rel med-t-c w-100 med-w-40 small-w-100">
-          <img src="./images/body/truth/<?= $item['id']; ?>.webp" alt="<?= $item['title']; ?>" class="reward-image w-60 med-w-100 small-w-60"/>
+          <img src="./images/body/ranks/<?= $item['image']; ?>" alt="<?= $item['title']; ?>" class="reward-image w-60 med-w-100 small-w-60"/>
           <h2 class="reward-title h4 m-0" style="transform-origin:left center;"><?= $item['title']; ?></h2>
           <p class="reward-text mb-0"><?= $item['text']; ?></p>
         </article>
@@ -286,7 +286,6 @@ foreach ($Modal as $item){
 	</div>
 </section>
 
-<script src="./js/webgl-distortion.js"></script>
 <script src="./js/slider.js"></script>
 
 <script>

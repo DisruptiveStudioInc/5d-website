@@ -345,9 +345,9 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
 	</div>
 </section>
 
-<section class="c-<?php echo $id; ?>">
+<section class="c-sub <?php echo $id; ?>">
     <div class="mw-1280 t-c big">
-        <h2 class="h1 med-mt-50"><?php echo $Started_subpage; ?></h2>
+        <h2 class="h1 med-mt-50 <?php echo $Condicion; ?>"><?php echo $Started_subpage; ?></h2>
         <?php if(false): ?>
           <a href="<?php echo $Login; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?php echo $Btn_start; ?></a>
         <?php endif; ?>

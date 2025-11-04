@@ -13,7 +13,7 @@ $Hide = ($Actual_Page === 'home' || $Actual_Page === '') ? '' : 'none';
 // CLIENT
 //-------------------------//
 
-$Company_Name  = "5D";
+$Company_Name  = "5D Community";
 
 //-------------------------//
 // BONUSES
@@ -99,14 +99,8 @@ $Footer_Rights  = $Company_Name."© ".date("Y").". All rights reserved";
 $link_01 = "basic";
 $link_02 = "premium";
 
-$link_web_us = "https://usa.myevoglobal.com";
-$link_web_mx = "https://mex.myevoglobal.com";
-$link_web_in = "https://int.myevoglobal.com";
-$link_web_co = "https://col.myevoglobal.com";
-$link_web_eu = "https://eur.myevoglobal.com";
-
-$Register = "https://my.stellumglobal.com/register/$user_replica";
-$Login    = "https://my.stellumglobal.com/login";
+$Register = "https://my.5dcommunity.io/register/$user_replica";
+$Login    = "https://my.5dcommunity.io/login";
 
 $Shop_us = "$link_web_us/?ref=$user_replica";
 $Shop_mx = "$link_web_mx/?ref=$user_replica";
@@ -203,7 +197,7 @@ $Video_vimeo = "1112334525";
 
 $Menu = array(
   array('#home','active',$Menu_01),
-  array('#stellum','',$Menu_02),
+  array('#5d','',$Menu_02),
   array('#suscriptions','',$Menu_03),
   array('?p=product&id=basic','',$Products_title_01)
   // array('','', $Menu_05)
@@ -243,7 +237,7 @@ $Condicion_lan = isset($idiomas[$idioma]) ? $idiomas[$idioma] : 'Desconocido';
 // CONTACT
 //-------------------------//
 
-$Email = "stellumglobal@gmail.com";
+$Email = "hola@5dcommunity.io";
 // $Schedule = "Mon-Fri: 9 am– 6 pm<br>Saturday: 9 am – 2pm<br>Sunday: Closed";
 // $Phone = "(888) 456 7890";
 // $Address = "Blvd. Kukulcan 1,<br>Puerto Juarez,<br>Zona Hotelera,<br>77500 Cancún, Q.R. México";
@@ -369,27 +363,32 @@ $sec07 = array(
   [
     'id' => 1,
     'title' => $Truth_title_01,
-    'text' => $Truth_text_01
+    'text' => $Truth_text_01,
+    'image' => 'reward_rubi.webp'
   ],
   [
     'id' => 2,
     'title' => $Truth_title_02,
-    'text' => $Truth_text_02
+    'text' => $Truth_text_02,
+    'image' => 'reward_zafiro.webp'
   ],
   [
     'id' => 3,
     'title' => $Truth_title_03,
-    'text' => $Truth_text_03
+    'text' => $Truth_text_03,
+    'image' => 'reward_esmeralda.webp'
   ],
   [
     'id' => 4,
     'title' => $Truth_title_04,
-    'text' => $Truth_text_04
+    'text' => $Truth_text_04,
+    'image' => 'reward_diamante.webp'
   ],
   [
     'id' => 5,
     'title' => $Truth_title_05,
-    'text' => $Truth_text_05
+    'text' => $Truth_text_05,
+    'image' => 'reward_diamante_corona.webp'
   ]
 );
 
