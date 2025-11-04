@@ -70,7 +70,7 @@
   <main class="rel d-flex jc-center ai-center of-h overlay o-30" style="min-height:100dvh;">
     <img src="./images/hero/hero.webp" alt="Placeholder" class="background" style="opacity:1" />
     <div class="d-flex fd-col ai-center rel p-20" style="z-index:10">
-      <img src="./images/logo/logo.svg" alt="logo Stellum" class="mb-60" style="width:min(50%,400px);">
+      <img src="./images/logo/logo.svg" alt="logo 5D" class="mb-60" style="width:min(50%,400px);">
       <h1 class="h1-special t-c m-0"><?= $Soon_Text ?></h1>
       <h2 class="h1 t-c mb-20"><?= $Soon_Description1 ?></h2>
       <p class="h3 t-c m-0"><?= $Soon_Description2 ?></p>

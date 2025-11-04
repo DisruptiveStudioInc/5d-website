@@ -13,7 +13,71 @@ $Hide = ($Actual_Page === 'home' || $Actual_Page === '') ? '' : 'none';
 // CLIENT
 //-------------------------//
 
-$Company_Name  = "Stellum";
+$Company_Name  = "5D";
+$Company_Fullname  = "5D Community";
+
+//-------------------------//
+// BONUSES
+//-------------------------//
+
+$Bonuses = array(
+  'flash' => [
+    'first_referal' => 700,
+    'first_percentage' => 70,
+    'regular_referal' => 400,
+    'regular_percentage' => 40
+  ],
+  'speed' => [
+    'people' => 3,
+    'initial_days' => 30,
+    'amount' => 300
+  ],
+  'community' => [
+    'total_percentage' => 70,
+    'levels' => array(
+      [
+        'level' => 1,
+        'percentage' => 40
+      ],
+      [
+        'level' => 2,
+        'percentage' => 20
+      ],
+      [
+        'level' => 3,
+        'percentage' => 5
+      ],
+      [
+        'level' => 4,
+        'percentage' => 2
+      ],
+      [
+        'level' => 5,
+        'percentage' => 1
+      ],
+      [
+        'level' => 6,
+        'percentage' => 1
+      ],
+      [
+        'level' => 7,
+        'percentage' => 1
+      ]
+    )
+  ],
+  'infinity' => [
+    'amount_renew' => 3000,
+    'amount_cost' => 1000,
+    'amount_benefit' => 2000
+  ]
+);
+
+//-------------------------//
+// LANGUAGES
+//-------------------------//
+
+include("idiomas/idiomas.php");
+$idioma = $_SESSION["language"];
 
 //-------------------------//
 // META
@@ -27,7 +91,7 @@ $Keywords_Site     = $Keywords;
 //-------------------------//
 
 $Host_Site      = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER["HTTP_HOST"];
-$Footer_Rights  = $Company_Name."© ".date("Y").". All rights reserved";
+$Footer_Rights  = $Company_Fullname." © ".date("Y").". All rights reserved.";
 
 //-------------------------//
 // LINKS
@@ -36,14 +100,8 @@ $Footer_Rights  = $Company_Name."© ".date("Y").". All rights reserved";
 $link_01 = "basic";
 $link_02 = "premium";
 
-$link_web_us = "https://usa.myevoglobal.com";
-$link_web_mx = "https://mex.myevoglobal.com";
-$link_web_in = "https://int.myevoglobal.com";
-$link_web_co = "https://col.myevoglobal.com";
-$link_web_eu = "https://eur.myevoglobal.com";
-
-$Register = "https://my.stellumglobal.com/register/$user_replica";
-$Login    = "https://my.stellumglobal.com/login";
+$Register = "https://my.5dcommunity.io/register/$user_replica";
+$Login    = "https://my.5dcommunity.io/login";
 
 $Shop_us = "$link_web_us/?ref=$user_replica";
 $Shop_mx = "$link_web_mx/?ref=$user_replica";
@@ -140,7 +198,7 @@ $Video_vimeo = "1112334525";
 
 $Menu = array(
   array('#home','active',$Menu_01),
-  array('#stellum','',$Menu_02),
+  array('#5d','',$Menu_02),
   array('#suscriptions','',$Menu_03),
   array('?p=product&id=basic','',$Products_title_01)
   // array('','', $Menu_05)
@@ -180,36 +238,183 @@ $Condicion_lan = isset($idiomas[$idioma]) ? $idiomas[$idioma] : 'Desconocido';
 // CONTACT
 //-------------------------//
 
-$Email = "stellumglobal@gmail.com";
+$Email = "hola@5dcommunity.io";
 // $Schedule = "Mon-Fri: 9 am– 6 pm<br>Saturday: 9 am – 2pm<br>Sunday: Closed";
 // $Phone = "(888) 456 7890";
 // $Address = "Blvd. Kukulcan 1,<br>Puerto Juarez,<br>Zona Hotelera,<br>77500 Cancún, Q.R. México";
 
-?>
+//-------------------------//
+// LOOPS
+//-------------------------//
 
+$sec01 = array(
+  [
+    'title' => $Journey_button_1,
+    'text' => $Journey_text_1
+  ],
+  [
+    'title' => $Journey_button_2,
+    'text' => $Journey_text_2
+  ],
+  [
+    'title' => $Journey_button_3,
+    'text' => $Journey_text_3
+  ],
+  [
+    'title' => $Journey_button_4,
+    'text' => $Journey_text_4
+  ],
+  [
+    'title' => $Journey_button_5,
+    'text' => $Journey_text_5
+  ]
+);
 
+$letterList_01 = [$Letters_list01_01, $Letters_list01_02, $Letters_list01_03, $Letters_list01_04];
+$letterList_02 = [$Letters_list02_01, $Letters_list02_02, $Letters_list02_03, $Letters_list02_04];
+$letterList_03 = [$Letters_list03_01, $Letters_list03_02, $Letters_list03_03, $Letters_list03_04];
+$letterList_04 = [$Letters_list04_01, $Letters_list04_02, $Letters_list04_03, $Letters_list04_04];
+$letterList_05 = [$Letters_list05_01, $Letters_list05_02, $Letters_list05_03, $Letters_list05_04];
+$verticalSlides = array(
+  [
+    'id' => 1,
+    'title' => $Letters_title_01,
+    'text' => $Letters_text_01,
+    'list' => $letterList_01,
+  ],
+  [
+    'id' => 2,
+    'title' => $Letters_title_02,
+    'text' => $Letters_text_02,
+    'list' => $letterList_02,
+  ],
+  [
+    'id' => 3,
+    'title' => $Letters_title_03,
+    'text' => $Letters_text_03,
+    'list' => $letterList_03,
+  ],
+  [
+    'id' => 4,
+    'title' => $Letters_title_04,
+    'text' => $Letters_text_04,
+    'list' => $letterList_04,
+  ],
+  [
+    'id' => 5,
+    'title' => $Letters_title_05,
+    'text' => $Letters_text_05,
+    'list' => $letterList_05,
+  ]
+);
 
+$sec03 = array(
+  [
+    'id' => 1,
+    'title' => $Vision_title_01,
+    'text' => $Vision_text_01,
+    'image' => 'zafiro.webp'
+  ],
+  [
+    'id' => 2,
+    'title' => $Vision_title_02,
+    'text' => $Vision_text_02,
+    'image' => 'rubi.webp'
+  ],
+  [
+    'id' => 3,
+    'title' => $Vision_title_03,
+    'text' => $Vision_text_03,
+    'image' => 'esmeralda.webp'
+  ],
+  [
+    'id' => 4,
+    'title' => $Vision_title_04,
+    'text' => $Vision_text_04,
+    'image' => 'diamante.webp'
+  ],
+  [
+    'id' => 5,
+    'title' => $Vision_title_05,
+    'text' => $Vision_text_05,
+    'image' => 'diamante_corona.webp'
+  ]
+);
 
+$sec04 = array(
+  [
+    'title' => $Slogan_item1_title,
+    'text' => $Slogan_item1_text
+  ],
+  [
+    'title' => $Slogan_item2_title,
+    'text' => $Slogan_item2_text
+  ],
+  [
+    'title' => $Slogan_item3_title,
+    'text' => $Slogan_item3_text
+  ],
+  [
+    'title' => $Slogan_item4_title,
+    'text' => $Slogan_item4_text
+  ]
+);
 
+$sec07 = array(
+  [
+    'id' => 1,
+    'title' => $Truth_title_01,
+    'text' => $Truth_text_01,
+    'image' => 'reward_rubi.webp'
+  ],
+  [
+    'id' => 2,
+    'title' => $Truth_title_02,
+    'text' => $Truth_text_02,
+    'image' => 'reward_zafiro.webp'
+  ],
+  [
+    'id' => 3,
+    'title' => $Truth_title_03,
+    'text' => $Truth_text_03,
+    'image' => 'reward_esmeralda.webp'
+  ],
+  [
+    'id' => 4,
+    'title' => $Truth_title_04,
+    'text' => $Truth_text_04,
+    'image' => 'reward_diamante.webp'
+  ],
+  [
+    'id' => 5,
+    'title' => $Truth_title_05,
+    'text' => $Truth_text_05,
+    'image' => 'reward_diamante_corona.webp'
+  ]
+);
 
+$clubBenefits = [$Spirit_item01, $Spirit_item02, $Spirit_item03, $Spirit_item04, $Spirit_item05, $Spirit_item06];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$productBonuses = array(
+  'flash' => [
+    'title' => $Bonus_flash_title,
+    'list' => [
+      $Bonus_flash_list_01,
+      $Bonus_flash_list_02
+    ]
+  ],
+  'speed' => [
+    'title' => $Bonus_speed_title,
+    'text' => $Bonus_speed_text,
+  ],
+  'community' => [
+    'title' => $Bonus_community_title,
+    'text' => $Bonus_community_text01,
+    'list' => $Bonuses['community']['levels'],
+    'total' => $Bonus_community_total,
+  ],
+  'infinity' => [
+    'title' => $Bonus_infinity_title,
+    'text' => $Bonus_infinity_text,
+  ]
+);

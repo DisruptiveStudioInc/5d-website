@@ -1,6 +1,4 @@
 <?php
-  include("idiomas/idiomas.php");
-  $idioma = $_SESSION["language"];
   include("info.php");
 ?>
 
@@ -13,15 +11,15 @@
   <!-- X -->
   <meta name="twitter:card"        content="summary">
   <meta name="twitter:site"        content="<?php echo $Host_Site; ?>">
-  <meta name="twitter:title"       content="<?php echo $Company_Name; ?>">
+  <meta name="twitter:title"       content="<?php echo $Company_Fullname; ?>">
   <meta name="twitter:description" content="<?php echo $Description_Site; ?>">
-  <meta name="twitter:creator"     content="<?php echo $Company_Name; ?>">
+  <meta name="twitter:creator"     content="<?php echo $Company_Fullname; ?>">
   <meta name="twitter:image"       content="<?php echo $Host_Site; ?>/images/facebook/facebook.webp">
 
   <!-- FACEBOOK -->
-  <meta property="og:site_name"    content="<?php echo $Company_Name; ?>" />
+  <meta property="og:site_name"    content="<?php echo $Company_Fullname; ?>" />
   <meta property="og:url"          content="<?php echo $Host_Site; ?>" />
-  <meta property="og:title"        content="<?php echo $Company_Name; ?>" />
+  <meta property="og:title"        content="<?php echo $Company_Fullname; ?>" />
   <meta property="og:type"         content="website" />
   <meta property="og:description"  content="<?php echo $Description_Site; ?>" />
   <meta property="og:image"        content="<?php echo $Host_Site; ?>/images/facebook/facebook.webp" />
@@ -33,16 +31,16 @@
   <meta http-equiv="Content-Type"  content="text/html; charset=UTF-8" />
   <meta name="description"         content="<?php echo $Description_Site; ?>" />
   <meta name="keywords"            content="<?php echo $Keywords_Site; ?>" />
-  <meta name="autor"               content="<?php echo $Company_Name; ?>" />
+  <meta name="autor"               content="<?php echo $Company_Fullname; ?>" />
 
-  <title><?php echo $Company_Name; ?></title>
+  <title><?php echo $Company_Fullname; ?></title>
 
   <!-- STYLES-->
   <link rel="stylesheet" type="text/css" href="./css/min/reset.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/min/main.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/min/root.min.css" />
 
-  <link rel="stylesheet" type="text/css" href="./css/body/style.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/body/style.css" />
   <link rel="stylesheet" type="text/css" href="./css/body/navigation.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/body/slick.min.css" />
 

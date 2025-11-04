@@ -18,6 +18,11 @@ $Text_price = [
     $link_02     => $Products_price_02
 ];
 
+$Text_hero_sub = [
+    $link_01     => $Products_text2_inner_01,
+    $link_02     => $Products_text2_inner_02
+];
+
 $Ingredients_map = [
     $link_01     => $Ingredients_01,
     $link_02     => $Ingredients_02
@@ -140,6 +145,7 @@ $Started_subpage_map = [
 $Subtitulo          = $Subtitulo_map[$id]            ?? "";
 $Text               = $Text_map[$id]                 ?? "";
 $Price              = $Text_price[$id]               ?? "";
+$HeroSub            = $Text_hero_sub[$id]            ?? "";
 $Ingredients        = $Ingredients_map[$id]          ?? "";
 $Ingredients_list   = $Ingredients_list_map[$id]     ?? [];
 $Benefits_Sub       = $Benefits_sub_map[$id]         ?? "";
@@ -165,42 +171,44 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
 
 <section>
     <div class="block-box-bg overlay o-70">
-        <div class="mw-1440 jc-center ai-center dh-100 small-fd-col-rev g-80 small-g-20 p-30">
+        <div class="mw-1440 jc-center ai-center dh-100 small-fd-col-rev g-0 small-g-20 p-30">
+          <div class="info w-60 tc-0 small-t-c">
+              <h1 class="h1-product"><?php echo $Subtitulo; ?></h1>
+            <p class="small-d-none"><?php echo $Text; ?></p>
+            <p class="h1 fw-700 tc-acc"><?php echo $Price; ?></p>
+            <p class="h3 fw-700"><?= $HeroSub; ?></p>
 
-            <div class="info w-50 med-w-100 all-tc-0 small-t-c">
-                <h1 class="h1-special"><?php echo $Subtitulo; ?></h1>
-                <p class="small-d-none"><?php echo $Text; ?></p>
-                <p class="h3"><?php echo $Price; ?></p>
+            <div class="btns g-10 small-jc-center d-none">
+                <?php
+                $wrap_product = "<div class='wrap-get subpage'>
+                  <div class='btn-get'>{$Btn_buy}</div>
+                  <div class='get'>";
 
-                <div class="btns g-10 small-jc-center">
-                    <?php
-                    $wrap_product = "<div class='wrap-get subpage'>
-                      <div class='btn-get'>{$Btn_buy}</div>
-                      <div class='get'>";
-
-                    foreach ($links_product as $link) {
-                        $wrap_product .= "
-                        <a href='{$link['url']}{$id}{$ref}'
-                           target='_blank'
-                           class='{$link['class']}'
-                           aria-label='{$link['label']}'>{$link['text']}</a>";
-                    }
-
+                foreach ($links_product as $link) {
                     $wrap_product .= "
-                      </div>
-                    </div>";
+                    <a href='{$link['url']}{$id}{$ref}'
+                        target='_blank'
+                        class='{$link['class']}'
+                        aria-label='{$link['label']}'>{$link['text']}</a>";
+                }
 
-                    //echo $wrap_product;
-                    ?>
-                    <?php if($user_replica): ?>
-                      <div class="wrap-get subpage">
-                        <a href="<?= $Register; ?>" target="_blank" class="btn-get"><?= $Btn_buy; ?></a>
-                      </div>
-                    <?php endif; ?>
-                </div>
+                $wrap_product .= "
+                  </div>
+                </div>";
+
+                //echo $wrap_product;
+                ?>
+                <?php if($user_replica): ?>
+                  <div class="wrap-get subpage">
+                    <a href="<?= $Register; ?>" target="_blank" class="btn-get"><?= $Btn_buy; ?></a>
+                  </div>
+                <?php endif; ?>
             </div>
+          </div>
 
-            <img class="w-50 med-w-30 small-w-80 small-mt-40" src="./images/body/products/<?php echo $id; ?>.webp" alt="<?php echo $id; ?> Product" />
+          <div class="w-40 small-w-80 small-mt-40 d-flex jc-center ai-center">
+            <img class="w-80 d-block object-cover" src="./images/body/products/<?php echo $id; ?>.webp" alt="<?php echo $id; ?> Product" />
+          </div>
         </div>
         <img class="full-img-abs" src="./images/body/subpage/bg_<?php echo $id; ?>.webp" alt="<?php echo $id; ?> background" />
     </div>
@@ -308,39 +316,28 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
 
             <!-- Textos dinámicos -->
             <div class="w-100 text_spirit <?php echo $id; ?>">
+              <?php foreach($productBonuses as $bonus): ?>
                 <div>
-                    <p class="h4"><?php echo $Started_tit; ?></p>
-                    <?php if (!empty($Started_list)): ?>
-                        <ul class="menu-list icon-check v-white">
-                            <?php foreach ($Started_list as $li): ?>
-                                <li><?php echo $li; ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    <?php endif; ?>
-                    <p><?= $Started_list_foot; ?></p>
-                </div>
-
-                <div>
-                    <p class="h4"><?php echo $Started_plan_tit; ?></p>
-                    <p><?= $Started_plan_txt[0]; ?></p>
-                    <?php if (!empty($Started_plans)): ?>
-                        <ul class="menu-list icon-check v-white">
-                            <?php foreach ($Started_plans as $li): ?>
-                                <li><?php echo $li; ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    <?php endif; ?>
-                </div>
-
-                <div>
-                    <p class="h4"><?php echo $Started_bonus_tit; ?></p>
-                    <?php if (!empty($Started_bonuses)): ?>
-                      <?php foreach ($Started_bonuses as $li): ?>
-                          <p><?php echo $li; ?></p>
+                  <h3 class="h4"><?= $bonus['title']; ?></h3>
+                  <?php if (isset($bonus['text'])): ?>
+                    <p><?= $bonus['text']; ?></p>
+                  <?php endif; ?>
+                  <?php if (isset($bonus['list'])): ?>
+                    <ul class="menu-list icon-check v-white">
+                      <?php foreach ($bonus['list'] as $li): ?>
+                        <li>
+                          <?= (gettype($li) === 'array') ?
+                          "{$Bonus_community_list_level} {$li['level']}: {$li['percentage']}%" :
+                          $li; ?>
+                        </li>
                       <?php endforeach; ?>
-                    <?php endif; ?>
-                    <p><?= $Started_bonus_foot; ?></p>
+                      <?php if (isset($bonus['total'])): ?>
+                        <li><?= $bonus['total']; ?></li>
+                      <?php endif; ?>
+                    </ul>
+                  <?php endif; ?>
                 </div>
+              <?php endforeach; ?>
             </div>
 
         </div>
@@ -348,9 +345,9 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
 	</div>
 </section>
 
-<section class="c-<?php echo $id; ?>">
+<section class="c-sub <?php echo $id; ?>">
     <div class="mw-1280 t-c big">
-        <h2 class="h1 med-mt-50"><?php echo $Started_subpage; ?></h2>
+        <h2 class="h1 med-mt-50 <?php echo $Condicion; ?>"><?php echo $Started_subpage; ?></h2>
         <?php if(false): ?>
           <a href="<?php echo $Login; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?php echo $Btn_start; ?></a>
         <?php endif; ?>
