@@ -10,7 +10,7 @@ $Keywords = "evolution, education, growth, community, exclusivity, leadership, t
 
 $Menu_01 = "Home";
 $Menu_02 = "5D";
-$Menu_03 = "Subscription";
+$Menu_03 = "5D 360";
 $Menu_04 = "Products";
 $Menu_05 = "Store";
 
