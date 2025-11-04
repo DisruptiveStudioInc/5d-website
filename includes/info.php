@@ -13,7 +13,8 @@ $Hide = ($Actual_Page === 'home' || $Actual_Page === '') ? '' : 'none';
 // CLIENT
 //-------------------------//
 
-$Company_Name  = "5D Community";
+$Company_Name  = "5D";
+$Company_Fullname  = "5D Community";
 
 //-------------------------//
 // BONUSES
@@ -90,7 +91,7 @@ $Keywords_Site     = $Keywords;
 //-------------------------//
 
 $Host_Site      = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER["HTTP_HOST"];
-$Footer_Rights  = $Company_Name."© ".date("Y").". All rights reserved";
+$Footer_Rights  = $Company_Fullname." © ".date("Y").". All rights reserved.";
 
 //-------------------------//
 // LINKS

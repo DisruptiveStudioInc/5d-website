@@ -28,7 +28,7 @@
 
   /*-- Font Family --*/
 
-  --f-family-h: "FaunaPro", sans-serif;
+  --f-family-h: "Microgbe", sans-serif;
   --f-family: "Averta", sans-serif;
 
   /*-- Font Size --*/
@@ -38,11 +38,10 @@
 }
 
 @font-face {
-  font-family: "FaunaPro";
+  font-family: "Microgbe";
   font-style: normal;
   font-weight: 400;
-  src: local("fauna_pro-extra_light"),
-    url("../../fonts/fauna_pro-extra_light.woff2") format("woff2");
+  src: local("microgbe"), url("../../fonts/microgbe.woff2") format("woff2");
 }
 @font-face {
   font-family: "Averta";
@@ -197,6 +196,7 @@ h5,
 h6 {
   color: white;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 p,
 li {
