@@ -120,7 +120,7 @@
     <ul class="d-flex med-fd-col med-ai-center jc-center g-20">
       <?php foreach($sec04 as $k => $plan): ?>
         <li class="licence-box rel c-pri p-20 med-w-100 w-30 br-10 d-flex fd-col ai-center jc-center g-10">
-          <img src="./images/body/<?= $k + 1 ?>.webp" alt="" class="licence-bg background br-10">
+          <img src="./images/body/<?= $k + 1 ?>.webp" alt="" class="licence-bg background br-10" <?= $k === 1 ? 'style="object-position:50% 90%"' : '' ?>>
           <h3 class="rel h5 fw-700 m-0"><?= $plan['title'] ?></h3>
           <p class="rel m-0"><?= $plan['text'] ?></p>
         </li>
