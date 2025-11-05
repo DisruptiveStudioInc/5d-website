@@ -72,6 +72,29 @@ $Bonuses = array(
   ]
 );
 
+$Ranks = array(
+  'sapphire' => [
+    'min' => 800,
+    'max' => 1200
+  ],
+  'ruby' => [
+    'min' => 2000,
+    'max' => 4000
+  ],
+  'emerald' => [
+    'min' => 5000,
+    'max' => 8000
+  ],
+  'diamond' => [
+    'min' => 10000,
+    'max' => 20000
+  ],
+  'crown_diamond' => [
+    'min' => 25000,
+    'max' => 50000
+  ]
+);
+
 //-------------------------//
 // LANGUAGES
 //-------------------------//
@@ -102,84 +125,6 @@ $link_02 = "premium";
 
 $Register = "https://my.5dcommunity.io/register/$user_replica";
 $Login    = "https://my.5dcommunity.io/login";
-
-$Shop_us = "$link_web_us/?ref=$user_replica";
-$Shop_mx = "$link_web_mx/?ref=$user_replica";
-$Shop_in = "$link_web_in/?ref=$user_replica";
-$Shop_co = "$link_web_co/?ref=$user_replica";
-$Shop_eu = "$link_web_eu/?ref=$user_replica";
-
-// ---------------------------
-// Array product
-// ---------------------------
-$links_product = [
-  [
-    'url'   => $link_web_us . "/product/",
-    'class' => 'eng',
-    'label' => 'Buy in USA',
-    'text'  => 'United Statess'
-  ],
-  [
-    'url'   => $link_web_mx . "/product/",
-    'class' => 'esp',
-    'label' => 'Buy in Mexico',
-    'text'  => 'México'
-  ],
-  [
-    'url'   => $link_web_in . "/product/",
-    'class' => 'int',
-    'label' => 'Buy International',
-    'text'  => 'International'
-  ],
-  [
-    'url'   => $link_web_co . "/product/",
-    'class' => 'col',
-    'label' => 'Buy Colombia',
-    'text'  => 'Colombia'
-  ],
-  [
-    'url'   => $link_web_eu . "/product/",
-    'class' => 'eur',
-    'label' => 'Buy Europe',
-    'text'  => 'Europe'
-  ]
-];
-
-// ---------------------------
-// Array product category
-// ---------------------------
-$links = [
-  [
-    'url'   => $link_web_us . "/product-category/starter-plans/",
-    'class' => 'eng',
-    'label' => 'Buy in USA',
-    'text'  => 'United States'
-  ],
-  [
-    'url'   => $link_web_mx . "/product-category/starter-plans/",
-    'class' => 'esp',
-    'label' => 'Buy in Mexico',
-    'text'  => 'México'
-  ],
-  [
-    'url'   => $link_web_in . "/product-category/starter-plans/",
-    'class' => 'int',
-    'label' => 'Buy International',
-    'text'  => 'International'
-  ],
-  [
-    'url'   => $link_web_co . "/product-category/starter-plans/",
-    'class' => 'col',
-    'label' => 'Buy Colombia',
-    'text'  => 'Colombia'
-  ],
-  [
-    'url'   => $link_web_eu . "/product-category/starter-plans/",
-    'class' => 'eur',
-    'label' => 'Buy Europe',
-    'text'  => 'Europe'
-  ]
-];
 
 // ---------------------------
 // Armar bloque HTML dinámico
@@ -213,14 +158,6 @@ $Sub = array(
     array($link_01, $Products_title_01, $Products_01),
     array($link_02, $Products_title_02, $Products_02)
   ))
-);
-
-$Sub_reg = array(
-  array($Shop_us,'USA'),
-  array($Shop_mx,'MEX'),
-  array($Shop_in,'INT'),
-  array($Shop_co,'COL'),
-  array($Shop_eu,'EUR')
 );
 
 //-------------------------//
@@ -418,3 +355,11 @@ $productBonuses = array(
     'text' => $Bonus_infinity_text,
   ]
 );
+
+//-------------------------//
+// FUNCTIONS
+//-------------------------//
+
+function formatCurrency($number) {
+  return number_format($number, 0, '.', ',');
+}

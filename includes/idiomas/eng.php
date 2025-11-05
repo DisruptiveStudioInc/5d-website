@@ -109,21 +109,37 @@ $Letters_list05_04 = "Rewards that turn goals into unforgettable moments";
 //-------------------------//
 
 $Vision_text = "{$Company_Name} Ranks";
+$monthly_earnings = "Estimated monthly earnings";
 
 $Vision_title_01 = "Sapphire";
-$Vision_text_01 = "To run your business easily from your phone.";
+$Vision_text_01 = sprintf("$%s - $%s USD/Month",
+  formatCurrency($Ranks['sapphire']['min']),
+  formatCurrency($Ranks['sapphire']['max'])
+);
 
 $Vision_title_02 = "Ruby";
-$Vision_text_02 = "With what truly transforms, no filler.";
+$Vision_text_02 = sprintf("$%s - $%s USD/Month",
+  formatCurrency($Ranks['ruby']['min']),
+  formatCurrency($Ranks['ruby']['max'])
+);
 
 $Vision_title_03 = "Emerald";
-$Vision_text_03 = "With direct access to the essentials you need.";
+$Vision_text_03 = sprintf("$%s - $%s USD/Month",
+  formatCurrency($Ranks['emerald']['min']),
+  formatCurrency($Ranks['emerald']['max'])
+);
 
 $Vision_title_04 = "Diamond";
-$Vision_text_04 = "With unique and memorable experiences.";
+$Vision_text_04 = sprintf("$%s - $%s USD/Month",
+  formatCurrency($Ranks['diamond']['min']),
+  formatCurrency($Ranks['diamond']['max'])
+);
 
 $Vision_title_05 = "Crown Diamond";
-$Vision_text_05 = "That vibrates, grows, and walks with you.";
+$Vision_text_05 = sprintf("$%s - $%s+ USD/Month",
+  formatCurrency($Ranks['crown_diamond']['min']),
+  formatCurrency($Ranks['crown_diamond']['max'])
+);
 
 //-------------------------//
 // Slogan

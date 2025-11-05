@@ -94,8 +94,9 @@
       <?php foreach($sec03 as $item): ?>
         <li class="box rel d-flex fd-col jc-center ai-center g-0 p-20 br-20 w-100 c-pri box_<?= $item['id']; ?>">
           <img src="./images/body/ranks/<?= $item['image'] ?>" alt="<?= $item['title']; ?>" class="w-40 mb-10">
-          <h3 class="box-title h3 m-0"><?= $item['title']; ?></h3>
-          <p><?= $item['text'] ?></p>
+          <h3 class="box-title h4 m-0"><?= $item['title']; ?></h3>
+          <p class="m-0"><?= $monthly_earnings ?><?= formatCurrency(3000) ?></p>
+          <p class="m-0 fw-700 h5 tc-acc"><?= $item['text'] ?></p>
           <svg class="glow-effect" xmlns="http://www.w3.org/2000/svg"><rect /></svg>
         </li>
       <?php endforeach; ?>
