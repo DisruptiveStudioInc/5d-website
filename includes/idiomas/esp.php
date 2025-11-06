@@ -46,6 +46,15 @@ $Hero_01 = "Real people. <span class='tc-acc'>True creators</span>";
 $Hero_02 = "#YoSoy5D";
 
 //-------------------------//
+// About
+//-------------------------//
+
+$About_title = "Quíenes somos";
+$About_text_acc = "{$Company_Name} es una comunidad de crecimiento y monetización digital";
+$About_text1 = "que combina educación, tecnología, experiencias y un modelo de expansión global.";
+$About_text2 = "En {$Company_Name} formamos líderes digitales que aprenden, ganan y evolucionan, mientras construyen una vida de libertad, propósito y estilo.";
+
+//-------------------------//
 // Journey
 //-------------------------//
 

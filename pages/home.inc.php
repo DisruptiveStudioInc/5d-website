@@ -20,7 +20,7 @@
 </section>
 
 <!-- ============================================== -->
-<!-- ONE -->
+<!-- ABOUT -->
 <!-- ============================================== -->
 
 <section>
@@ -30,15 +30,41 @@
 	    <button class="arrow down"></button>
 	</div>
 
+  <div class="d-flex fw-wrap">
+    <div class="w-50 med-w-100 d-flex fd-col jc-center ai-center min-h-dhv med-min-h-50dvh p-60 med-pt-60 med-pb-60 small-p-20 small-pt-50 small-pb-50">
+      <h2 class="h1 mb-60 med-mb-40 small-mb-20 t-c"><?= $About_title; ?></h2>
+      <p class="h2 t-balance med-t-c fw-700 tc-acc mb-0"><?= $About_text_acc; ?></p>
+      <p class="h5 med-t-c mb-20 small-mb-10"><?= $About_text1; ?></p>
+      <p class="h5 med-t-c"><?= $About_text2; ?></p>
+    </div>
+    <div class="w-50 med-w-100 med-h-50 rel">
+      <img src="./images/body/about.webp" alt="People smiling on a beach" class="background" style="opacity:1;" />
+      <!-- <img src="./images/body/the_spirit/2.webp" alt="<?= $Spirit_title_02; ?>" class="background animate-fade" style="animation-delay:5s" />
+      <img src="./images/body/the_spirit/3.webp" alt="<?= $Spirit_title_03; ?>" class="background animate-fade" style="animation-delay:10s" /> -->
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- ONE -->
+<!-- ============================================== -->
+
+<section class="c-pri">
+
+	<div class="section-arrows">
+	    <button class="arrow up"></button>
+	    <button class="arrow down"></button>
+	</div>
+
 	<div class="anchor" id="5d"></div>
-	<div class="mw-1440 jc-center ai-center min-h-dhv med-min-h-60dvh med-pt-150 med-pb-150">
+	<div class="mw-1440 jc-center ai-center min-h-dhv med-min-h-60dvh med-pt-60 med-pb-60">
 		<div class="t-c">
 			<h2 class="h1 mb-80 small-mb-40"><?= $Journey_title; ?></h2>
-      <ul class="slider">
+      <ul class="d-flex g-40 med-g-20 fw-wrap jc-center">
         <?php foreach($sec01 as $step): ?>
-          <li class="content-slide">
-            <h3 class="content-title tc-acc h1-special"><?= $step['title'] ?></h3>
-            <p class="content-text h1" data-text="<?= $step['text'] ?>"><?= $step['text'] ?></p>
+          <li class="dimension p-20 br-10 d-flex fd-col ai-center jc-center g-0">
+            <h3 class="dimension-title tc-acc h4 mt-0"><?= $step['title'] ?></h3>
+            <p class="h5 m-0 t-balance" data-text="<?= $step['text'] ?>"><?= $step['text'] ?></p>
           </li>
         <?php endforeach; ?>
       </ul>
@@ -81,26 +107,27 @@
 <!-- THREE -->
 <!-- ============================================== -->
 
-<section class="parallax-wrap">
+<section class="parallax-wrap rel">
 
-	<div class="section-arrows">
-	    <button class="arrow up"></button>
-	    <button class="arrow down"></button>
-	</div>
-
-	<div class="mw-1440 t-c h-100 med-h-0 fd-col g-40 med-g-20 jc-center ai-center parallax">
-		<h2 class="h1-special short"><?= $Vision_text; ?></h2>
-    <ul class="d-flex fw-wrap jc-center">
-      <?php foreach($sec03 as $item): ?>
-        <li class="box rel d-flex fd-col jc-center ai-center g-0 p-20 br-20 w-100 c-pri box_<?= $item['id']; ?>">
-          <img src="./images/body/ranks/<?= $item['image'] ?>" alt="<?= $item['title']; ?>" class="w-40 mb-10">
-          <h3 class="box-title h4 m-0"><?= $item['title']; ?></h3>
-          <p class="m-0"><?= $monthly_earnings ?></p>
-          <p class="m-0 fw-700 h5 tc-acc"><?= $item['text'] ?></p>
-          <svg class="glow-effect" xmlns="http://www.w3.org/2000/svg"><rect /></svg>
-        </li>
-      <?php endforeach; ?>
-    </ul>
+  <div class="parallax">
+    <div class="mw-1440 t-c h-100 med-h-0 fd-col g-30 med-g-20 jc-center ai-center med-pt-60 med-pb-60">
+      <div class="section-arrows">
+        <button class="arrow up"></button>
+        <button class="arrow down"></button>
+      </div>
+      <h2 class="h1-special short m-0"><?= $Vision_text; ?></h2>
+      <ul class="d-flex fw-wrap jc-center">
+        <?php foreach($sec03 as $k => $item): ?>
+          <li class="box rel d-flex fd-col jc-center ai-center g-0 p-20 br-20 w-100 c-pri box_<?= $item['id']; ?>">
+            <img src="./images/body/ranks/<?= $item['image'] ?>" alt="<?= $item['title']; ?>" class="rank-image med-w-40" <?= $k === count($sec03) - 1 ? 'style="translate:0 -5px;"' : '' ?>>
+            <h3 class="box-title h5 m-0"><?= $item['title']; ?></h3>
+            <p class="m-0"><?= $monthly_earnings ?></p>
+            <p class="m-0 fw-700 h5 tc-acc"><?= $item['text'] ?></p>
+            <svg class="glow-effect" xmlns="http://www.w3.org/2000/svg"><rect /></svg>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+    </div>
 	</div>
 </section>
 
@@ -114,19 +141,25 @@
 	    <button class="arrow down"></button>
 	</div>
 
-	<div class="mw-1280 t-c h-100 med-h-0 jc-center fd-col">
-		<h2 class="h1 m-center mb-20 licence-title t-balance" style="max-width:26ch;"><?= $Slogan_title; ?></h2>
-		<p class="h4 fw-700 tc-acc m-center mb-0 licence-text" style="max-width:48ch"><?= $Slogan_subtitle; ?></p>
-		<p class="h4 m-center mt-0 mb-40 licence-text" style="max-width:48ch"><?= $Slogan_text; ?></p>
-    <ul class="d-flex med-fd-col med-ai-center jc-center g-20">
-      <?php foreach($sec04 as $k => $plan): ?>
-        <li class="licence-box rel c-pri p-20 med-w-100 w-30 br-10 d-flex fd-col ai-center jc-center g-10">
-          <img src="./images/body/<?= $k + 1 ?>.webp" alt="" class="licence-bg background br-10" <?= $k === 1 ? 'style="object-position:50% 90%"' : '' ?>>
-          <h3 class="rel h5 fw-700 m-0"><?= $plan['title'] ?></h3>
-          <p class="rel m-0"><?= $plan['text'] ?></p>
-        </li>
-      <?php endforeach; ?>
-    </ul>
+	<div class="mw-1280 h-100 med-h-0 jc-center fd-col med-pt-60 med-pb-60">
+		<h2 class="h1 t-c m-center mb-20 licence-title t-balance" style="max-width:26ch;"><?= $Slogan_title; ?></h2>
+		<p class="h3 t-c fw-700 tc-acc m-center mb-40 med-mb-10 licence-text"><?= $Slogan_subtitle; ?></p>
+    <div class="d-flex g-60 med-g-40 ai-center med-fd-col med-g-40">
+      <div class="w-40 med-w-100">
+        <p class="m-center mt-0 mb-40 med-t-c med-mb-20 licence-text"><?= $Slogan_text; ?></p>
+        <ul class="d-flex fd-col g-20 med-p-40 med-pt-0 med-pb-0 small-p-0">
+          <?php foreach($sec04 as $k => $plan): ?>
+            <li class="licence-box c-sec p-20 br-10 d-flex fd-col ai-start jc-center g-0">
+              <h3 class="rel h5 fw-700 m-0"><?= $plan['title'] ?></h3>
+              <p class="rel m-0"><?= $plan['text'] ?></p>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+      <div class="w-60 med-w-100 med-p-40 med-pt-0 med-pb-0 small-p-0">
+        <img src="./images/body/team.webp" alt="" class="licence-img w-100">
+      </div>
+    </div>
     <?php if($user_replica): ?>
 		  <a href="<?= $Register; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?= $Btn_live; ?></a>
     <?php endif; ?>
@@ -461,6 +494,7 @@ document.addEventListener("DOMContentLoaded", function () {
             licensesTimeline
               .from('.licence-title', animationSpeed, {scale:1.5, y:200})
               .staggerFrom('.licence-text', animationSpeed, {y: 40, opacity:0}, 0.2)
+              .from('.licence-img', animationSpeed, {scale:1.1, opacity:0}, '-=0.5')
               .staggerFrom('.licence-box', animationSpeed, {x: 80, opacity:0}, 0.2);
 
             new ScrollMagic.Scene({
