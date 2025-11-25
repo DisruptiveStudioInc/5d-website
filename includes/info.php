@@ -394,6 +394,23 @@ $productBonuses = array(
   ]
 );
 
+$homeProducts = array(
+  [
+    'id' => 1,
+    'number' => 'one',
+    'link' => $link_01,
+    'title' => $Products_title_01,
+    'text' => $Products_text_01
+  ],
+  [
+    'id' => 2,
+    'number' => 'two',
+    'link' => $link_02,
+    'title' => $Products_title_02,
+    'text' => $Products_text_02
+  ]
+);
+
 //-------------------------//
 // FUNCTIONS
 //-------------------------//

@@ -170,27 +170,16 @@
 <!-- ============================================== -->
 
 <?php
-$Modal = array(
-	array(
-		$Products_title_01,
-		$Products_sub_01,
-		$Products_text_01
-	)
-);
-
-$counter = 1;
-
-foreach ($Modal as $item){
+foreach ($homeProducts as $item){
 	echo "
-	<div id='Modal{$counter}' class='modal'>
+	<div id='Modal{$item['id']}' class='modal'>
     <div class='modal-content rel t-c pt-60'>
-      <span class='v-white c-pri icon icon-close' onclick=\"closeModal('Modal{$counter}')\"></span>
-      <h2 class='h2 tc-pri t-c med-t-l'>{$item[0]}</h2>
-      <p>{$item[2]}</p>
+      <span class='v-white c-pri icon icon-close' onclick=\"closeModal('Modal{$item['id']}')\"></span>
+      <h2 class='h2 tc-pri t-c med-t-l'>{$item['title']}</h2>
+      <p>{$item['text']}</p>
     </div>
 	</div>
 	";
-	$counter++;
 }
 ?>
 
@@ -200,24 +189,27 @@ foreach ($Modal as $item){
 
 	<div class="anchor" id="membership"></div>
 	<div class="h-100 med-h-0 med-fd-col-rev content-scroll jc-center ai-center rel wrap_products">
-  <div class="abs h-100 w-50" style="background-color:rgba(0,0,0,0.6)"></div>
-	<div class="section-arrows">
-	    <button class="arrow up"></button>
-	    <button class="arrow down"></button>
-	</div>
+    <div class="abs h-100 w-50" style="background-color:rgba(0,0,0,0.6)"></div>
+    <div class="section-arrows">
+        <button class="arrow up"></button>
+        <button class="arrow down"></button>
+    </div>
 
-	<div class="box_product img-three rel flex ai-center jc-center fd-col g-20">
-		<div class="rel t-c">
-      <img src="./images/body/products/<?= $link_01; ?>.webp" class="product m-center" alt="<?= $link_01; ?>" onclick="openModal('Modal1')"/>
-      <div class="abs product-plus-wrap">
-        <button type="button" class="v-white c-acc icon br-50 icon-more"></button>
+    <?php foreach($homeProducts as $item): ?>
+      <div class="box_product img-<?= $item['number']; ?> rel flex ai-center jc-center fd-col">
+        <div class="rel t-c">
+          <img src="./images/body/products/<?= $item['link']; ?>.webp" class="product m-center cursor-pointer" alt="<?= $item['link']; ?>" onclick="openModal('Modal<?= $item['id']; ?>')"/>
+          <div class="abs product-plus-wrap d-flex fd-col ai-center g-20">
+            <button type="button" class="v-white c-pri icon br-50 icon-more pointer-e-none"></button>
+            <a href="?p=product&id=<?= $item['link']; ?>" class="btn c-ter br-50"><?= $Btn_view; ?></a>
+          </div>
+        </div>
       </div>
-		</div>
-    <a href="?p=product&id=<?= $link_01; ?>" class="btn big c-sec br-50"><?= $Btn_view; ?></a>
-	</div>
+    <?php endforeach; ?>
 
-	<!--<img class="polvo med-d-none" src="./images/body/products/bg.webp">-->
-	<img class="background anim-scale med-d-none img_product_<?= $link_01; ?>" src="./images/body/subpage/bg_<?= $link_01; ?>.webp" alt="<?= $link_01; ?> background">
+    <?php foreach($homeProducts as $item): ?>
+      <img class="background anim-scale med-d-none img_product_<?= $item['link']; ?>" src="./images/body/subpage/bg_<?= $item['link']; ?>.webp" alt="<?= $item['link']; ?> background">
+    <?php endforeach; ?>
 
 	</div>
 </section>

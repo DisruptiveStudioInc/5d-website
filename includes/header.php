@@ -40,7 +40,7 @@
   <link rel="stylesheet" type="text/css" href="./css/min/main.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/min/root.min.css" />
 
-  <link rel="stylesheet" type="text/css" href="./css/body/style.css" />
+  <link rel="stylesheet" type="text/css" href="./css/body/style.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/body/navigation.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/body/slick.min.css" />
 
@@ -67,30 +67,10 @@
 
   <!-- jQuery y Slick -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
 </head>
 <body id="page-content">
 
-  <?php
-    $wrap_get = "<div class='wrap-get'>
-      <div class='btn-get'>{$Btn_started}</div>
-      <div class='get'>";
-
-    foreach ($links as $link) {
-      $wrap_get .= "
-      <a href='{$link['url']}{$ref}'
-        target='_blank'
-        class='{$link['class']}'
-        aria-label='{$link['label']}'>{$link['text']}</a>";
-    }
-
-    $wrap_get .= "
-      </div>
-    </div>";
-
-    //echo $wrap_get;
-  ?>
   <?php if($user_replica): ?>
     <div class="wrap-get">
       <a href="<?= $Register; ?>" target="_blank" class="btn-get"><?= $Btn_started; ?></a>
