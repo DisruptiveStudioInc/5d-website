@@ -11,7 +11,7 @@ $Keywords = "evolución, educación, crecimiento, comunidad, exclusividad, lider
 $Menu_01 = "Inicio";
 $Menu_02 = "5D";
 $Menu_03 = "5D 360";
-$Menu_04 = "Productos";
+$Menu_04 = "Membership";
 $Menu_05 = "Tienda";
 
 $Menu_log = "Login";
@@ -50,9 +50,10 @@ $Hero_02 = "#YoSoy5D";
 //-------------------------//
 
 $About_title = "Quíenes somos";
-$About_text_acc = "{$Company_Name} es una comunidad de crecimiento y monetización digital";
-$About_text1 = "que combina educación, tecnología, experiencias y un modelo de expansión global.";
-$About_text2 = "En {$Company_Name} formamos líderes digitales que aprenden, ganan y evolucionan, mientras construyen una vida de libertad, propósito y estilo.";
+$About_text_acc = "{$Company_Name} es una comunidad de crecimiento y monetización digital que combina educación, tecnología, experiencias y un modelo de expansión global.";
+$About_text1 = "En {$Company_Name} formamos líderes digitales que aprenden, ganan y evolucionan, mientras construyen una vida de libertad, propósito y estilo.";
+$About_subtitle = "Propósito";
+$About_text2 = "Elevar la vida de millones de personas, guiándolas a desarrollar una mentalidad ganadora, dominar habilidades digitales y generar ingresos reales, sostenibles y escalables.";
 
 //-------------------------//
 // Journey
@@ -106,12 +107,12 @@ $Letters_list04_02 = "Desarrolla la mentalidad, los hábitos y el ritmo que te l
 $Letters_list04_03 = "Manual {$Company_Name}, tu mapa claro para saber qué hacer y cómo avanzar.";
 $Letters_list04_04 = "{$Company_Name} Energy Day evento mensual para crecer, conectar y mantener el impulso en comunidad.";
 
-$Letters_title_05 = "{$Company_Name} Rewards";
-$Letters_text_05 = "Tu esfuerzo se celebra en grande:";
-$Letters_list05_01 = "Convenciones VIP de reconocimiento";
-$Letters_list05_02 = "Premios y experiencias exclusivas por tus logros";
-$Letters_list05_03 = "Merch oficial que te distingue";
-$Letters_list05_04 = "Recompensas que convierten metas en momentos inolvidables";
+$Letters_title_05 = "Filosofía Reward {$Company_Name}";
+$Letters_text_05 = "Cada premio es un recordatorio de quién te convertiste para lograrlo:";
+$Letters_list05_01 = "Zafiro Pin oficial 5D";
+$Letters_list05_02 = "Rubí Pin edición Rub";
+$Letters_list05_03 = "Esmeralda Pin + Placa conmemorativa";
+$Letters_list05_04 = "Diamante Pin + Anillo exclusivo 5D + viaje";
 
 //-------------------------//
 // Vision
@@ -170,35 +171,38 @@ $Slogan_item4_text = "Enfoque, claridad y resultados";
 // Products
 //-------------------------//
 
-$Products_title_01 = "Membership {$Company_Name}";
-$Products_01 = "Tu pase directo";
-$Products_sub_01 = "100 USDT";
-$Products_text_01 = "Tu membership única de $1,000 USD y obtén acceso TOTAL a {$Company_Name} 360: Academy, Experience, Evolution, Digital Business y Rewards.";
-$Products_text_inner_01 = "Una sola activación. Todo el sistema. Sin límites.";
-$Products_price_01 = "$1000 USD";
-$Products_text2_inner_01 = "¡No vuelves a pagar!";
+$Products_title_01 = "Basic Membership";
+$Products_01 = "Tu primer paso";
+$Products_text_01 = "$500 USD con acceso limitado.";
+$Products_text_inner_01 = "Una sola activación. Acceso parcial.";
+$Products_price_01 = "$500 USD";
+$Products_text2_inner_01 = "Acceso limitado";
+
+$Products_title_02 = "Premium Membership";
+$Products_02 = "Acceso total";
+$Products_text_02 = "$1,000 USD con obtén acceso TOTAL a 5D 360: Academy, Experience, Evolution, Digital Business y Rewards. Una sola activación. Todo el sistema. Sin límites.";
+$Products_text_inner_02 = "Una sola activación. Todo el sistema. Sin límites.";
+$Products_price_02 = "$1000 USD";
+$Products_text2_inner_02 = "¡No vuelves a pagar!";
 
 //-------------------------//
 // Truth
 //-------------------------//
 
-$Truth_title = "<span class='tc-acc'>Rewards</span> por rango";
-$Truth_subtitle = "Crecimiento que se celebra. Logros que se viven.";
+$Truth_title = "Mr. {$Company_Name} IA";
+$Truth_subtitle = "Tu mentor 24/7 en un mensaje de WhatsApp.";
 
-$Truth_title_01 = $Vision_title_01;
-$Truth_text_01 = "Pin oficial {$Company_Name}";
+$Truth_title_01 = "Resuelve";
+$Truth_text_01 = "Preguntas al instante.";
 
-$Truth_title_02 = $Vision_title_02;
-$Truth_text_02 = "Pin edición Rubí";
+$Truth_title_02 = "Explica";
+$Truth_text_02 = "Conceptos de forma clara.";
 
-$Truth_title_03 = $Vision_title_03;
-$Truth_text_03 = "Pin + Placa conmemorativa";
+$Truth_title_03 = "Guía";
+$Truth_text_03 = "Tus pasos para activar, presentar y duplicar.";
 
-$Truth_title_04 = $Vision_title_04;
-$Truth_text_04 = "Pin + Anillo exclusivo {$Company_Name} + viaje";
-
-$Truth_title_05 = $Vision_title_05;
-$Truth_text_05 = "Pin + Rolex Exclusive Edition + viaje";
+$Truth_title_04 = "Asegura";
+$Truth_text_04 = "A toda la red alineada.";
 
 //-------------------------//
 // Spirit
@@ -206,7 +210,7 @@ $Truth_text_05 = "Pin + Rolex Exclusive Edition + viaje";
 
 $Spirit_title = "<span class='tc-acc'>Diamond</span> Club";
 $Spirit_subtitle = "La élite de {$Company_Name}";
-$Spirit_text = "Un club exclusivo y reservado para quienes se atreven a ir más allá, dejando huella en la comunidad 5D y convirtiéndose en ejemplo de grandeza.";
+$Spirit_text = "Ser Diamante es entrar al círculo más exclusivo de la organización: un lugar de acceso privilegiado, experiencias únicas y conexiones de alto nivel, reservado solo para quienes marcaron la diferencia.";
 
 $Spirit_title_01 = "Beneficios exclusivos";
 $Spirit_item01 = "Viajes y experiencias internacionales de élite.";
@@ -235,6 +239,14 @@ $Ingredients_01_04 = "Experiencias";
 $Ingredients_01_05 = "Conexiones";
 $Ingredients_01_06 = "Crecimiento";
 
+$Ingredients_02 = $Ingredients_01;
+$Ingredients_02_01 = $Ingredients_01_01;
+$Ingredients_02_02 = $Ingredients_01_02;
+$Ingredients_02_03 = $Ingredients_01_03;
+$Ingredients_02_04 = $Ingredients_01_04;
+$Ingredients_02_05 = $Ingredients_01_05;
+$Ingredients_02_06 = $Ingredients_01_06;
+
 //-------------------------//
 // Benefits
 //-------------------------//
@@ -251,6 +263,16 @@ $Benefits_01_03 = "Cada premio es un recordatorio de quién te convertiste para 
 $Benefits_01_tit_04 = "Comunidad global";
 $Benefits_01_04 = "El lugar donde todos vibran, crecen y avanzan.";
 
+$Benefits_sub_02 = $Benefits_sub_01;
+$Benefits_02_tit_01 = $Benefits_01_tit_01;
+$Benefits_02_01 = $Benefits_01_01;
+$Benefits_02_tit_02 = $Benefits_01_tit_02;
+$Benefits_02_02 = $Benefits_01_02;
+$Benefits_02_tit_03 = $Benefits_01_tit_03;
+$Benefits_02_03 = $Benefits_01_03;
+$Benefits_02_tit_04 = $Benefits_01_tit_04;
+$Benefits_02_04 = $Benefits_01_04;
+
 //-------------------------//
 // Started - Product bonuses
 //-------------------------//
@@ -260,16 +282,17 @@ $Satarted_title_01 = "Bonos {$Company_Name} oficiales";
 $Satarted_sub_01 = "4 bonos oficiales, creados para generar resultados rápidos, constantes y escalables";
 
 $Bonus_flash_title = "Flash Bonus";
-$Bonus_flash_list_01 = "Primera venta: {$Bonuses['flash']['first_percentage']}% = \${$Bonuses['flash']['first_referal']} USD directo para ti.";
-$Bonus_flash_list_02 = "Segunda en adelante: {$Bonuses['flash']['regular_percentage']}%  = \${$Bonuses['flash']['regular_referal']} USD por cada nueva activación.";
+$Bonus_flash_text01 = "El bono más explosivo de toda la industria";
+$Bonus_flash_list_01 = "{$Bonuses['flash']['first_percentage']}% = \${$Bonuses['flash']['first_referal']} USD (primera ganancia, directo para ti)";
+$Bonus_flash_list_02 = "Segunda en adelante: {$Bonuses['flash']['regular_percentage']}%  = \${$Bonuses['flash']['regular_referal']} USD (por cada nueva activación)";
 
 $Bonus_speed_title = "Speed Bonus";
 $Bonus_speed_text = "Si logras {$Bonuses['speed']['people']} activaciones directas en tus primeros {$Bonuses['speed']['initial_days']} días, {$Company_Name} te premia con un BONO EXTRA de \${$Bonuses['speed']['amount']} USD, además de todo lo que ya ganaste por tus primeras tres ventas.";
 
 $Bonus_community_title = "Community Bonus";
-$Bonus_community_text01 = "Aquí nadie prospera solo. Cuando tu comunidad avanza, tú avanzas. Esa es la fuerza {$Company_Name}.";
+$Bonus_community_text01 = "El verdadero poder de {$Company_Name} está en la comunidad. Frontalidad ilimitada, hasta 7 niveles, {$Bonuses['community']['total_percentage']}% total pagado.";
 $Bonus_community_list_level = "Nivel";
-$Bonus_community_total = "Total: {$Bonuses['community']['total_percentage']}% directo a la comunidad";
+$Bonus_community_text02 = "Recibe hasta el {$Bonuses['community']['total_percentage']}% en ganancias de toda tu comunidad";
 
 $Bonus_infinity_title = "Infinity Bonus";
 $Bonus_infinity_text = "Cada vez que tu organización te genera \${$Bonuses['infinity']['amount_renew']} USD, se activa una Renovación Inteligente Automática: solo \${$Bonuses['infinity']['amount_cost']} USD reinician el sistema, y \${$Bonuses['infinity']['amount_benefit']} USD son tuyos.";
@@ -279,7 +302,11 @@ $Bonus_rewards_text01 = "Constancia que paga:";
 $Bonus_rewards_list_01 = "Bonos extra por seguir firme y activo.";
 $Bonus_rewards_text02 = "Porque tu esfuerzo merece celebrarse.";
 
-$Satarted_subpage_01 = "Hoy puedes quedarte donde estás... o elegir una nueva dimensión. El mundo está cambiando.";
+$Satarted_subpage_01 = "<span class='d-block'>\"Hoy puedes quedarte donde estás… o elegir tu nueva dimensión.\"</span> El mundo está cambiando y no va a esperar por nadie.";
+
+$Satarted_title_02 = $Satarted_title_01;
+$Satarted_sub_02 = $Satarted_sub_01;
+$Satarted_subpage_02 = $Satarted_subpage_01;
 
 //-------------------------//
 // Footer

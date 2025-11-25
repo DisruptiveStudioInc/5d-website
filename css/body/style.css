@@ -14,8 +14,8 @@
   --color-acc-h: #f3730a;
   --color-sec-h: #25385a;
 
-  --color-basic: 40;
-  --color-premium: #677d8c;
+  --color-basic: 215;
+  --color-premium: 40;
   --color-black: #000000;
 
   --color-main-bg: #131222;
@@ -115,8 +115,8 @@
 }
 
 .c-basic {
-  --stop1: calc(var(--color-basic) - 2), 61%, 64%;
-  --stop2: var(--color-basic), 43%, 16%;
+  --stop1: calc(var(--color-basic) - 2), 32%, 67%;
+  --stop2: var(--color-basic), 26%, 36%;
   background: linear-gradient(
     to top left,
     hsl(var(--stop2)),
@@ -124,18 +124,19 @@
   );
 }
 .c-premium {
-  background: var(--color-premium);
+  --stop1: calc(var(--color-premium) - 2), 61%, 64%;
+  --stop2: var(--color-premium), 43%, 16%;
+  background: linear-gradient(
+    to top left,
+    hsl(var(--stop2)),
+    hsl(var(--stop1))
+  );
 }
 .c-black {
   background: var(--color-black);
 }
 
-.c-sub.basic {
-  --stop1: calc(var(--color-basic) - 2), 69%, 73%;
-  --stop2: calc(var(--color-basic) + 5), 63%, 86%;
-  --stop3: var(--color-basic), 37%, 37%;
-  --stop4: calc(var(--color-basic) - 1), 82%, 85%;
-  --stop5: var(--color-basic), 43%, 24%;
+.c-sub {
   background: radial-gradient(
       hsl(var(--stop2)) 5%,
       hsla(var(--stop1), 0.4) 35%,
@@ -155,8 +156,19 @@
       hsl(var(--stop1)) 360deg
     );
 }
+.c-sub.basic {
+  --stop1: calc(var(--color-basic) - 2), 52%, 78%;
+  --stop2: calc(var(--color-basic) + 5), 47%, 91%;
+  --stop3: var(--color-basic), 37%, 59%;
+  --stop4: calc(var(--color-basic) - 1), 61%, 90%;
+  --stop5: var(--color-basic), 32%, 37%;
+}
 .c-sub.premium {
-  background: radial-gradient(circle, #fff 0%, var(--color-premium) 100%);
+  --stop1: calc(var(--color-premium) - 2), 69%, 73%;
+  --stop2: calc(var(--color-premium) + 5), 63%, 86%;
+  --stop3: var(--color-premium), 37%, 37%;
+  --stop4: calc(var(--color-premium) - 1), 82%, 85%;
+  --stop5: var(--color-premium), 43%, 24%;
 }
 .c-sub.black {
   background: radial-gradient(circle, #111111 0%, var(--color-black) 100%);
@@ -901,23 +913,23 @@ img.polvo {
   transition: all 250ms ease;
 }
 .text_spirit div:hover {
-  background: var(--color-sec);
-}
-
-.text_spirit.premium div:hover {
-  background: var(--color-premium);
-}
-.text_spirit.black div:hover {
-  background: var(--color-black);
-}
-.text_spirit.basic div:hover {
-  --stop1: 38, 61%, 64%;
-  --stop2: 40, 43%, 16%;
   background: linear-gradient(
     to top left,
     hsl(var(--stop2)),
     hsl(var(--stop1))
   );
+}
+
+.text_spirit.premium div:hover {
+  --stop1: calc(var(--color-premium) - 2), 61%, 64%;
+  --stop2: var(--color-premium), 43%, 16%;
+}
+.text_spirit.black div:hover {
+  background: var(--color-black);
+}
+.text_spirit.basic div:hover {
+  --stop1: calc(var(--color-basic) - 2), 32%, 67%;
+  --stop2: var(--color-basic), 26%, 36%;
 }
 
 .img_product {

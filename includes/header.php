@@ -40,7 +40,7 @@
   <link rel="stylesheet" type="text/css" href="./css/min/main.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/min/root.min.css" />
 
-  <link rel="stylesheet" type="text/css" href="./css/body/style.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/body/style.css" />
   <link rel="stylesheet" type="text/css" href="./css/body/navigation.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/body/slick.min.css" />
 
@@ -137,71 +137,25 @@
           <ul>
             <?php
               $id = $_GET['id'] ?? '';
-              $counter = 0;
-
-              foreach ($Menu as $item) {
-                $counter++;
-
-                // Primer item -> dinámico
-                if ($counter == 1) {
-                  // Si NO estamos en home ni vacío -> ir a "./"
-                  if ($Actual_Page !== '' && $Actual_Page !== 'home') {
-                    $item[0] = './';
-                  } else {
-                    $item[0] = '#home';
-                  }
-                }
-
-                // Segundo y tercer item -> solo mostrar en "home" o vacío
-                if (in_array($counter, [2, 3]) && $Actual_Page !== '' && $Actual_Page !== 'home') {
-                  continue;
-                }
-
-                // Submenú con sub-sub (Menu 4) desactivado
-                if ($counter == 6) {
-                  echo "<li class='rel'>";
-                  echo "<a href='#' class='btn-sub'>{$item[2]}</a>";
-
-                  echo "<ul class='sub'>";
-                  foreach ($Sub as $item_sub) {
-                    $hasSubSub = isset($item_sub[1]) && is_array($item_sub[1]);
-
-                    echo "<li>";
-                    echo "<a href='#'>{$item_sub[0]}</a>";
-
-                    if ($hasSubSub) {
-                      echo "<ul class='sub-sub'>";
-                      foreach ($item_sub[1] as $subsub) {
-                        echo "<li>
-                                <span class='img'><img src='./images/body/products/{$subsub[0]}.webp' alt='{$subsub[2]}'></span>
-                                <a href='?p=product&id={$subsub[0]}'>{$subsub[1]}<span>{$subsub[2]}</span></a>
-                              </li>";
-                      }
-                      echo "</ul>";
-                    }
-                    echo "</li>";
-                  }
-                  echo "</ul>";
-                  echo "</li>";
-
-                // Submenú simple (Menu 5)
-                } elseif ($counter == 5) {
-                  echo "<li class='rel'>";
-                  echo "<a href='#' class='btn-sub'>{$item[2]}</a>";
-
-                  echo "<ul class='sub no-chevron'>";
-                  foreach ($Sub_reg as $item_sub) {
-                    echo "<li><a href='{$item_sub[0]}' target='_blank'>{$item_sub[1]}</a></li>";
-                  }
-                  echo "</ul>";
-                  echo "</li>";
-
-                // Items normales
-                } else {
-                  echo "<li class='normal'><a href='{$item[0]}' class='{$item[1]}'>{$item[2]}</a></li>";
-                }
-              }
+              foreach($MenuNamed as $item):
+                if(!$item['show']){ continue; }
             ?>
+              <li class="<?= $item['hasSubmenu'] ? 'rel' : '' ?>">
+                <a href="<?= $item['link'] ?>" class="<?= $item['hasSubmenu'] ? 'btn-sub no-chevron' : $item['status'] ?>"><?= $item['title'] ?></a>
+                <?php if($item['hasSubmenu']): ?>
+                  <ul class="sub">
+                    <?php foreach($item['submenu'] as $subitem): ?>
+                      <li>
+                        <a href="<?= $subitem['link'] ?>"><?= $subitem['title'] ?><span><?= $subitem['slogan'] ?></span></a>
+                      </li>
+                    <?php endforeach; ?>
+                  </ul>
+                <?php endif; ?>
+              </li>
+            <?php endforeach; ?>
+          </ul>
+          <ul>
+
             <?php if($ConnectBO): ?>
               <div class="d-none med-d-block mt-20">
                 <div class="mb-10">

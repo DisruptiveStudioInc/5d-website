@@ -33,14 +33,13 @@
   <div class="d-flex fw-wrap">
     <div class="w-50 med-w-100 d-flex fd-col jc-center ai-center min-h-dhv med-min-h-50dvh p-60 med-pt-60 med-pb-60 small-p-20 small-pt-50 small-pb-50">
       <h2 class="h1 mb-60 med-mb-40 small-mb-20 t-c"><?= $About_title; ?></h2>
-      <p class="h2 t-balance med-t-c fw-700 tc-acc mb-0"><?= $About_text_acc; ?></p>
+      <p class="h3 t-balance med-t-c fw-700 tc-acc mb-0"><?= $About_text_acc; ?></p>
       <p class="h5 med-t-c mb-20 small-mb-10"><?= $About_text1; ?></p>
+      <h3 class="h5 mt-20 mb-10 w-100 med-t-c"><?= $About_subtitle; ?></h3>
       <p class="h5 med-t-c"><?= $About_text2; ?></p>
     </div>
     <div class="w-50 med-w-100 med-h-50 rel">
       <img src="./images/body/about.webp" alt="People smiling on a beach" class="background" style="opacity:1;" />
-      <!-- <img src="./images/body/the_spirit/2.webp" alt="<?= $Spirit_title_02; ?>" class="background animate-fade" style="animation-delay:5s" />
-      <img src="./images/body/the_spirit/3.webp" alt="<?= $Spirit_title_03; ?>" class="background animate-fade" style="animation-delay:10s" /> -->
     </div>
   </div>
 </section>
@@ -157,7 +156,7 @@
         </ul>
       </div>
       <div class="w-60 med-w-100 med-p-40 med-pt-0 med-pb-0 small-p-0">
-        <img src="./images/body/team.webp" alt="" class="licence-img w-100">
+        <img src="./images/body/genesis_team.webp" alt="" class="licence-img w-100">
       </div>
     </div>
     <?php if($user_replica): ?>
@@ -280,15 +279,15 @@ foreach ($Modal as $item){
 	    <button class="arrow down"></button>
 	</div>
 
-	<div class="mw-1440 d-flex med-fd-col ai-center g-20">
+	<div class="mw-1440 d-flex med-fd-col ai-center g-20 min-h-dhv">
     <div class="w-100">
-      <h2 class="h1-special med-t-c" style="font-size:4.5vw"><?= $Truth_title; ?></h2>
+      <h2 class="h1-special tc-acc med-t-c" style="font-size:4.5vw"><?= $Truth_title; ?></h2>
       <p class="h4 med-t-c t-balance"><?= $Truth_subtitle; ?></p>
     </div>
     <div class="w-100 med-d-flex fw-wrap g-0 small-g-20 jc-center">
       <?php foreach($sec07 as $item): ?>
         <article class="reward p-20 pt-40 pb-40 of-h rel med-t-c w-100 med-w-40 small-w-100">
-          <img src="./images/body/ranks/<?= $item['image']; ?>" alt="<?= $item['title']; ?>" class="reward-image w-60 med-w-100 small-w-60"/>
+          <img src="./images/body/mr_ai/<?= $item['image']; ?>" alt="<?= $item['title']; ?>" class="reward-image w-60 med-w-100 small-w-60"/>
           <h2 class="reward-title h4 m-0" style="transform-origin:left center;"><?= $item['title']; ?></h2>
           <p class="reward-text mb-0"><?= $item['text']; ?></p>
         </article>

@@ -148,6 +148,49 @@ $Menu = array(
   array('?p=product&id=basic','',$Products_title_01)
   // array('','', $Menu_05)
 );
+$MenuNamed = array(
+  [
+    'link' => ($Actual_Page === 'home' || $Actual_Page === '') ? '#home' : './',
+    'status' => ($Actual_Page === 'home' || $Actual_Page === '') ? 'active' : '',
+    'title' => $Menu_01,
+    'show' => true,
+    'hasSubmenu' => false
+  ],
+  [
+    'link' => '#5d',
+    'status' => '',
+    'title' => $Menu_02,
+    'show' => ($Actual_Page === 'home' || $Actual_Page === '') ? true : false,
+    'hasSubmenu' => false
+  ],
+  [
+    'link' => '#5d-360',
+    'status' => '',
+    'title' => $Menu_03,
+    'show' => ($Actual_Page === 'home' || $Actual_Page === '') ? true : false,
+    'hasSubmenu' => false
+  ],
+  [
+    'link' => '?p=product&id=basic',
+    'status' => '',
+    'title' => $Menu_04,
+    'show' => true,
+    'hasSubmenu' => true,
+    'submenu' => array(
+      [
+        'link' => '?p=product&id=basic',
+        'title' => $Products_title_01,
+        'slogan' => $Products_01
+      ],
+      [
+        'link' => '?p=product&id=premium',
+        'title' => $Products_title_02,
+        'slogan' => $Products_02
+      ]
+    )
+  ]
+  // array('','', $Menu_05)
+);
 
 //-------------------------//
 // SUBMENU
@@ -302,31 +345,25 @@ $sec07 = array(
     'id' => 1,
     'title' => $Truth_title_01,
     'text' => $Truth_text_01,
-    'image' => 'reward_rubi.webp'
+    'image' => 'resuelve.webp'
   ],
   [
     'id' => 2,
     'title' => $Truth_title_02,
     'text' => $Truth_text_02,
-    'image' => 'reward_zafiro.webp'
+    'image' => 'explica.webp'
   ],
   [
     'id' => 3,
     'title' => $Truth_title_03,
     'text' => $Truth_text_03,
-    'image' => 'reward_esmeralda.webp'
+    'image' => 'guia.webp'
   ],
   [
     'id' => 4,
     'title' => $Truth_title_04,
     'text' => $Truth_text_04,
-    'image' => 'reward_diamante.webp'
-  ],
-  [
-    'id' => 5,
-    'title' => $Truth_title_05,
-    'text' => $Truth_text_05,
-    'image' => 'reward_diamante_corona.webp'
+    'image' => 'asegura.webp'
   ]
 );
 
@@ -335,6 +372,7 @@ $clubBenefits = [$Spirit_item01, $Spirit_item02, $Spirit_item03, $Spirit_item04,
 $productBonuses = array(
   'flash' => [
     'title' => $Bonus_flash_title,
+    'text' => $Bonus_flash_text01,
     'list' => [
       $Bonus_flash_list_01,
       $Bonus_flash_list_02
@@ -348,7 +386,7 @@ $productBonuses = array(
     'title' => $Bonus_community_title,
     'text' => $Bonus_community_text01,
     'list' => $Bonuses['community']['levels'],
-    'total' => $Bonus_community_total,
+    'text2' => $Bonus_community_text02
   ],
   'infinity' => [
     'title' => $Bonus_infinity_title,
