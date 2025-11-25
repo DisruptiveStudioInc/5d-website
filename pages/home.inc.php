@@ -90,6 +90,9 @@
       <img class="letter-bg img_0<?= $slide['id']; ?>" src="./images/body/letters/<?= $slide['id']; ?>.webp" alt="<?= $slide['title']; ?>">
       <div class="letter-content word_0<?= $slide['id']; ?> abs w-100 p-40 med-p-10-20 med-pt-50 med-pb-50 t-c">
         <h2 class="letter-title"><?= $slide['title']; ?></h2>
+        <?php if(isset($slide['subtitle'])): ?>
+          <h3 class="h4 tc-acc"><?= $slide['subtitle']; ?></h3>
+        <?php endif; ?>
         <p class="h4 letter-text t-balnce h3"><?= $slide['text']; ?></p>
         <ul class="letter-list d-flex fw-wrap jc-center t-c w-60 med-w-100 m-center mt-40 med-mt-20" style="gap:20px;">
           <?php foreach($slide['list'] as $item): ?>

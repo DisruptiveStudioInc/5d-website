@@ -283,6 +283,7 @@ $verticalSlides = array(
   [
     'id' => 5,
     'title' => $Letters_title_05,
+    'subtitle' => $Letters_sub_05,
     'text' => $Letters_text_05,
     'list' => $letterList_05,
   ]

@@ -107,10 +107,11 @@ $Letters_list04_02 = "Develop the mindset, habits, and rhythm that will take you
 $Letters_list04_03 = "{$Company_Name} Manual, your clear map to know what to do and how to move forward.";
 $Letters_list04_04 = "{$Company_Name} Energy Day, a monthly event to grow, connect, and keep the momentum in community.";
 
-$Letters_title_05 = "{$Company_Name} Reward Philosophy";
-$Letters_text_05 = "Every reward is a reminder of who you became to achieve it:";
+$Letters_title_05 = "{$Company_Name} Rewards";
+$Letters_sub_05 = "{$Company_Name} Reward Philosophy";
+$Letters_text_05 = "\"Every reward is a reminder of who you became to achieve it.\"";
 $Letters_list05_01 = "Sapphire Official 5D Pin";
-$Letters_list05_02 = "Ruby Ruby Edition Pin";
+$Letters_list05_02 = "Ruby Pin Ruby Edition";
 $Letters_list05_03 = "Emerald Pin + Commemorative Plaque";
 $Letters_list05_04 = "Diamond Pin + Exclusive 5D Ring + Trip";
 
@@ -180,7 +181,7 @@ $Products_text2_inner_01 = "Limited access.";
 
 $Products_title_02 = "Premium Membership";
 $Products_02 = "Total access";
-$Products_text_02 = "$1,000 USD with TOTAL access to 5D 360: Academy, Experience, Evolution, Digital Business, and Rewards. One activation. The whole system. No limits.";
+$Products_text_02 = "$1,000 USD get TOTAL access to 5D 360: Academy, Experience, Evolution, Digital Business, and Rewards. One activation. The whole system. No limits.";
 $Products_text_inner_02 = "One activation. The whole system. No limits.";
 $Products_price_02 = "$1000 USD";
 $Products_text2_inner_02 = "You never pay again!";

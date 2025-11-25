@@ -107,10 +107,11 @@ $Letters_list04_02 = "Desarrolla la mentalidad, los hábitos y el ritmo que te l
 $Letters_list04_03 = "Manual {$Company_Name}, tu mapa claro para saber qué hacer y cómo avanzar.";
 $Letters_list04_04 = "{$Company_Name} Energy Day evento mensual para crecer, conectar y mantener el impulso en comunidad.";
 
-$Letters_title_05 = "Filosofía Reward {$Company_Name}";
-$Letters_text_05 = "Cada premio es un recordatorio de quién te convertiste para lograrlo:";
+$Letters_title_05 = "{$Company_Name} Rewards";
+$Letters_sub_05 = "Filosofía Reward {$Company_Name}";
+$Letters_text_05 = "\"Cada premio es un recordatorio de quién te convertiste para lograrlo.\"";
 $Letters_list05_01 = "Zafiro Pin oficial 5D";
-$Letters_list05_02 = "Rubí Pin edición Rub";
+$Letters_list05_02 = "Rubí Pin edición Rubí";
 $Letters_list05_03 = "Esmeralda Pin + Placa conmemorativa";
 $Letters_list05_04 = "Diamante Pin + Anillo exclusivo 5D + viaje";
 
@@ -180,7 +181,7 @@ $Products_text2_inner_01 = "Acceso limitado";
 
 $Products_title_02 = "Premium Membership";
 $Products_02 = "Acceso total";
-$Products_text_02 = "$1,000 USD con obtén acceso TOTAL a 5D 360: Academy, Experience, Evolution, Digital Business y Rewards. Una sola activación. Todo el sistema. Sin límites.";
+$Products_text_02 = "$1,000 USD obtén acceso TOTAL a 5D 360: Academy, Experience, Evolution, Digital Business y Rewards. Una sola activación. Todo el sistema. Sin límites.";
 $Products_text_inner_02 = "Una sola activación. Todo el sistema. Sin límites.";
 $Products_price_02 = "$1000 USD";
 $Products_text2_inner_02 = "¡No vuelves a pagar!";
