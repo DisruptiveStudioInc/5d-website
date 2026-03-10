@@ -42,7 +42,7 @@ $Soon_Description3 = "¡No te lo puedes perder!";
 // Hero
 //-------------------------//
 
-$Hero_01 = "Real people. <span class='tc-acc'>True creators</span>";
+$Hero_01 = "Feel Good.</br><span class='tc-acc'>Look Good.</span><br>Be Great";
 $Hero_02 = "#YoSoy5D";
 
 //-------------------------//
@@ -50,7 +50,7 @@ $Hero_02 = "#YoSoy5D";
 //-------------------------//
 
 $About_title = "Quíenes somos";
-$About_text_acc = "{$Company_Name} es una comunidad de crecimiento y monetización digital que combina educación, tecnología, experiencias y un modelo de expansión global.";
+$About_text_acc = "{$Company_Name} es un ecosistema digital global enfocado en el desarrollo integral del emprendedor moderno. Integramos educación digital, herramientas tecnológicas, desarrollo personal, experiencias presenciales y un sistema estructurado de crecimiento que permite a nuestros miembros <span class='tc-acc'>fortalecer</span> su mentalidad, <span class='tc-acc'>desarrollar</span> liderazgo, <span class='tc-acc'>generar</span> ingresos y <span class='tc-acc'>evolucionar</span> en la nueva economía digital.";
 $About_text1 = "En {$Company_Name} formamos líderes digitales que aprenden, ganan y evolucionan, mientras construyen una vida de libertad, propósito y estilo.";
 $About_subtitle = "Propósito";
 $About_text2 = "Elevar la vida de millones de personas, guiándolas a desarrollar una mentalidad ganadora, dominar habilidades digitales y generar ingresos reales, sostenibles y escalables.";
@@ -59,7 +59,7 @@ $About_text2 = "Elevar la vida de millones de personas, guiándolas a desarrolla
 // Journey
 //-------------------------//
 
-$Journey_title = "Dimensiones del éxito <span class='tc-acc'>{$Company_Name}</span>";
+$Journey_title = "Nuestro ADN <span class='tc-acc'>{$Company_Name}</span>";
 
 $Journey_button_1 = "Deseo";
 $Journey_button_2 = "Definición";
@@ -67,11 +67,11 @@ $Journey_button_3 = "Decisión";
 $Journey_button_4 = "Determinación";
 $Journey_button_5 = "Disciplina";
 
-$Journey_text_1 = "El fuego interno que inicia tu camino.";
-$Journey_text_2 = "Cuando sabes quién eres y a dónde vas, el mundo se abre.";
-$Journey_text_3 = "El éxito empieza cuando eliges actuar.";
-$Journey_text_4 = "Avanzas más allá de las excusas.";
-$Journey_text_5 = "Constancia todos los días, incluso cuando nadie te ve.";
+$Journey_text_1 = "Fuego interno que te impulsa a querer más.";
+$Journey_text_2 = "Cuando sabes quién eres, cómo vives y hacia dónde vas.";
+$Journey_text_3 = "El momento en el que eliges cambiar tu historia.";
+$Journey_text_4 = "Avanzar incluso cuando nadie te ve.";
+$Journey_text_5 = "Hacer lo correcto todos los días.";
 
 //-------------------------//
 // Letters

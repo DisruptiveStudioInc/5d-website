@@ -31,12 +31,13 @@
 	</div>
 
   <div class="d-flex fw-wrap">
-    <div class="w-50 med-w-100 d-flex fd-col jc-center ai-center min-h-dhv med-min-h-50dvh p-60 med-pt-60 med-pb-60 small-p-20 small-pt-50 small-pb-50">
-      <h2 class="h1 mb-60 med-mb-40 small-mb-20 t-c"><?= $About_title; ?></h2>
-      <p class="h3 t-balance med-t-c fw-700 tc-acc mb-0"><?= $About_text_acc; ?></p>
-      <p class="h5 med-t-c mb-20 small-mb-10"><?= $About_text1; ?></p>
-      <h3 class="h5 mt-20 mb-10 w-100 med-t-c"><?= $About_subtitle; ?></h3>
-      <p class="h5 med-t-c"><?= $About_text2; ?></p>
+    <div class="w-50 med-w-100 d-flex fd-col jc-center ai-start med-ai-center min-h-dhv med-min-h-50dvh p-60 med-pt-60 med-pb-60 small-p-20 small-pt-50 small-pb-50">
+      <h2 class="h1 mb-60 med-mb-40 small-mb-20 t-l"><?= $About_title; ?></h2>
+      <!-- <p class="h3 t-balance med-t-c fw-700 tc-acc mb-0"><?= $About_text_acc; ?></p> -->
+      <p class="h5 med-t-c"><?= $About_text_acc; ?></p>
+      <!-- <p class="h5 med-t-c mb-20 small-mb-10"><?= $About_text1; ?></p> -->
+      <!-- <h3 class="h5 mt-20 mb-10 w-100 med-t-c"><?= $About_subtitle; ?></h3>
+      <p class="h5 med-t-c"><?= $About_text2; ?></p> -->
     </div>
     <div class="w-50 med-w-100 med-h-50 rel">
       <img src="./images/body/about.webp" alt="People smiling on a beach" class="background" style="opacity:1;" />
@@ -109,7 +110,7 @@
 <!-- THREE -->
 <!-- ============================================== -->
 
-<section class="parallax-wrap rel">
+<!-- <section class="parallax-wrap rel">
 
   <div class="parallax">
     <div class="mw-1440 t-c h-100 med-h-0 fd-col g-30 med-g-20 jc-center ai-center med-pt-60 med-pb-60">
@@ -131,13 +132,13 @@
       </ul>
     </div>
 	</div>
-</section>
+</section> -->
 
 <!-- ============================================== -->
 <!-- FOUR -->
 <!-- ============================================== -->
 
-<section class="c-pri licence-wrap">
+<!-- <section class="c-pri licence-wrap">
 	<div class="section-arrows">
 	    <button class="arrow up"></button>
 	    <button class="arrow down"></button>
@@ -166,7 +167,7 @@
 		  <a href="<?= $Register; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?= $Btn_live; ?></a>
     <?php endif; ?>
 	</div>
-</section>
+</section> -->
 
 <!-- ============================================== -->
 <!-- FIVE -->
@@ -295,7 +296,7 @@ foreach ($homeProducts as $item){
 <!-- EIGHT -->
 <!-- ============================================== -->
 
-<?php include_once('./includes/altSec.php'); ?>
+<?php #include_once('./includes/altSec.php'); ?>
 
 <!-- ============================================== -->
 <!-- NINE -->

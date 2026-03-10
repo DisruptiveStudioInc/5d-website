@@ -42,7 +42,7 @@ $Soon_Description3 = "You can't miss it!";
 // Hero
 //-------------------------//
 
-$Hero_01 = "Real people. <span class='tc-acc'>True creators</span>";
+$Hero_01 = "Feel Good.</br><span class='tc-acc'>Look Good.</span><br>Be Great";
 $Hero_02 = "#YoSoy5D";
 
 //-------------------------//
@@ -50,7 +50,7 @@ $Hero_02 = "#YoSoy5D";
 //-------------------------//
 
 $About_title = "Who we are";
-$About_text_acc = "{$Company_Name} is a digital growth and monetization community that combines education, technology, experiences, and a global expansion model.";
+$About_text_acc = "{$Company_Name} is a global digital ecosystem focused on the comprehensive development of the modern entrepreneur. We integrate digital education, technological tools, personal development, in-person experiences, and a structured growth system that allows our members to <span class='tc-acc'>strengthen</span> their mindset, <span class='tc-acc'>develop</span> leadership, <span class='tc-acc'>generate</span> income, and <span class='tc-acc'>evolve</span> in the new digital economy.";
 $About_text1 = "At {$Company_Name}, we train digital leaders who learn, earn, and evolve while building a life of freedom, purpose, and style.";
 $About_subtitle = "Purpose";
 $About_text2 = "Elevate the lives of millions by guiding them to develop a winning mindset, master digital skills, and generate real, sustainable, and scalable income.";
@@ -59,7 +59,7 @@ $About_text2 = "Elevate the lives of millions by guiding them to develop a winni
 // Journey
 //-------------------------//
 
-$Journey_title = "Dimensions of success <span class='tc-acc'>{$Company_Name}</span>";
+$Journey_title = "Our DNA <span class='tc-acc'>{$Company_Name}</span>";
 
 $Journey_button_1 = "Desire";
 $Journey_button_2 = "Definition";
@@ -67,11 +67,11 @@ $Journey_button_3 = "Decision";
 $Journey_button_4 = "Determination";
 $Journey_button_5 = "Discipline";
 
-$Journey_text_1 = "The inner fire that starts your path.";
-$Journey_text_2 = "When you know who you are and where you're going, the world opens up.";
-$Journey_text_3 = "Success begins when you choose to act.";
-$Journey_text_4 = "You move beyond excuses.";
-$Journey_text_5 = "Consistency every day, even when no one sees you.";
+$Journey_text_1 = "Inner fire that drives you to want more.";
+$Journey_text_2 = "When you know who you are, how you live, and where you're going.";
+$Journey_text_3 = "The moment you choose to change your story.";
+$Journey_text_4 = "Moving forward even when no one is watching.";
+$Journey_text_5 = "Doing the right thing every day.";
 
 //-------------------------//
 // Letters
