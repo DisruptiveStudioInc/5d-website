@@ -32,7 +32,7 @@
 
   <div class="d-flex fw-wrap">
     <div class="w-50 med-w-100 d-flex fd-col jc-center ai-start med-ai-center min-h-dhv med-min-h-50dvh p-60 med-pt-60 med-pb-60 small-p-20 small-pt-50 small-pb-50">
-      <h2 class="h1 mb-60 med-mb-40 small-mb-20 t-l"><?= $About_title; ?></h2>
+      <h2 class="h1 font-cross mb-60 med-mb-40 small-mb-20 t-l"><?= $About_title; ?></h2>
       <!-- <p class="h3 t-balance med-t-c fw-700 tc-acc mb-0"><?= $About_text_acc; ?></p> -->
       <p class="h5 med-t-c"><?= $About_text_acc; ?></p>
       <!-- <p class="h5 med-t-c mb-20 small-mb-10"><?= $About_text1; ?></p> -->
@@ -63,7 +63,7 @@
       <ul class="d-flex g-40 med-g-20 fw-wrap jc-center">
         <?php foreach($sec01 as $step): ?>
           <li class="dimension p-20 br-10 d-flex fd-col ai-center jc-center g-0">
-            <h3 class="dimension-title tc-acc h4 mt-0"><?= $step['title'] ?></h3>
+            <h3 class="dimension-title font-cross tc-acc h4 mt-0"><?= $step['title'] ?></h3>
             <p class="h5 m-0 t-balance" data-text="<?= $step['text'] ?>"><?= $step['text'] ?></p>
           </li>
         <?php endforeach; ?>
@@ -90,7 +90,7 @@
 		<div class="letter-wrap" style="--item-index:<?= $k; ?>">
       <img class="letter-bg img_0<?= $slide['id']; ?>" src="./images/body/letters/<?= $slide['id']; ?>.webp" alt="<?= $slide['title']; ?>">
       <div class="letter-content word_0<?= $slide['id']; ?> abs w-100 p-40 med-p-10-20 med-pt-50 med-pb-50 t-c">
-        <h2 class="letter-title"><?= $slide['title']; ?></h2>
+        <h2 class="letter-title font-cross"><?= $slide['title']; ?></h2>
         <?php if(isset($slide['subtitle'])): ?>
           <h3 class="h4 tc-acc"><?= $slide['subtitle']; ?></h3>
         <?php endif; ?>
@@ -179,7 +179,7 @@ foreach ($homeProducts as $item){
 	<div id='Modal{$item['id']}' class='modal'>
     <div class='modal-content rel t-c pt-60'>
       <span class='v-white c-pri icon icon-close' onclick=\"closeModal('Modal{$item['id']}')\"></span>
-      <h2 class='h2 tc-pri t-c med-t-l'>{$item['title']}</h2>
+      <h2 class='h2 font-cross tc-acc t-c med-t-l'>{$item['title']}</h2>
       <p>{$item['text']}</p>
     </div>
 	</div>
@@ -284,7 +284,7 @@ foreach ($homeProducts as $item){
       <?php foreach($sec07 as $item): ?>
         <article class="reward p-20 pt-40 pb-40 of-h rel med-t-c w-100 med-w-40 small-w-100">
           <img src="./images/body/mr_ai/<?= $item['image']; ?>" alt="<?= $item['title']; ?>" class="reward-image w-60 med-w-100 small-w-60"/>
-          <h2 class="reward-title h4 m-0" style="transform-origin:left center;"><?= $item['title']; ?></h2>
+          <h2 class="reward-title font-cross h4 m-0" style="transform-origin:left center;"><?= $item['title']; ?></h2>
           <p class="reward-text mb-0"><?= $item['text']; ?></p>
         </article>
       <?php endforeach; ?>

@@ -7,9 +7,9 @@
     <div class="block-box-bg overlay o-70">
         <div class="mw-1440 jc-center ai-center dh-100 small-fd-col-rev g-0 small-g-20 p-30">
           <div class="info w-60 tc-0 small-t-c">
-            <h1 class="h1-product"><?= $content['subtitle']; ?></h1>
+            <h1 class="h1-product font-cross"><?= $content['subtitle']; ?></h1>
             <p class="small-d-none"><?= $content['text1']; ?></p>
-            <p class="h1 fw-700 tc-acc"><?= $content['price']; ?></p>
+            <p class="h1 font-title fw-700 tc-acc"><?= $content['price']; ?></p>
             <p class="h3 fw-700"><?= $content['text2'] ?></p>
 
             <div class="btns g-10 small-jc-center d-none">
@@ -55,7 +55,7 @@
 <section class="c-sub <?= $content['id']; ?>">
     <div class="h-100 of-h rel small-h-0 p-20 d-flex fd-col ai-center jc-center">
 
-      <h2 class="abs-text h1 t-c <?= $content['ingredients_textCl'] ?> ?>"><?= $content['ingredients'] ?></h2>
+      <h2 class="abs-text h1 font-cross t-c <?= $content['ingredients_textCl'] ?> ?>"><?= $content['ingredients'] ?></h2>
       <img class="img-middle br-20 small-d-none" src="./images/body/products/<?= $content['image']; ?>" alt="<?= $content['subtitle']; ?>" />
 
       <div class="ingredients_wrap">
@@ -79,34 +79,34 @@
 <!-- ============================================== -->
 
 <section>
-    <div class="img_med of-h">
-        <div class="h-100 rel all-tc-0 overlay o-60 custom">
-            <div class="center">
-                <h2 class="h1"><?= $Benefits; ?></h2>
-                <p><?= $content['benefits_sub'] ?></p>
-            </div>
+  <div class="img_med of-h">
+    <div class="h-100 rel all-tc-0 overlay o-60 custom">
+      <div class="center">
+        <h2 class="h1"><?= $Benefits; ?></h2>
+        <p><?= $content['benefits_sub'] ?></p>
+      </div>
 
-            <ul class="benefits-list med-d-none">
-                <?php
-                $titles = $content['benefits_titles'];
-                $benefits = $content['benefits_list'];
+      <ul class="benefits-list med-d-none">
+        <?php
+          $titles = $content['benefits_titles'];
+          $benefits = $content['benefits_list'];
 
-                foreach ($titles as $index => $title) {
-                    // Cada título tiene su correspondiente descripción en $benefits
-                    $desc = $benefits[$index + 1] ?? ''; // +1 porque en $Benefits_list_map, el primer elemento es el título
-                    ?>
-                    <li class="benefits b-<?= $index + 1; ?>">
-                        <span class="v-custom icon icon-<?= 7 + $index; ?> <?= $id; ?> i-big"></span>
-                        <h4><?= $title; ?></h4>
-                        <p><?= $desc; ?></p>
-                    </li>
-                <?php } ?>
-            </ul>
+          foreach ($titles as $index => $title):
+            // Cada título tiene su correspondiente descripción en $benefits
+            $desc = $benefits[$index + 1] ?? ''; // +1 porque en $Benefits_list_map, el primer elemento es el título
+        ?>
+          <li class="benefits b-<?= $index + 1; ?>">
+            <span class="v-custom icon icon-<?= 7 + $index; ?> <?= $id; ?> i-big"></span>
+            <h3 class="font-cross"><?= $title; ?></h3>
+            <p><?= $desc; ?></p>
+          </li>
+        <?php endforeach; ?>
+      </ul>
 
-            <img class="full-img" src="./images/body/subpage/bg_middle_<?= $id; ?>.webp" alt="<?= $id; ?>">
+      <img class="full-img" src="./images/body/subpage/bg_middle_<?= $id; ?>.webp" alt="<?= $id; ?>">
 
-        </div>
     </div>
+  </div>
 </section>
 
 <!-- ============================================== -->

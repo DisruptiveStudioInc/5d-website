@@ -6,19 +6,19 @@
   /*-- Color  --*/
 
   --color-acc: #ff8500;
-  --color-pri: #040a1b;
-  --color-sec: #1d283b;
-  --color-ter: #26384d;
+  --color-pri: #111111;
+  --color-sec: #313131;
+  --color-ter: #333b45;
 
   --color-ter-h: #f3730a;
   --color-acc-h: #f3730a;
-  --color-sec-h: #25385a;
+  --color-sec-h: #303d53;
 
   --color-basic: 215;
   --color-premium: 40;
   --color-black: #000000;
 
-  --color-main-bg: #131222;
+  --color-main-bg: #1c1c1c;
 
   --color-testimonials: #5f707f;
   --color-glow: rgba(245, 126, 28, 0.2);
@@ -41,19 +41,32 @@
   font-family: "Microgbe";
   font-style: normal;
   font-weight: 400;
-  src: local("microgbe"), url("../../fonts/microgbe.woff2") format("woff2");
+  src:
+    local("microgbe"),
+    url("../../fonts/microgbe.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cross Boxed";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("cross_boxed"),
+    url("../../fonts/cross_boxed.woff2") format("woff2");
 }
 @font-face {
   font-family: "Averta";
   font-style: normal;
   font-weight: 400;
-  src: local("averta"), url("../../fonts/averta.woff2") format("woff2");
+  src:
+    local("averta"),
+    url("../../fonts/averta.woff2") format("woff2");
 }
 @font-face {
   font-family: "Averta";
   font-style: normal;
   font-weight: 700;
-  src: local("averta-bold"),
+  src:
+    local("averta-bold"),
     url("../../fonts/averta-bold.woff2") format("woff2");
 }
 
@@ -84,6 +97,13 @@
 }
 .flex-grow {
   flex-grow: 1;
+}
+.font-cross {
+  font-family: "Cross Boxed", sans-serif;
+  font-weight: 400;
+}
+.font-title {
+  font-family: var(--f-family-h);
 }
 @media only screen and (max-width: 1080px) {
   .med-min-h-auto {
@@ -137,7 +157,8 @@
 }
 
 .c-sub {
-  background: radial-gradient(
+  background:
+    radial-gradient(
       hsl(var(--stop2)) 5%,
       hsla(var(--stop1), 0.4) 35%,
       hsla(var(--stop5), 0.25) 90%
@@ -1111,7 +1132,9 @@ section {
   opacity: 0;
   transform: translateY(10px);
   pointer-events: none;
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
   position: relative;
   display: none;
   font-size: 3rem;
@@ -1211,7 +1234,9 @@ ul.textos li span {
   z-index: 7;
   color: white;
   transform: translate(-50%, -45%);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
 }
 
 ul.textos li:hover {
@@ -1237,7 +1262,9 @@ ul.textos li span img {
   display: block;
   margin: 10px 0;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease-out, opacity 0.3s ease-out;
+  transition:
+    transform 0.2s ease-out,
+    opacity 0.3s ease-out;
   transition-delay: 0.5s;
   opacity: 0;
   object-fit: cover;
@@ -1322,7 +1349,9 @@ ul.textos li span img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
   overflow-y: auto;
 }
 
