@@ -417,16 +417,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 .to('.word_02', animationSpeed, {opacity:0, scale:1.5, y:'-300%', filter:'blur(12px)', ease:animationLinear})
                 .fromTo('.word_03', animationSpeed, {opacity:0, scale:1, filter: 'blur(12px)'}, {opacity:1, scale:1, filter:'blur(0)', ease:animationLinear, immediateRender:false})
                 .to('.word_03', animationSpeed, {opacity:0, scale:1.5, y:'-300%', filter:'blur(12px)', ease:animationLinear})
-                .fromTo('.word_04', animationSpeed, {opacity:0, scale:1, filter: 'blur(12px)'}, {opacity:1, scale:1, filter:'blur(0)', ease:animationLinear, immediateRender:false})
-                .to('.word_04', animationSpeed, {opacity:0, scale:1.5, y:'-300%', filter:'blur(12px)', ease:animationLinear})
-                .fromTo('.word_05', animationSpeed, {opacity:0, scale:1, filter: 'blur(12px)'}, {opacity:1, scale:1, filter:'blur(0)', ease:animationLinear, immediateRender:false});
+                .fromTo('.word_04', animationSpeed, {opacity:0, scale:1, filter: 'blur(12px)'}, {opacity:1, scale:1, filter:'blur(0)', ease:animationLinear, immediateRender:false});
+                //.to('.word_04', animationSpeed, {opacity:0, scale:1.5, y:'-300%', filter:'blur(12px)', ease:animationLinear})
+                //.fromTo('.word_05', animationSpeed, {opacity:0, scale:1, filter: 'blur(12px)'}, {opacity:1, scale:1, filter:'blur(0)', ease:animationLinear, immediateRender:false});
 
             var imgTimeline = new TimelineMax();
             imgTimeline
                 .to('.img_01', animationSpeed, {y: '-100%', ease: animationLinear}, animationSpeed * 0.25)
                 .to('.img_02', animationSpeed, {y: '-100%', ease: animationLinear}, animationSpeed * 2.25)
                 .to('.img_03', animationSpeed, {y: '-100%', ease: animationLinear}, animationSpeed * 4)
-                .to('.img_04', animationSpeed, {y: '-100%', ease: animationLinear}, animationSpeed * 5.75);
+                //.to('.img_04', animationSpeed, {y: '-100%', ease: animationLinear}, animationSpeed * 5.75);
 
             var master = new TimelineMax();
             master.add(textoTimeline, 0);

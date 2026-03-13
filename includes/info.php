@@ -279,14 +279,14 @@ $verticalSlides = array(
     'title' => $Letters_title_04,
     'text' => $Letters_text_04,
     'list' => $letterList_04,
-  ],
-  [
-    'id' => 5,
-    'title' => $Letters_title_05,
-    'subtitle' => $Letters_sub_05,
-    'text' => $Letters_text_05,
-    'list' => $letterList_05,
   ]
+  // [
+  //   'id' => 5,
+  //   'title' => $Letters_title_05,
+  //   'subtitle' => $Letters_sub_05,
+  //   'text' => $Letters_text_05,
+  //   'list' => $letterList_05,
+  // ]
 );
 
 $sec03 = array(
